@@ -1,2 +1,0 @@
-#include "Casilla.h"
-
