@@ -7,6 +7,8 @@
 class Carta {
 
  public:
+ 		carta(): m_nombre(""){}
+ 		carta(string s): m_nombre(s){}
     string m_nombre;
 
 };
