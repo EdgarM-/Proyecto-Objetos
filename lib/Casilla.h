@@ -45,6 +45,18 @@ public:
 		return m_pila_cartas;
 	}
 
+	Ficha* getFicha()
+	{
+		if (m_fichas.empty())
+			return nullptr;
+		return m_fichas[0];
+	}
+
+	std::vector<Fichas*> getFichas()
+	{
+		return m_fichas;
+	}
+
 };
 
 #endif // Casilla_h

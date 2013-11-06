@@ -6,26 +6,26 @@
 
 #include "Ficha.h"
 
-using namespace std;
-
 
 class Jugador {
 
- public:
-
-    void retirar()  = 0;
-
- public:
-    string m_nombre;
+ protected:
+    std::string m_nombre;
+    vector< Ficha* > m_fichas;
     int m_equipo;
-
+ 
  public:
+ 	Jugador(std::string nombre, int equipo = 0)
+ 		: m_nombre(nombre), m_equipo(equipo)
+ 	{}
 
+ 	void addFicha(Ficha* ficha)
+ 	{
+ 		ficha.setJugador(this);
+ 		m_fichas.push_back(ficha);
+ 	}
 
-    /**
-     * @element-type Ficha
-     */
-    vector< Ficha > m_fichas;
+    void retirar() = 0;
 };
 
 #endif // Jugador_h

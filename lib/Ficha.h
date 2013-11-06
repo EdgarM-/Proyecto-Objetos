@@ -2,28 +2,36 @@
 #define Ficha_h
 
 #include "Pareja.h"
-
+#include "Jugador.h"
 
 class Ficha {
 
- public:
+protected:
+	Jugador* m_jugador;
+	int m_fila;
+	int m_columna;
 
-     int getFila();
+public:
+	Ficha()
+		: m_jugador(nullptr)
+	{}
 
-     int getColumna();
+	int getFila();
 
-     Pareja getPareja();
+	int getColumna();
 
-     void setFila();
+	Pareja getPareja();
 
-     void setColumna();
+	void setFila();
 
-     void setPareja();
+	void setColumna();
 
- public:
-    int m_fila;
-    int m_columna;
+	void setJugador(Jugador* jugador)
+	{
+		m_jugador = jugador;
+	}
 
+	void setPareja();
 };
 
 #endif // Ficha_h
