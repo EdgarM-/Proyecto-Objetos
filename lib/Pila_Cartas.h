@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <cstdlib>
+#include <algorithm>
 
 #include "Carta.h"
 
@@ -11,56 +12,45 @@ using namespace std;
 
 class Pila_Cartas {
 
- public:
+protected:
+	string m_nombre;
+	vector< Carta* > m_cartas;
 
- 		Pila_Cartas(string s): m_nombre(s){}
+public:
 
-    Boolean push(Carta& c){
-    	m_cartas.push_back(c);
-    };
+	Pila_Cartas(string s): m_nombre(s){}
 
-    Carta &pop(){
-    	Carta c;
-    	c=m_cartas.back();
-    	m_cartas.erase(m_cartas.end());
-    	return c;
-    };
+	void push(Carta* c){
+		m_cartas.push_back(c);
+	}
 
-    void shuffle(){
-    	vector<Boolean> v(false);
-    	v.resize(m_cartas.size())
-    	Carta c;
-    	int n;
-    	for (int i = 0; i < m_cartas.size(); ++i)
-    	{
-    		if (v[i]==true)
-    		{
-    			continue;
-    		}
-    		n=rand() % m_cartas.size()-1 +0
-    		if (n!=i && v[n]== false)
-    		{
-    			c=m_cartas[i];
-    			m_cartas[i]=m_cartas[n];
-    			m_cartas[n]=c;
-    			v[i]=true; v[n]=true;
-    		}
-    		else{
-    			--i;
-    		}
-    	}
-    };
+	Carta* pop(){
+		Carta* c = m_cartas.back();
+		m_cartas.pop_back();
+		return c;
+	}
 
- public:
-    string m_nombre;
+	void shuffle(){
+		vector<Boolean> v(m_cartas.size(), false);
+		int n;
 
- public:
+		for (int i = 0; i < m_cartas.size(); ++i)
+		{
+			if (v[i] == true)
+				continue;
 
+			n = rand() % m_cartas.size()
+			if (n != i && v[n] == false)
+			{
+				swap(m_cartas[i], m_cartas[n]);
 
-    /**
-     * @element-type Carta
-     */
-    vector< Carta* > m_cartas;
+				v[i] = true;
+				v[n] = true;
+			}
+			else --i;
+		}
+	}
+
 };
 
 #endif // Pila_Cartas_h

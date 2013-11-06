@@ -6,10 +6,17 @@
 
 class Carta {
 
- public:
- 		carta(): m_nombre(""){}
- 		carta(string s): m_nombre(s){}
-    string m_nombre;
+protected:
+	string m_nombre;
+
+public:
+	Carta()
+		: m_nombre("")
+	{}
+
+	Carta(string s)
+		: m_nombre(s)
+	{}
 
 };
 
