@@ -1,5 +1,5 @@
-#ifndef _DADO_H
-#define _DADO_H
+#ifndef Dado_h
+#define Dado_h
 
 #include <random>
 #include <functional>
@@ -23,4 +23,4 @@ public:
 	~Dado(){}
 };
 
-#endif // _DADO_H
+#endif // Dado_h
