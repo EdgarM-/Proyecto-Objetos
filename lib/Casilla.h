@@ -52,9 +52,21 @@ public:
 		return m_fichas[0];
 	}
 
-	std::vector<Fichas*> getFichas()
+	std::vector<Ficha*> getFichas()
 	{
 		return m_fichas;
+	}
+
+	Carta* getCarta()
+	{
+		if (m_cartas.empty())
+			return nullptr;
+		return m_cartas[0];
+	}
+
+	std::vector<Carta*> getFichas()
+	{
+		return m_catas;
 	}
 
 };

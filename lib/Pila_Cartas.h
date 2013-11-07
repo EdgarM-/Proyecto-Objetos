@@ -51,6 +51,13 @@ public:
 		}
 	}
 
+	~Pila_Cartas()
+	{
+		for (auto& carta : m_cartas)
+			delete carta;
+		m_cartas.clear();
+	}
+
 };
 
 #endif // Pila_Cartas_h

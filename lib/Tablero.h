@@ -7,41 +7,55 @@
 #include "Casilla.h"
 #include "Ficha.h"
 
-using namespace std;
-
 class Tablero {
 
- public:
+protected:
+    std::vector< Casilla* > m_casillas;
 
-    Ficha getFicha();
+public:
 
-    Ficha getFichas();
-
-    Carta &getCarta();
-
-    Carta &getCartas();
-
-    void limpiar();
-
-    void agregarFicha();
-
-    void agregarCarta();
-
-    void removerFicha();
-
-    void removerCarta();
-
- public:
-    Integer m_filas;
-    Integer m_columnas;
-
- public:
+	explicit Tablero(int tamano)
+	{
+		m_casillas.resize(tamano, new Casilla())
+	}
 
 
-    /**
-     * @element-type Casilla
-     */
-    vector< Casilla > m_casillas;
+	Ficha* getFicha(int position)
+	{
+		return m_casillas[position].getFicha();
+	}
+
+	std::vector< Ficha* > v; getFichas(int position)
+	{
+		return m_casillas[position].getFichas();
+	}
+
+	Carta* getCarta(int position)
+	{
+		return m_casillas[position].getCarta();
+	}
+
+	std::vector< Carta* > getCartas()
+	{
+		return m_casillas[position].getCartas();
+	}
+
+	void limpiar(); // TODO: Terminar, funcion importante, definir funcionamiento.
+
+	void agregarFicha(Ficha* ficha, int position)
+	{
+		m_casillas[position].addFicha(ficha);
+	}
+
+	void agregarCarta(Carta* carta, int position)
+	{
+		m_casillas[position].addCarta(carta);
+	}
+
+	void removerFicha();
+
+	void removerCarta();
+
 };
 
 #endif // Tablero_h
