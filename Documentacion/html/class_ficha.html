@@ -4,10 +4,17 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>Saem Games: Referencia de la Clase Ficha</title>
+<title>SAEMGames: Referencia de la Clase Ficha</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -23,9 +30,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logohtml.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Saem Games
+   <div id="projectname">SAEMGames
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Saem Games es un libreria para crear la mayoria de  juegos de mesa que poseen tablero , no se pueden hacer los juegos tipo Risk por lo del movimiento,  proyecto de objetos y programacion a media escala.</div>
   </td>
  </tr>
  </tbody>
@@ -66,6 +73,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
       <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_ficha.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -80,7 +102,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
@@ -91,22 +112,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 </div><!--header-->
 <div class="contents">
 
+<p>La clase <a class="el" href="class_ficha.html" title="La clase Ficha es la base para las fichas. ">Ficha</a> es la base para las fichas.  
+ <a href="class_ficha.html#details">Más...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_ficha_8h_source.html">Ficha.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:ad57dd3e499ebb36f1a3b3e978391cd80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#ad57dd3e499ebb36f1a3b3e978391cd80">Ficha</a> ()</td></tr>
+<tr class="memdesc:ad57dd3e499ebb36f1a3b3e978391cd80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad57dd3e499ebb36f1a3b3e978391cd80">Más...</a><br/></td></tr>
 <tr class="separator:ad57dd3e499ebb36f1a3b3e978391cd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d8bfecef738f859159a6af7484bd525"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a5d8bfecef738f859159a6af7484bd525">getFila</a> ()</td></tr>
+<tr class="memdesc:a5d8bfecef738f859159a6af7484bd525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve la fila en la que esta la ficha.  <a href="#a5d8bfecef738f859159a6af7484bd525">Más...</a><br/></td></tr>
 <tr class="separator:a5d8bfecef738f859159a6af7484bd525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069d3b190fd63b9ab765287d813696bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a069d3b190fd63b9ab765287d813696bb">getColumna</a> ()</td></tr>
+<tr class="memdesc:a069d3b190fd63b9ab765287d813696bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve la columna en la que esta la ficha.  <a href="#a069d3b190fd63b9ab765287d813696bb">Más...</a><br/></td></tr>
 <tr class="separator:a069d3b190fd63b9ab765287d813696bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6630690eb9d2d842d0bc1c1437c976be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pareja.html">Pareja</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a6630690eb9d2d842d0bc1c1437c976be">getPareja</a> ()</td></tr>
+<tr class="memdesc:a6630690eb9d2d842d0bc1c1437c976be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve la <a class="el" href="class_pareja.html">Pareja</a> en la que esta la ficha.  <a href="#a6630690eb9d2d842d0bc1c1437c976be">Más...</a><br/></td></tr>
 <tr class="separator:a6630690eb9d2d842d0bc1c1437c976be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ea0ccbc31ac6782d398efc4a4d3ffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a58ea0ccbc31ac6782d398efc4a4d3ffd">setFila</a> ()</td></tr>
-<tr class="separator:a58ea0ccbc31ac6782d398efc4a4d3ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80d1429ccb2e9d765c692df128dc9a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a80d1429ccb2e9d765c692df128dc9a1b">setColumna</a> ()</td></tr>
-<tr class="separator:a80d1429ccb2e9d765c692df128dc9a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1634e927bcd1c2e191622835eadf00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a3c1634e927bcd1c2e191622835eadf00">setFila</a> (int fila)</td></tr>
+<tr class="memdesc:a3c1634e927bcd1c2e191622835eadf00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asigna.  <a href="#a3c1634e927bcd1c2e191622835eadf00">Más...</a><br/></td></tr>
+<tr class="separator:a3c1634e927bcd1c2e191622835eadf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3015c41c76405b5a6b00fcb17b840fbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a3015c41c76405b5a6b00fcb17b840fbb">setColumna</a> (int columna)</td></tr>
+<tr class="separator:a3015c41c76405b5a6b00fcb17b840fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b701233ee7bfce83a296499486bb2da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#a8b701233ee7bfce83a296499486bb2da">setJugador</a> (<a class="el" href="class_jugador.html">Jugador</a> *jugador)</td></tr>
 <tr class="separator:a8b701233ee7bfce83a296499486bb2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34d1e99130e953b976935a23f343d7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jugador.html">Jugador</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#ad34d1e99130e953b976935a23f343d7a">getJugador</a> ()</td></tr>
@@ -129,7 +158,10 @@ Atributos protegidos</h2></td></tr>
 <tr class="memitem:adc422685513ddfaefd4165af3cee652a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ficha.html#adc422685513ddfaefd4165af3cee652a">m_columna</a></td></tr>
 <tr class="separator:adc422685513ddfaefd4165af3cee652a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>La clase <a class="el" href="class_ficha.html" title="La clase Ficha es la base para las fichas. ">Ficha</a> es la base para las fichas. </p>
+<p>La clase define las funciones las funciones para modelar lo basico de una ficha como asignar a un jugador o conseguir o asignar la casilla donde esta la ficha </p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a class="anchor" id="ad57dd3e499ebb36f1a3b3e978391cd80"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,6 +182,9 @@ Atributos protegidos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>m_jugador y m_casilla empiezan en nullpointer. </p>
 
 </div>
 </div>
@@ -190,6 +225,9 @@ Atributos protegidos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Devuelve la columna en la que esta la ficha. </p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_ficha.html#a6630690eb9d2d842d0bc1c1437c976be" title="Devuelve la Pareja en la que esta la ficha. ">getPareja()</a>, <a class="el" href="class_ficha.html#a5d8bfecef738f859159a6af7484bd525" title="Devuelve la fila en la que esta la ficha. ">getFila()</a> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a5d8bfecef738f859159a6af7484bd525"></a>
@@ -204,6 +242,9 @@ Atributos protegidos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Devuelve la fila en la que esta la ficha. </p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_ficha.html#a6630690eb9d2d842d0bc1c1437c976be" title="Devuelve la Pareja en la que esta la ficha. ">getPareja()</a>, <a class="el" href="class_ficha.html#a069d3b190fd63b9ab765287d813696bb" title="Devuelve la columna en la que esta la ficha. ">getColumna()</a> </dd></dl>
 
 </div>
 </div>
@@ -243,6 +284,9 @@ Atributos protegidos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Devuelve la <a class="el" href="class_pareja.html">Pareja</a> en la que esta la ficha. </p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_ficha.html#a5d8bfecef738f859159a6af7484bd525" title="Devuelve la fila en la que esta la ficha. ">getFila()</a> , <a class="el" href="class_ficha.html#a069d3b190fd63b9ab765287d813696bb" title="Devuelve la columna en la que esta la ficha. ">getColumna()</a>, <a class="el" href="class_pareja.html">Pareja</a> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a570c6284bfde76f4b37ea7e787cb5a11"></a>
@@ -269,14 +313,15 @@ Atributos protegidos</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a80d1429ccb2e9d765c692df128dc9a1b"></a>
+<a class="anchor" id="a3015c41c76405b5a6b00fcb17b840fbb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Ficha::setColumna </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columna</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -284,18 +329,21 @@ Atributos protegidos</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a58ea0ccbc31ac6782d398efc4a4d3ffd"></a>
+<a class="anchor" id="a3c1634e927bcd1c2e191622835eadf00"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Ficha::setFila </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fila</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Asigna. </p>
 
 </div>
 </div>
@@ -419,16 +467,16 @@ Atributos protegidos</h2></td></tr>
 
 </div>
 </div>
-<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
-<li><a class="el" href="_ficha_8h_source.html">Ficha.h</a></li>
-<li><a class="el" href="_ficha_8cpp.html">Ficha.cpp</a></li>
-</ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generado el Domingo, 10 de Noviembre de 2013 23:45:23 para Saem Games por &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_ficha.html">Ficha</a></li>
+    <li class="footer">Generado el Lunes, 11 de Noviembre de 2013 09:40:24 para SAEMGames por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
 </body>
 </html>
