@@ -1,0 +1,97 @@
+\hypertarget{class_jugador}{\section{Referencia de la Clase Jugador}
+\label{class_jugador}\index{Jugador@{Jugador}}
+}
+
+
+{\ttfamily \#include $<$Jugador.\-h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_jugador_a507b41f628794c6512f81f6caa887b97}{Jugador} (std\-::string nombre, int equipo=0)
+\item 
+void \hyperlink{class_jugador_af9d0efb95b52b56edd7e7d6cdfa77377}{add\-Ficha} (\hyperlink{class_ficha}{Ficha} $\ast$ficha)
+\item 
+void \hyperlink{class_jugador_a2a3f5c21a6b825ef46e72a465b25e1a9}{set\-Equipo} (int equipo)
+\item 
+int \hyperlink{class_jugador_a725214a9fd6122d62e7fc0d72005c932}{get\-Equipo} () const 
+\item 
+bool \hyperlink{class_jugador_a2874be23b93d3500b35b214b323a091d}{mismo\-Equipo} (\hyperlink{class_jugador}{Jugador} $\ast$jugador) const 
+\item 
+void \hyperlink{class_jugador_a7da404c1a34ab8355570e1a90b7ace84}{retirar} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_jugador_a1d5a997e6b8161fbb59705e4157612e5}{m\-\_\-nombre}
+\item 
+std\-::vector$<$ \hyperlink{class_ficha}{Ficha} $\ast$ $>$ \hyperlink{class_jugador_a2d8022d341e2c4f1ed4dd9b218c36662}{m\-\_\-fichas}
+\item 
+int \hyperlink{class_jugador_aed31247f7379b5ecd32469c5d014d5ad}{m\-\_\-equipo}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_jugador_a507b41f628794c6512f81f6caa887b97}{\index{Jugador@{Jugador}!Jugador@{Jugador}}
+\index{Jugador@{Jugador}!Jugador@{Jugador}}
+\subsubsection[{Jugador}]{\setlength{\rightskip}{0pt plus 5cm}Jugador\-::\-Jugador (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nombre, }
+\item[{int}]{equipo = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jugador_a507b41f628794c6512f81f6caa887b97}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_jugador_af9d0efb95b52b56edd7e7d6cdfa77377}{\index{Jugador@{Jugador}!add\-Ficha@{add\-Ficha}}
+\index{add\-Ficha@{add\-Ficha}!Jugador@{Jugador}}
+\subsubsection[{add\-Ficha}]{\setlength{\rightskip}{0pt plus 5cm}void Jugador\-::add\-Ficha (
+\begin{DoxyParamCaption}
+\item[{{\bf Ficha} $\ast$}]{ficha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jugador_af9d0efb95b52b56edd7e7d6cdfa77377}
+\hypertarget{class_jugador_a725214a9fd6122d62e7fc0d72005c932}{\index{Jugador@{Jugador}!get\-Equipo@{get\-Equipo}}
+\index{get\-Equipo@{get\-Equipo}!Jugador@{Jugador}}
+\subsubsection[{get\-Equipo}]{\setlength{\rightskip}{0pt plus 5cm}int Jugador\-::get\-Equipo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jugador_a725214a9fd6122d62e7fc0d72005c932}
+\hypertarget{class_jugador_a2874be23b93d3500b35b214b323a091d}{\index{Jugador@{Jugador}!mismo\-Equipo@{mismo\-Equipo}}
+\index{mismo\-Equipo@{mismo\-Equipo}!Jugador@{Jugador}}
+\subsubsection[{mismo\-Equipo}]{\setlength{\rightskip}{0pt plus 5cm}bool Jugador\-::mismo\-Equipo (
+\begin{DoxyParamCaption}
+\item[{{\bf Jugador} $\ast$}]{jugador}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jugador_a2874be23b93d3500b35b214b323a091d}
+\hypertarget{class_jugador_a7da404c1a34ab8355570e1a90b7ace84}{\index{Jugador@{Jugador}!retirar@{retirar}}
+\index{retirar@{retirar}!Jugador@{Jugador}}
+\subsubsection[{retirar}]{\setlength{\rightskip}{0pt plus 5cm}void Jugador\-::retirar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_jugador_a7da404c1a34ab8355570e1a90b7ace84}
+\hypertarget{class_jugador_a2a3f5c21a6b825ef46e72a465b25e1a9}{\index{Jugador@{Jugador}!set\-Equipo@{set\-Equipo}}
+\index{set\-Equipo@{set\-Equipo}!Jugador@{Jugador}}
+\subsubsection[{set\-Equipo}]{\setlength{\rightskip}{0pt plus 5cm}void Jugador\-::set\-Equipo (
+\begin{DoxyParamCaption}
+\item[{int}]{equipo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_jugador_a2a3f5c21a6b825ef46e72a465b25e1a9}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_jugador_aed31247f7379b5ecd32469c5d014d5ad}{\index{Jugador@{Jugador}!m\-\_\-equipo@{m\-\_\-equipo}}
+\index{m\-\_\-equipo@{m\-\_\-equipo}!Jugador@{Jugador}}
+\subsubsection[{m\-\_\-equipo}]{\setlength{\rightskip}{0pt plus 5cm}int Jugador\-::m\-\_\-equipo\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_jugador_aed31247f7379b5ecd32469c5d014d5ad}
+\hypertarget{class_jugador_a2d8022d341e2c4f1ed4dd9b218c36662}{\index{Jugador@{Jugador}!m\-\_\-fichas@{m\-\_\-fichas}}
+\index{m\-\_\-fichas@{m\-\_\-fichas}!Jugador@{Jugador}}
+\subsubsection[{m\-\_\-fichas}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Ficha}$\ast$ $>$ Jugador\-::m\-\_\-fichas\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_jugador_a2d8022d341e2c4f1ed4dd9b218c36662}
+\hypertarget{class_jugador_a1d5a997e6b8161fbb59705e4157612e5}{\index{Jugador@{Jugador}!m\-\_\-nombre@{m\-\_\-nombre}}
+\index{m\-\_\-nombre@{m\-\_\-nombre}!Jugador@{Jugador}}
+\subsubsection[{m\-\_\-nombre}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Jugador\-::m\-\_\-nombre\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_jugador_a1d5a997e6b8161fbb59705e4157612e5}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_jugador_8h}{Jugador.\-h}\end{DoxyCompactItemize}
