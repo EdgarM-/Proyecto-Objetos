@@ -1,12 +1,13 @@
 var annotated =
 [
-    [ "Carta", "class_carta.html", "class_carta" ],
-    [ "Casilla", "class_casilla.html", "class_casilla" ],
-    [ "Dado", "class_dado.html", "class_dado" ],
-    [ "Ficha", "class_ficha.html", "class_ficha" ],
-    [ "Juego", "class_juego.html", "class_juego" ],
-    [ "Jugador", "class_jugador.html", "class_jugador" ],
-    [ "Pareja", "class_pareja.html", "class_pareja" ],
-    [ "Pila_Cartas", "class_pila___cartas.html", "class_pila___cartas" ],
-    [ "Tablero", "class_tablero.html", "class_tablero" ]
+    [ "SCarta", "class_s_carta.html", "class_s_carta" ],
+    [ "SCasilla", "class_s_casilla.html", "class_s_casilla" ],
+    [ "SDado", "class_s_dado.html", "class_s_dado" ],
+    [ "SFicha", "class_s_ficha.html", "class_s_ficha" ],
+    [ "SJuego", "class_s_juego.html", "class_s_juego" ],
+    [ "SJugador", "class_s_jugador.html", "class_s_jugador" ],
+    [ "SPareja", "class_s_pareja.html", "class_s_pareja" ],
+    [ "SPila_Cartas", "class_s_pila___cartas.html", "class_s_pila___cartas" ],
+    [ "SRegla", "class_s_regla.html", "class_s_regla" ],
+    [ "STablero", "class_s_tablero.html", "class_s_tablero" ]
 ];

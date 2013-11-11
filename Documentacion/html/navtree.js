@@ -11,18 +11,14 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Archivos", null, [
-      [ "Lista de archivos", "files.html", "files" ],
-      [ "Miembros de los ficheros", "globals.html", [
-        [ "Todo", "globals.html", null ],
-        [ "Funciones", "globals_func.html", null ]
-      ] ]
+      [ "Lista de archivos", "files.html", "files" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_carta_8h.html"
+"_s_carta_8h.html"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronización';

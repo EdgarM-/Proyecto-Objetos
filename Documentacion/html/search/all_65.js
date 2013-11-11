@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empate',['empate',['../class_juego.html#aea9cd9c077eeba2f948f41669f0002b9',1,'Juego']]]
+  ['empate',['empate',['../class_s_juego.html#a267be7b6667504de2cf9becdb5b13600',1,'SJuego']]]
 ];

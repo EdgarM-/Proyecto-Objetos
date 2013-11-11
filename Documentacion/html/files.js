@@ -1,35 +1,33 @@
 var files =
 [
-    [ "Carta.h", "_carta_8h.html", [
-      [ "Carta", "class_carta.html", "class_carta" ]
+    [ "SCarta.h", "_s_carta_8h.html", [
+      [ "SCarta", "class_s_carta.html", "class_s_carta" ]
     ] ],
-    [ "Casilla.h", "_casilla_8h.html", [
-      [ "Casilla", "class_casilla.html", "class_casilla" ]
+    [ "SCasilla.h", "_s_casilla_8h.html", [
+      [ "SCasilla", "class_s_casilla.html", "class_s_casilla" ]
     ] ],
-    [ "Dado.h", "_dado_8h.html", [
-      [ "Dado", "class_dado.html", "class_dado" ]
+    [ "SDado.h", "_s_dado_8h.html", [
+      [ "SDado", "class_s_dado.html", "class_s_dado" ]
     ] ],
-    [ "Ficha.cpp", "_ficha_8cpp.html", null ],
-    [ "Ficha.h", "_ficha_8h.html", [
-      [ "Ficha", "class_ficha.html", "class_ficha" ]
+    [ "SFicha.h", "_s_ficha_8h.html", [
+      [ "SFicha", "class_s_ficha.html", "class_s_ficha" ]
     ] ],
-    [ "Juego.cpp", "_juego_8cpp.html", null ],
-    [ "Juego.h", "_juego_8h.html", [
-      [ "Juego", "class_juego.html", "class_juego" ]
+    [ "SJuego.h", "_s_juego_8h.html", [
+      [ "SJuego", "class_s_juego.html", "class_s_juego" ]
     ] ],
-    [ "Jugador.h", "_jugador_8h.html", [
-      [ "Jugador", "class_jugador.html", "class_jugador" ]
+    [ "SJugador.h", "_s_jugador_8h.html", [
+      [ "SJugador", "class_s_jugador.html", "class_s_jugador" ]
     ] ],
-    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "Pareja.h", "_pareja_8h.html", [
-      [ "Pareja", "class_pareja.html", "class_pareja" ]
+    [ "SPareja.h", "_s_pareja_8h.html", [
+      [ "SPareja", "class_s_pareja.html", "class_s_pareja" ]
     ] ],
-    [ "Pila_Cartas.cpp", "_pila___cartas_8cpp.html", null ],
-    [ "Pila_Cartas.h", "_pila___cartas_8h.html", [
-      [ "Pila_Cartas", "class_pila___cartas.html", "class_pila___cartas" ]
+    [ "SPila_Cartas.h", "_s_pila___cartas_8h.html", [
+      [ "SPila_Cartas", "class_s_pila___cartas.html", "class_s_pila___cartas" ]
     ] ],
-    [ "Tablero.cpp", "_tablero_8cpp.html", null ],
-    [ "Tablero.h", "_tablero_8h.html", [
-      [ "Tablero", "class_tablero.html", "class_tablero" ]
+    [ "SRegla.h", "_s_regla_8h.html", [
+      [ "SRegla", "class_s_regla.html", "class_s_regla" ]
+    ] ],
+    [ "STablero.h", "_s_tablero_8h.html", [
+      [ "STablero", "class_s_tablero.html", "class_s_tablero" ]
     ] ]
 ];

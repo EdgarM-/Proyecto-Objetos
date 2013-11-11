@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init',['init',['../class_juego.html#a1192b532b7acfa034ddc7765caddf86b',1,'Juego']]]
+  ['init',['init',['../class_s_juego.html#a0f27120ff712d840a9e3a115cfdce680',1,'SJuego']]]
 ];

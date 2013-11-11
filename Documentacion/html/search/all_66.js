@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ficha',['Ficha',['../class_ficha.html',1,'Ficha'],['../class_ficha.html#ad57dd3e499ebb36f1a3b3e978391cd80',1,'Ficha::Ficha()']]],
-  ['ficha_2ecpp',['Ficha.cpp',['../_ficha_8cpp.html',1,'']]],
-  ['ficha_2eh',['Ficha.h',['../_ficha_8h.html',1,'']]]
+  ['fichaentra',['fichaEntra',['../class_s_regla.html#a4a1f4cd3bcd3fd764f8bbddaf2683af5',1,'SRegla']]],
+  ['fichasale',['fichaSale',['../class_s_regla.html#a320b5ac9cf80290f8bd01acfabffc4ff',1,'SRegla']]]
 ];

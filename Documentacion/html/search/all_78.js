@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../class_pareja.html#a021ebcfa17225b2beb0b4c1da401bcb1',1,'Pareja']]]
+  ['x',['x',['../class_s_pareja.html#a74cd2af041daa82cc6207ba7cdbcbf2d',1,'SPareja']]]
 ];

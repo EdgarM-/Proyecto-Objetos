@@ -42,7 +42,7 @@ public:
 
 	//!Devuelve la Pareja en la que esta la ficha
 	/*!
-	  \sa getFila() , getColumna(), Pareja
+	  \sa getFila() , getColumna(), SPareja
 	*/
 
 	SPareja getPareja();
