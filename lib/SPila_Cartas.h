@@ -57,6 +57,8 @@ public:
 		m_cartas.clear();
 	}
 
+	~SPila_Cartas(){}
+
 };
 
 #endif // SPila_Cartas_h
