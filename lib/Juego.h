@@ -12,43 +12,37 @@ using namespace std;
 
 class Juego {
 
+protected:
+    int m_jugador_actual;
+    Tablero* m_tablero;
+    vector< Jugador* > m_jugadores;
+    vector< Dado > m_dados;
+    vector< Pila_Cartas > m_pilas;
+
  public:
 
-    void getJugadores();
+    Juego()
+        : m_jugador_actual(0), m_tablero(nullptr) 
+    {}
 
-    void agregarJugador();
+    void agregarJugador(Jugador* jugador)
+    {
+        m_jugadores.push_back(jugador);
+    }
 
-    void agregarPila();
+    void agregarPila(Pila_Cartas* pila)
+    {
+        m_pilas.push_back(pila);
+    }
 
     void init()  = 0;
 
     void turno()  = 0;
 
-    Boolean ganar()  = 0;
+    bool ganar()  = 0;
 
-    Boolean empate()  = 0;
+    bool empate()  = 0;
 
- public:
-    int m_jugador_actual;
-
- public:
-
-    /**
-     * @element-type Jugador
-     */
-    vector< Jugador > m_jugadores;
-
-    /**
-     * @element-type Pila_Cartas
-     */
-    vector< Pila_Cartas > m_pilas;
-
-    Tablero m_tablero;
-
-    /**
-     * @element-type Dado
-     */
-    vector< Dado > m_dados;
 };
 
 #endif // Juego_h

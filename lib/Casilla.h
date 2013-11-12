@@ -11,6 +11,8 @@ protected:
 	Pila_Cartas* m_pila_cartas;
 	std::vector< Ficha* > m_fichas;
 	std::vector< Carta* > m_cartas;
+	Regla* m_regla;
+
 public:
 	Casilla()
 		: m_pila_cartas(nullptr)

@@ -7,16 +7,26 @@
 class Carta {
 
 protected:
-	string m_nombre;
+	std::string m_nombre;
 
 public:
 	Carta()
 		: m_nombre("")
 	{}
 
-	Carta(string s)
-		: m_nombre(s)
+	Carta(string nombre)
+		: m_nombre(nombre)
 	{}
+
+	std::string getNombre()
+	{
+		return m_nombre;
+	}
+
+	void setNombre(std::string nombre)
+	{
+		m_nombre = nombre;
+	}
 
 };
 
