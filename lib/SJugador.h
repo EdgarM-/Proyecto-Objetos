@@ -6,33 +6,34 @@
 
 #include "SFicha.h"
 
-//! La Clase jugador es la base para modelar los jugadores
+//! La Clase SJugador es la base para modelar los jugadores
 	/*!
 	   La clase define las funciones basicas para modelar un jugador, este tiene fichas, un nombre y pertenece a un equipo.
-	   puede asignar un equipo, fichas, saber de que equipo es y retirar el jugador de ser nesesario.
+	   Se puede asignar un equipo, fichas, saber a que equipo pertenece y retirar el jugador de ser necesario.
 	 */
 
 class SJugador {
 
 protected:
-	//! nombre del jugador
+	//! Nombre del jugador
 	std::string m_nombre;
-	//! fichas del jugador
+	//! Fichas del jugador
 	std::vector< SFicha* > m_fichas;
-	//! entero que representa a que equipo pertenece el jugador
+	//! Entero que representa a que equipo pertenece el jugador
 	int m_equipo;
 	
 public:
 	//! Constructor
 	/*!
-	   m_nombre empezara con el nombre que entre al metodo y m_equipo empieza con el entero que ingrese al metodo, de lo contrario el equipo sera por default 0
+	   @ref m_nombre empezara con el nombre que entre al metodo y @ref m_equipo empieza con el entero que ingrese al metodo, de lo contrario el equipo sera 0
 	 */
 	SJugador(std::string nombre, int equipo = 0)
 	: m_nombre(nombre), m_equipo(equipo)
 	{}
 
-	//! Agregar una ficha, le entre un puntero a una ficha y la guarda en el jugador
+	//! Agregar una ficha
 	/*!
+	  \param ficha es un puntero a la ficha que se agregara
 	   \sa SFicha.h
 	 */
 	void addFicha(SFicha* ficha)
@@ -41,8 +42,10 @@ public:
 		m_fichas.push_back(ficha);
 	}
 
-	//! Asigancion de quipo, canbia el entero que reprensenta el equipo del jugador por el nuevo que entre
+	//! Asignacion de equipo.
 	/*!
+	  Cambia el entero que reprensenta el equipo del jugador por el nuevo que entre
+	  \param equipo Entero que indica el nuevo equipo del jugador
 	   \sa getEquipo(), mismoEquipo()
 	 */
 	void setEquipo(int equipo)
@@ -59,9 +62,11 @@ public:
 		return m_equipo;
 	}
 
-	//! Devuelve verdadero si jugador que entra a la funcion es de el mismo equipo que el jugador, falso de lo contrario
+	//! Comprueba si dos jugadores son del mismo equipo
 	/*!
-	   \sa setEquipo(), getEquipo()
+	  Devuelve verdadero si jugador que entra a la funcion es de el mismo equipo que el jugador, falso de lo contrario
+	  \param jugador Jugador con el que se va a comparar
+	   \sa setEquipo(), getEquipo(), SJugador()
 	 */
 	bool mismoEquipo(SJugador* jugador) const
 	{
@@ -70,10 +75,11 @@ public:
 
 	//! Retira un jugador del juego
 	/*!
-	   es caso de que el jugador no se nesesite mas en el juego
+	   En caso de que el jugador no se necesite mas en el juego
 	 */
-	void retirar(){};
-
+	void retirar()
+	{};
+	//! Destructor
 	~SJugador(){}
 };
 
