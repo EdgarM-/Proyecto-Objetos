@@ -3,7 +3,7 @@
 
 #include <string>
 
-//! La clase Carta es la base para modelar cartas
+//! La clase SCarta es la base para modelar cartas
 /*!
    Se definen las funciones las funciones para modelar lo basico de una carta, como colocar un nombre a una carta o obtener el nombre de la carta
 */
@@ -35,7 +35,7 @@ public:
 
 	//! Cambiar el nombre de la carta
 	/*!
-	   m_nombre toma el valor que le entre al metodo.
+	  \param nombre es el nombre que va a tomar la carta
 	   \sa getNombre();
 	 */
 	void setNombre(std::string nombre)
