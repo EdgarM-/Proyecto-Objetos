@@ -71,6 +71,8 @@ public:
 		return m_cartas;
 	}
 
+	~SCasilla(){}
+
 };
 
 #endif // SCasilla_h

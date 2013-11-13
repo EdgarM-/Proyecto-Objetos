@@ -6,6 +6,10 @@
 
 #include "SFicha.h"
 
+//! Clase jugador 
+	/*!
+	   m_jugador y  m_casilla empiezan en nullpointer.
+	 */
 
 class SJugador {
 
@@ -40,7 +44,9 @@ public:
 		return (m_equipo == jugador.getEquipo())
 	}
 
-	void retirar() = 0;
+	void retirar(){};
+
+	~SJugador(){}
 };
 
 #endif // SJugador_h
