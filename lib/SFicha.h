@@ -5,7 +5,7 @@
 #include "SJugador.h"
 #include "SCasilla.h"
 
-//! La clase Ficha es la base para las fichas
+//! La clase SFicha es la base para las fichas
 /*!
   La clase define las funciones las funciones para modelar lo basico de una ficha como asignar a un jugador, conseguir o asignar la casilla donde esta la ficha
 */
@@ -26,7 +26,7 @@ protected:
 public:
 	//! Constructor
 	/*!
-	   m_jugador y  m_casilla empiezan en nullpointer.
+	   @ref m_jugador y @ref m_casilla empiezan en nullpointer.
 	 */
 	SFicha()
 		: m_jugador(nullptr), m_casilla(nullptr)
@@ -85,8 +85,8 @@ public:
 	
 	//!Asigna a la ficha un Jugador
 	/*!
-	  \param jugador es un puntero al Jugador que posee la ficha
-	  \sa  getJugador()
+	  \param jugador es un puntero al jugador que posee la ficha
+	  \sa  getJugador(), SJugador
 	 */
 
 	void setJugador(SJugador* jugador)
@@ -94,9 +94,9 @@ public:
 		m_jugador = jugador;
 	}
 	
-	//!Devuelve el Jugador al que le pertenece la ficha
+	//!Devuelve el jugador al que le pertenece la ficha
 	/*!
-	  \sa setJugador()
+	  \sa setJugador(), SJugador
 	 */
 
 	SJugador* getJugador()
@@ -106,7 +106,7 @@ public:
 	//!Asigna a la ficha una casilla
 	/*!
 	  \param casilla es una SCasilla la cual indica en que casilla esta la ficha
-	  \sa getCasilla()
+	  \sa getCasilla(),SCasilla
 	 */
 	void setCasilla(SCasilla* casilla)
 	{
@@ -114,7 +114,7 @@ public:
 	}
 	//!Devuelve la casilla en la cual esta la ficha
 	/*!
-	  \sa  setCasilla()
+	  \sa  setCasilla(), SCasilla
 	 */
 	SCasilla* getCasilla()
 	{

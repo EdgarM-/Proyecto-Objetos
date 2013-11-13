@@ -1,7 +1,7 @@
 #ifndef SPareja_h
 #define SPareja_h
 
-//! La clase Pareja es un par de enteros 
+//! La clase SPareja es un par de enteros 
 /*!
    Los enteros se usaran para almacenar lo que generalmente seran posiciones.
  */
