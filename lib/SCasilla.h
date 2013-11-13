@@ -4,8 +4,9 @@
 #include <vector>
 #include "SPila_Cartas.h"
 #include "SFicha.h"
+#include "SRegla.h"
 
-//! La clase casilla son las divisiones que tiene el tablero y lugares donde podran estar las fichas o cartas
+//! La clase SCasilla son las divisiones que tiene el tablero y lugares donde podran estar las fichas o cartas
 	/*!
 	   la clase define funciones para saber que hay en la casilla y sus constructoras, debido a que el contenido de esta puede variar
 	 */
@@ -13,13 +14,13 @@
 class SCasilla {
 
 protected:
-	//! pila de cartas
+	//! Pila de cartas
 	SPila_Cartas* m_pila_cartas;
-	//! fichas que puedan estar en la casilla
+	//! Fichas que se encuentran en la casilla
 	std::vector< SFicha* > m_fichas;
-	//! cartas que puedan estar en la casilla
+	//! Cartas asignadas a la casilla
 	std::vector< SCarta* > m_cartas;
-	//! reglas de una casilla
+	//! Reglas asociadas a la entrada y salida  de Fichas en la casilla.
 	/*!
 	   \sa SRegla.h
 	 */
@@ -28,57 +29,57 @@ protected:
 public:
 	//! Constructor
 	/*!
-	   este constructor por defecto no coloca pila de cartas
+	   Constructor por defecto, no coloca pila de cartas
 	 */
-	SCasilla()
-		: m_pila_cartas(nullptr)
+	SCasilla(SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_regla(regla)
 	{}
 
 	//! Constructor
 	/*!
-	   este constructor, coloca una ficha en la casilla, sin pila de cartas
+	   Constructor, coloca una ficha en la casilla, sin pila de cartas
 	 */
 
-	SCasilla(SFicha* ficha)
-		: m_pila_cartas(nullptr)
+	SCasilla(SFicha* ficha, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_regla(regla)
 	{
 		m_fichas.push_back(ficha);
 	}
 
 	//! Constructor
 	/*!
-	   le asigna a las fichas de la casilla fichas por referencia sin pila de cartass
+	   Asigna a las fichas de la casilla fichas por referencia sin pila de cartass
 	 */
-	SCasilla(const std::vector< SFicha* >& fichas)
-		: m_pila_cartas(nullptr), m_fichas(fichas)
+	SCasilla(const std::vector< SFicha* >& fichas, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_fichas(fichas), m_regla(regla)
 	{}
 
 	//! Constructor
 	/*!
-	   coloca una carta en la casilla y sin pila de cartas
+	   Coloca una carta en la casilla y sin pila de cartas
 	 */
-	SCasilla(SCarta* carta)
-		: m_pila_cartas(nullptr)
+	SCasilla(SCarta* carta, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_regla(regla)
 	{
 		m_cartas.push_back(carta);
 	}
 
 	//! Constructor
 	/*!
-	   le asigna a la casilla cartas por referencia y sin pila de cartas
+	   Asigna a la casilla cartas por referencia y sin pila de cartas
 	 */
 
-	SCasilla(const std::vector< SCarta* >& cartas)
-		: m_pila_cartas(nullptr), m_cartas(cartas)
+	SCasilla(const std::vector< SCarta* >& cartas, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_cartas(cartas), m_regla(regla)
 	{}
 
 	//! Constructor
 	/*!
-	   crea una pila de cartas en la casilla
+	   Crea una Casilla y le asigna una pila de cartas
 	 */
 
-	SCasilla(SPila_Cartas* pila_cartas)
-		: m_pila_cartas(pila_cartas)
+	SCasilla(SPila_Cartas* pila_cartas, SRegla* regla = nullptr)
+		: m_pila_cartas(pila_cartas), m_regla(regla)
 	{}
 
 	//! Devuelve una pila de cartas que tenga la casilla
@@ -132,7 +133,11 @@ public:
 		return m_cartas;
 	}
 
-	~SCasilla(){}
+	virtual ~SCasilla()
+	{
+		m_fichas.clear();
+		m_cartas.clear();
+	}
 
 };
 
