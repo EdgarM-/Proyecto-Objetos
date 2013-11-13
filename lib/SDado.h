@@ -1,17 +1,17 @@
-#ifndef Dado_h
-#define Dado_h
+#ifndef SDado_h
+#define SDado_h
 
 #include <random>
 #include <functional>
 #include <ctime>
 
-class Dado
+class SDado
 {
 	std::uniform_int_distribution<int> m_distribucion;
 	std::mt19937 m_generador;
 
 public:
-	Dado(const int& min, const int& max)
+	SDado(const int& min, const int& max)
 		: m_distribucion(min, max), m_generador(time(NULL))
 	{}
 
@@ -20,7 +20,7 @@ public:
 		return m_distribucion(m_generador);
 	}
 
-	~Dado(){}
+	~SDado(){}
 };
 
-#endif // Dado_h
+#endif // SDado_h

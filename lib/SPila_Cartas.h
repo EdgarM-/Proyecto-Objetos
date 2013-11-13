@@ -1,37 +1,36 @@
-#ifndef Pila_Cartas_h
-#define Pila_Cartas_h
+#ifndef SPila_Cartas_h
+#define SPila_Cartas_h
 
 #include <vector>
 #include <string>
 #include <cstdlib>
 #include <algorithm>
 
-#include "Carta.h"
+#include "SCarta.h"
 
-using namespace std;
 
-class Pila_Cartas {
+class SPila_Cartas {
 
 protected:
-	string m_nombre;
-	vector< Carta* > m_cartas;
+	std::string m_nombre;
+	std::vector< SCarta* > m_cartas;
 
 public:
 
-	Pila_Cartas(string s): m_nombre(s){}
+	SPila_Cartas(std::string nombre): m_nombre(nombre){}
 
-	void push(Carta* c){
-		m_cartas.push_back(c);
+	void push(SCarta* carta){
+		m_cartas.push_back(carta);
 	}
 
-	Carta* pop(){
-		Carta* c = m_cartas.back();
+	SCarta* pop(){
+		SCarta* carta = m_cartas.back();
 		m_cartas.pop_back();
-		return c;
+		return carta;
 	}
 
 	void shuffle(){
-		vector<Boolean> v(m_cartas.size(), false);
+		std::vector< bool > v(m_cartas.size(), false);
 		int n;
 
 		for (int i = 0; i < m_cartas.size(); ++i)
@@ -42,7 +41,7 @@ public:
 			n = rand() % m_cartas.size()
 			if (n != i && v[n] == false)
 			{
-				swap(m_cartas[i], m_cartas[n]);
+				std::swap(m_cartas[i], m_cartas[n]);
 
 				v[i] = true;
 				v[n] = true;
@@ -51,7 +50,7 @@ public:
 		}
 	}
 
-	~Pila_Cartas()
+	~SPila_Cartas()
 	{
 		for (auto& carta : m_cartas)
 			delete carta;
@@ -60,4 +59,4 @@ public:
 
 };
 
-#endif // Pila_Cartas_h
+#endif // SPila_Cartas_h

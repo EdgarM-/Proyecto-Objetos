@@ -1,20 +1,20 @@
-#ifndef Ficha_h
-#define Ficha_h
+#ifndef SFicha_h
+#define SFicha_h
 
-#include "Pareja.h"
-#include "Jugador.h"
-#include "Casilla.h"
+#include "SPareja.h"
+#include "SJugador.h"
+#include "SCasilla.h"
 
 //! La clase Ficha es la base para las fichas
 /*!
   La clase define las funciones las funciones para modelar lo basico de una ficha como asignar a un jugador o conseguir o asignar la casilla donde esta la ficha
 */
 
-class Ficha {
+class SFicha {
 
 protected:
-	Jugador* m_jugador;
-	Casilla* m_casilla;
+	SJugador* m_jugador;
+	SCasilla* m_casilla;
 	int m_fila;
 	int m_columna;
 
@@ -23,7 +23,7 @@ public:
 	/*!
 	   m_jugador y  m_casilla empiezan en nullpointer.
 	 */
-	Ficha()
+	SFicha()
 		: m_jugador(nullptr), m_casilla(nullptr)
 	{}
 
@@ -45,7 +45,7 @@ public:
 	  \sa getFila() , getColumna(), Pareja
 	*/
 
-	Pareja getPareja();
+	SPareja getPareja();
 
 	//!Asigna 
 
@@ -53,22 +53,22 @@ public:
 
 	void setColumna(int columna);
 
-	void setJugador(Jugador* jugador)
+	void setJugador(SJugador* jugador)
 	{
 		m_jugador = jugador;
 	}
 
-	Jugador* getJugador()
+	SJugador* getJugador()
 	{
 		return m_jugador;
 	}
 
-	void setCasilla(Casilla* casilla)
+	void setCasilla(SCasilla* casilla)
 	{
 		m_casilla = casilla;
 	}
 
-	Casilla* getCasilla()
+	SCasilla* getCasilla()
 	{
 		return m_casilla;
 	}
@@ -76,4 +76,4 @@ public:
 	void setPareja();
 };
 
-#endif // Ficha_h
+#endif // SFicha_h
