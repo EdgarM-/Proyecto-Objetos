@@ -19,7 +19,7 @@ protected:
 	std::string m_nombre;
 	//! Fichas del jugador
 	std::vector< SFicha* > m_fichas;
-	//! Entero que representa a que equipo pertenece el jugador
+	//! entero que representa a que equipo pertenece el jugador, 0 es igual a que no pertenece a algun equipo
 	int m_equipo;
 	
 public:
@@ -31,7 +31,18 @@ public:
 	: m_nombre(nombre), m_equipo(equipo)
 	{}
 
-	//! Agregar una ficha
+	//! Constructor
+	/*!
+	   Construye un SJugador con un nombre especificado y con un numero @ref n_fichas de fichas tipo SFicha asignadas, de no ser especificado el equipo sera por default 0 
+	 */
+	SJugador(std::string nombre, int n_fichas, int equipo = 0)
+	: m_nombre(nombre), m_equipo(equipo)
+	{
+		for (int i = 0; i < n_fichas; ++i)
+			addFicha(new SFicha());
+	}
+
+	//! Agregar una ficha, le entra un puntero a una ficha y la guarda en el jugador
 	/*!
 	  \param ficha es un puntero a la ficha que se agregara
 	   \sa SFicha.h
@@ -70,17 +81,25 @@ public:
 	 */
 	bool mismoEquipo(SJugador* jugador) const
 	{
-		return (m_equipo == jugador.getEquipo())
+		return (m_equipo == jugador.getEquipo());
 	}
 
 	//! Retira un jugador del juego
 	/*!
 	   En caso de que el jugador no se necesite mas en el juego
 	 */
-	void retirar()
-	{};
+
+	virtual void retirar(){};
 	//! Destructor
-	~SJugador(){}
+	/*!
+	  Elimina todas la fichas que tenga el jugador
+	 */
+	virtual ~SJugador()
+	{
+		for (auto& ficha : m_fichas)
+			delete ficha;
+		m_fichas.clear();
+	}
 };
 
 #endif // SJugador_h
