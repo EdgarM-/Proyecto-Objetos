@@ -40,8 +40,6 @@ public:
 		return m_casillas[position].getCartas();
 	}
 
-	void limpiar(); // TODO: Terminar, funcion importante, definir funcionamiento.
-
 	void agregarFicha(Ficha* ficha, int position)
 	{
 		m_casillas[position].addFicha(ficha);
