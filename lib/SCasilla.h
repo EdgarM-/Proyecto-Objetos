@@ -47,7 +47,7 @@ public:
 
 	//! Constructor
 	/*!
-	   
+	   le asigna a las fichas de la casilla fichas por referencia sin pila de cartass
 	 */
 	SCasilla(const std::vector< SFicha* >& fichas)
 		: m_pila_cartas(nullptr), m_fichas(fichas)
@@ -65,7 +65,7 @@ public:
 
 	//! Constructor
 	/*!
-	   
+	   le asigna a la casilla cartas por referencia y sin pila de cartas
 	 */
 
 	SCasilla(const std::vector< SCarta* >& cartas)
