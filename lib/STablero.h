@@ -1,51 +1,51 @@
-#ifndef Tablero_h
-#define Tablero_h
+#ifndef STablero_h
+#define STablero_h
 
 #include <vector>
 
-#include "Carta.h"
-#include "Casilla.h"
-#include "Ficha.h"
+#include "SCarta.h"
+#include "SCasilla.h"
+#include "SFicha.h"
 
-class Tablero {
+class STablero {
 
 protected:
-    std::vector< Casilla* > m_casillas;
+    std::vector< SCasilla* > m_casillas;
 
 public:
 
-	explicit Tablero(int tamano)
+	explicit STablero(int tamano)
 	{
-		m_casillas.resize(tamano, new Casilla())
+		m_casillas.resize(tamano, new SCasilla())
 	}
 
 
-	Ficha* getFicha(int position)
+	SFicha* getFicha(int position)
 	{
 		return m_casillas[position].getFicha();
 	}
 
-	std::vector< Ficha* > v; getFichas(int position)
+	std::vector< SFicha* > v getFichas(int position)
 	{
 		return m_casillas[position].getFichas();
 	}
 
-	Carta* getCarta(int position)
+	SCarta* getCarta(int position)
 	{
 		return m_casillas[position].getCarta();
 	}
 
-	std::vector< Carta* > getCartas()
+	std::vector< SCarta* > getCartas()
 	{
 		return m_casillas[position].getCartas();
 	}
 
-	void agregarFicha(Ficha* ficha, int position)
+	void agregarFicha(SFicha* ficha, int position)
 	{
 		m_casillas[position].addFicha(ficha);
 	}
 
-	void agregarCarta(Carta* carta, int position)
+	void agregarCarta(SCarta* carta, int position)
 	{
 		m_casillas[position].addCarta(carta);
 	}
@@ -56,4 +56,4 @@ public:
 
 };
 
-#endif // Tablero_h
+#endif // STablero_h

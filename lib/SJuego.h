@@ -1,36 +1,34 @@
-#ifndef Juego_h
-#define Juego_h
+#ifndef SJuego_h
+#define SJuego_h
 
 #include <vector>
 
-#include "Dado.h"
-#include "Jugador.h"
-#include "Pila_Cartas.h"
-#include "Tablero.h"
+#include "SDado.h"
+#include "SJugador.h"
+#include "SPila_Cartas.h"
+#include "STablero.h"
 
-using namespace std;
-
-class Juego {
+class SJuego {
 
 protected:
 	int m_jugador_actual;
-	Tablero* m_tablero;
-	vector< Jugador* > m_jugadores;
-	vector< Dado > m_dados;
-	vector< Pila_Cartas > m_pilas;
+	STablero* m_tablero;
+	std::vector< SJugador* > m_jugadores;
+	std::vector< SDado > m_dados;
+	std::vector< SPila_Cartas* > m_pilas;
 
 public:
 
-	Juego()
+	SJuego()
 	: m_jugador_actual(0), m_tablero(nullptr) 
 	{}
 
-	void agregarJugador(Jugador* jugador)
+	void agregarJugador(SJugador* jugador)
 	{
 		m_jugadores.push_back(jugador);
 	}
 
-	void agregarPila(Pila_Cartas* pila)
+	void agregarPila(SPila_Cartas* pila)
 	{
 		m_pilas.push_back(pila);
 	}
@@ -45,4 +43,4 @@ public:
 
 };
 
-#endif // Juego_h
+#endif // SJuego_h

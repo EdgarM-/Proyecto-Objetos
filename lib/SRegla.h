@@ -1,18 +1,18 @@
-#ifndef Regla_h
-#define Regla_h
+#ifndef SRegla_h
+#define SRegla_h
 
-#include "Ficha.h"
+#include "SFicha.h"
 
-class Regla
+class SRegla
 {
 public:
-	Regla(){}
+	SRegla(){}
 
-	virtual void fichaEntra(Ficha* ficha) = 0;
+	virtual void fichaEntra(SFicha* ficha) = 0;
 
-	virtual void fichaSale(Ficha* ficha) = 0;
+	virtual void fichaSale(SFicha* ficha) = 0;
 
-	~Regla(){}
+	~SRegla(){}
 };
 
-#endif /* Regla_h */
+#endif /* SRegla_h */

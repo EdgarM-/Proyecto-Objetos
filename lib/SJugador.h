@@ -1,25 +1,25 @@
-#ifndef Jugador_h
-#define Jugador_h
+#ifndef SJugador_h
+#define SJugador_h
 
 #include <vector>
 #include <string>
 
-#include "Ficha.h"
+#include "SFicha.h"
 
 
-class Jugador {
+class SJugador {
 
 protected:
 	std::string m_nombre;
-	std::vector< Ficha* > m_fichas;
+	std::vector< SFicha* > m_fichas;
 	int m_equipo;
 	
 public:
-	Jugador(std::string nombre, int equipo = 0)
+	SJugador(std::string nombre, int equipo = 0)
 	: m_nombre(nombre), m_equipo(equipo)
 	{}
 
-	void addFicha(Ficha* ficha)
+	void addFicha(SFicha* ficha)
 	{
 		ficha.setJugador(this);
 		m_fichas.push_back(ficha);
@@ -35,7 +35,7 @@ public:
 		return m_equipo;
 	}
 
-	bool mismoEquipo(Jugador* jugador) const
+	bool mismoEquipo(SJugador* jugador) const
 	{
 		return (m_equipo == jugador.getEquipo())
 	}
@@ -43,4 +43,4 @@ public:
 	void retirar() = 0;
 };
 
-#endif // Jugador_h
+#endif // SJugador_h

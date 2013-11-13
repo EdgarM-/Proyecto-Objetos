@@ -1,20 +1,20 @@
-#ifndef Carta_h
-#define Carta_h
+#ifndef SCarta_h
+#define SCarta_h
 
 #include <string>
 
 
-class Carta {
+class SCarta {
 
 protected:
 	std::string m_nombre;
 
 public:
-	Carta()
+	SCarta()
 		: m_nombre("")
 	{}
 
-	Carta(string nombre)
+	SCarta(string nombre)
 		: m_nombre(nombre)
 	{}
 
@@ -30,4 +30,4 @@ public:
 
 };
 
-#endif // Carta_h
+#endif // SCarta_h

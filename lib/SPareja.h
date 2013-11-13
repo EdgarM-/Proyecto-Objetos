@@ -1,14 +1,14 @@
-#ifndef Pareja_h
-#define Pareja_h
+#ifndef SPareja_h
+#define SPareja_h
 
 
-class Pareja {
+class SPareja {
 
  public:
- 		Pareja(int i, int j): x(i), y(j){}
- 		Pareja(): x(0), y(0){}
+ 		SPareja(int i, int j): x(i), y(j){}
+ 		SPareja(): x(0), y(0){}
     int x;
     int y;
 };
 
-#endif // Pareja_h
+#endif // SPareja_h

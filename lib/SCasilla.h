@@ -1,76 +1,76 @@
-#ifndef Casilla_h
-#define Casilla_h
+#ifndef SCasilla_h
+#define SCasilla_h
 
 #include <vector>
-#include "Pila_Cartas.h"
-#include "Ficha.h"
+#include "SPila_Cartas.h"
+#include "SFicha.h"
 
-class Casilla {
+class SCasilla {
 
 protected:
-	Pila_Cartas* m_pila_cartas;
-	std::vector< Ficha* > m_fichas;
-	std::vector< Carta* > m_cartas;
-	Regla* m_regla;
+	SPila_Cartas* m_pila_cartas;
+	std::vector< SFicha* > m_fichas;
+	std::vector< SCarta* > m_cartas;
+	SRegla* m_regla;
 
 public:
-	Casilla()
+	SCasilla()
 		: m_pila_cartas(nullptr)
 	{}
 
-	Casilla(Ficha* ficha)
+	SCasilla(SFicha* ficha)
 		: m_pila_cartas(nullptr)
 	{
 		m_fichas.push_back(ficha);
 	}
 
-	Casilla(const std::vector<Ficha*>& fichas)
+	SCasilla(const std::vector< SFicha* >& fichas)
 		: m_pila_cartas(nullptr), m_fichas(fichas)
 	{}
 
-	Casilla(Carta* carta)
+	SCasilla(SCarta* carta)
 		: m_pila_cartas(nullptr)
 	{
 		m_cartas.push_back(carta);
 	}
 
-	Casilla(const std::vector<Carta*>& cartas)
+	SCasilla(const std::vector< SCarta* >& cartas)
 		: m_pila_cartas(nullptr), m_cartas(cartas)
 	{}
 
-	Casilla(Pila_Cartas* pila_cartas)
+	SCasilla(SPila_Cartas* pila_cartas)
 		: m_pila_cartas(pila_cartas)
 	{}
 
-	Pila_Cartas* getPila()
+	SPila_Cartas* getPila()
 	{
 		return m_pila_cartas;
 	}
 
-	Ficha* getFicha()
+	SFicha* getFicha()
 	{
 		if (m_fichas.empty())
 			return nullptr;
 		return m_fichas[0];
 	}
 
-	std::vector<Ficha*> getFichas()
+	std::vector< SFicha* > getFichas()
 	{
 		return m_fichas;
 	}
 
-	Carta* getCarta()
+	SCarta* getCarta()
 	{
 		if (m_cartas.empty())
 			return nullptr;
 		return m_cartas[0];
 	}
 
-	std::vector<Carta*> getFichas()
+	std::vector< SCarta* > getFichas()
 	{
-		return m_catas;
+		return m_cartas;
 	}
 
 };
 
-#endif // Casilla_h
+#endif // SCasilla_h
