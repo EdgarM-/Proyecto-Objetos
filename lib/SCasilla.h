@@ -4,6 +4,7 @@
 #include <vector>
 #include "SPila_Cartas.h"
 #include "SFicha.h"
+#include "SRegla.h"
 
 //! La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas
 /*!
@@ -13,22 +14,22 @@
 class SCasilla {
 
 protected:
-	//! Pila de cartas que puede poseer la casilla
+	//! Pila de cartas
         /*!
-	  \sa SPila_Cartas, SCarta
-	*/
+	 \sa SPila_Cartas
+	 */
 	SPila_Cartas* m_pila_cartas;
-	//! Fichas que posee la casilla
+	//! Fichas que se encuentran en la casilla
 	/*!
-	  \sa SFicha  
-	*/
+	 \sa SFicha
+	 */
 	std::vector< SFicha* > m_fichas;
-	//! Cartas que puede poseer la casilla
-	/*! 
-	  \sa SCarta 
-	*/
+	//! Cartas asignadas a la casilla
+	/*!
+	 \sa SCarta
+	 */
 	std::vector< SCarta* > m_cartas;
-	//! Reglas que posee la casilla
+	//! Reglas asociadas a la entrada y salida  de Fichas en la casilla.
 	/*!
 	   \sa SRegla
 	 */
@@ -37,57 +38,57 @@ protected:
 public:
 	//! Constructor
 	/*!
-	   Este es el constructor por defecto, solo le asigna a  @ref m_pila_cartas un nullpointer
+	   Constructor por defecto, no coloca pila de cartas
 	 */
-	SCasilla()
-		: m_pila_cartas(nullptr)
+	SCasilla(SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_regla(regla)
 	{}
 
 	//! Constructor
 	/*!
-	   Este constructor, le agrega una ficha a @ref m_fichas y le asigna a @ref m_pila_cartas un nullpointer \param ficha Es la ficha que se agrega a la casilla
+	  Crea una casilla y coloca una ficha en la casilla, sin pila de cartas
 	 */
 
-	SCasilla(SFicha* ficha)
-		: m_pila_cartas(nullptr)
+	SCasilla(SFicha* ficha, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_regla(regla)
 	{
 		m_fichas.push_back(ficha);
 	}
 
 	//! Constructor
 	/*!
-	   Este constructor le asigna a @ref m_fichas las fichas por referencia y le asigna a @ref m_pila_cartas un nullpointer \param fichas Es la referencia al vector de fichas que se asignara a @ref m_fichas
+	   Crea una casilla y asigna a las fichas de la casilla fichas por referencia sin pila de cartass
 	 */
-	SCasilla(const std::vector< SFicha* >& fichas)
-		: m_pila_cartas(nullptr), m_fichas(fichas)
+	SCasilla(const std::vector< SFicha* >& fichas, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_fichas(fichas), m_regla(regla)
 	{}
 
 	//! Constructor
 	/*!
-	  Este constructor le agrega una carta a @ref m_cartas y le asigna a @ref m_pila_cartas un nullpointer \param carta Es la carta que se agregara a la casilla
+	   Crea una casilla y coloca una carta en la casilla y sin pila de cartas
 	 */
-	SCasilla(SCarta* carta)
-		: m_pila_cartas(nullptr)
+	SCasilla(SCarta* carta, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_regla(regla)
 	{
 		m_cartas.push_back(carta);
 	}
 
 	//! Constructor
 	/*!
-	  Este constructor le asigna a @ref m_cartas las cartas por referencia y le asigna a @ref m_pila_cartas un nullpointer \param cartas Es la referencia al vector de cartas que se asignara a @ref m_cartas
+	   Crea una casilla y asigna a la casilla cartas por referencia y sin pila de cartas
 	 */
 
-	SCasilla(const std::vector< SCarta* >& cartas)
-		: m_pila_cartas(nullptr), m_cartas(cartas)
+	SCasilla(const std::vector< SCarta* >& cartas, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_cartas(cartas), m_regla(regla)
 	{}
 
 	//! Constructor
 	/*!
-	   Este constructor le asigna a @ref m_pila_cartas la pila de cartas \param pila_cartas Es la pila de cartas se asignara a la casilla
+	   Crea una Casilla y le asigna una pila de cartas
 	 */
 
-	SCasilla(SPila_Cartas* pila_cartas)
-		: m_pila_cartas(pila_cartas)
+	SCasilla(SPila_Cartas* pila_cartas, SRegla* regla = nullptr)
+		: m_pila_cartas(pila_cartas), m_regla(regla)
 	{}
 
 	//! Devuelve la pila de cartas que tenga la casilla
@@ -100,7 +101,7 @@ public:
 
 	//! Devuelve la ficha que tenga en la casilla, la primera que entro
 	/*!
-	   \sa   SFicha, getFichas(), addFichas(), rmFichas() */
+	   \sa   SFicha, getFichas(), addFicha(), rmFicha() */
 
 	SFicha* getFicha()
 	{
@@ -143,20 +144,26 @@ public:
 
         //! Agrega una ficha a la casilla
 	/*!
-	   \sa   SFicha, getFichas(), rmFichas() */
+	   \sa   SFicha, getFichas(), rmFicha() */
 	void addFicha(SFicha* ficha)
 	{
 		m_fichas.push_back(ficha);
 	}
 	//! Quita una ficha a la casilla
 	/*!
-	   \sa   SFicha, getFichas(), addFichas() */
-	void addFicha(SFicha* ficha)
+	   \sa   SFicha, getFichas(), addFicha() */
+	void rmFicha()
 	{
-		m_fichas.push_back(ficha);
 	}
 	//! Destructor
-	~SCasilla(){}
+	/*!
+	  Vacia @ref m_fichas y @ref m_cartas
+	 */
+	virtual ~SCasilla()
+	{
+		m_fichas.clear();
+		m_cartas.clear();
+	}
 
 };
 

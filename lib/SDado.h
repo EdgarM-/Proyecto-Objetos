@@ -5,7 +5,10 @@
 #include <functional>
 #include <ctime>
 //! La Clase SDado es la base de un dado
-/*! Con esta clase se puede conseguir la funcionalidad de un dado*/
+/*!
+   Con esta clase se puede conseguir la funcionalidad de un dado,
+   genera numeros aleatorios.
+*/
 class SDado
 {
 	std::uniform_int_distribution<int> m_distribucion;
@@ -21,7 +24,7 @@ public:
 		return m_distribucion(m_generador);
 	}
 
-	~SDado(){}
+	virtual ~SDado(){}
 };
 
 #endif // SDado_h

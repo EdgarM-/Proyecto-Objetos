@@ -19,17 +19,25 @@ public:
 
 	SPila_Cartas(std::string nombre): m_nombre(nombre){}
 
-	void push(SCarta* carta){
+	void push(SCarta* carta)
+	{
 		m_cartas.push_back(carta);
 	}
 
-	SCarta* pop(){
+	SCarta* pop()
+	{
 		SCarta* carta = m_cartas.back();
 		m_cartas.pop_back();
 		return carta;
 	}
 
-	void shuffle(){
+	int size()
+	{
+		return m_cartas.size();
+	}
+
+	void shuffle()
+	{
 		std::vector< bool > v(m_cartas.size(), false);
 		int n;
 
@@ -50,14 +58,12 @@ public:
 		}
 	}
 
-	~SPila_Cartas()
+	virtual ~SPila_Cartas()
 	{
 		for (auto& carta : m_cartas)
 			delete carta;
 		m_cartas.clear();
 	}
-
-	~SPila_Cartas(){}
 
 };
 

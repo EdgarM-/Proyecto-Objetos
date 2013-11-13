@@ -12,15 +12,15 @@ class SCarta {
 
 protected:
 
-	//! Nombre de la carta
+	//! Nombre que identifica la carta
 	std::string m_nombre;
 
 public:
 	//! Constructor
 	/*!
-	   m_nombre toma el valor del  string que halla entrado al constructor, o sera vacio en caso de que no entre nada al constructor
+	  @ref m_nombre toma el valor del  string que halla entrado al constructor, o sera vacio en caso de que no entre nada al constructor
 	 */
-	SCarta(string nombre="")
+	SCarta(std::string nombre = "")
 		: m_nombre(nombre)
 	{}
 
@@ -47,7 +47,7 @@ public:
 	/*!
 	   Destruye la carta
 	 */
-	~SCarta(){}
+	virtual ~SCarta(){}
 
 };
 
