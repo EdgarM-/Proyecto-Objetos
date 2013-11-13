@@ -18,6 +18,8 @@ class SPareja {
 
  		//! par de enteros
     int x;
+    //! par de enteros
+    
     int y;
 };
 
