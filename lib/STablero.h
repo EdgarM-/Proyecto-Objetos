@@ -114,6 +114,17 @@ public:
 		else
 			agregarFicha(ficha, pos + n_casillas);
 	}
+
+	//!Agrega una regla en la casilla posicion
+	/*!
+	  \param regla Regla que se va a agregar
+	  \param posicion Entero que indica en donde se pondra la regla
+	 */
+	void agregarRegla(SRegla* regla, int posicion)
+	{
+		m_casillas[posicion]->setRegla(regla);
+	}
+
 	//!Remueve las cartas en una posicion
 	/*!
 	  \param posicion Entero que se indica la posicion en la que se va a eliminar las cartas
