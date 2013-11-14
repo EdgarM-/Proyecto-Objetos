@@ -19,6 +19,7 @@ public:
 	//! Constructor
 	/*!
 	  @ref m_nombre toma el valor del  string que halla entrado al constructor, o sera vacio en caso de que no entre nada al constructor
+	  \param nombre String que se asigna al nombre de la carta
 	 */
 	SCarta(std::string nombre = "")
 		: m_nombre(nombre)
