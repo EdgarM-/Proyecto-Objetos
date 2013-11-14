@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "SPila_Cartas.h"
+#include "Tablero"
 #include "SFicha.h"
 #include "SRegla.h"
 
@@ -15,6 +16,11 @@
 class SCasilla {
 
 protected:
+	//! Tablero de juego
+	/*!
+	 \sa STablero
+	 */
+	 STablero* m_tablero;
 	//! Pila de cartas
 	/*!
 	 \sa SPila_Cartas
@@ -42,8 +48,8 @@ public:
 	   Constructor por defecto, no coloca pila de cartas
 	   \param regla Regla que aplica en la casilla
 	 */
-	SCasilla(SRegla* regla = nullptr)
-		: m_pila_cartas(nullptr), m_regla(regla)
+	SCasilla(STablero* tablero = nullptr, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_tablero(tablero), m_regla(regla)
 	{}
 
 	//! Constructor
@@ -53,8 +59,8 @@ public:
 	  \param regla Regla que aplica en la casilla
 	 */
 
-	SCasilla(SFicha* ficha, SRegla* regla = nullptr)
-		: m_pila_cartas(nullptr), m_regla(regla)
+	SCasilla(SFicha* ficha, STablero* tablero = nullptr, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_tablero(tablero), m_regla(regla)
 	{
 		m_fichas.push_back(ficha);
 	}
@@ -65,8 +71,8 @@ public:
 	   \param fichas Vector de SFicha* pasado por referencia, contiene las fichas que se van a poner a la casilla
 	   \param regla Regla que aplica en la casilla
 	 */
-	SCasilla(const std::vector< SFicha* >& fichas, SRegla* regla = nullptr)
-		: m_pila_cartas(nullptr), m_fichas(fichas), m_regla(regla)
+	SCasilla(const std::vector< SFicha* >& fichas, STablero* tablero = nullptr, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_fichas(fichas), m_tablero(tablero), m_regla(regla)
 	{}
 
 	//! Constructor
@@ -75,8 +81,8 @@ public:
 	   \param carta Carta que se va a agregar a la casilla
 	   \param regla Regla que aplica en la casilla
 	 */
-	SCasilla(SCarta* carta, SRegla* regla = nullptr)
-		: m_pila_cartas(nullptr), m_regla(regla)
+	SCasilla(SCarta* carta, STablero* tablero = nullptr, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_tablero(tablero), m_regla(regla)
 	{
 		m_cartas.push_back(carta);
 	}
@@ -88,8 +94,8 @@ public:
 	   \param regla Regla que aplica en la casilla
 	 */
 
-	SCasilla(const std::vector< SCarta* >& cartas, SRegla* regla = nullptr)
-		: m_pila_cartas(nullptr), m_cartas(cartas), m_regla(regla)
+	SCasilla(const std::vector< SCarta* >& cartas, STablero* tablero = nullptr, SRegla* regla = nullptr)
+		: m_pila_cartas(nullptr), m_cartas(cartas), m_tablero(tablero), m_regla(regla)
 	{}
 
 	//! Constructor
@@ -99,8 +105,8 @@ public:
 	   \param regla Regla que aplica en la casilla
 	 */
 
-	SCasilla(SPila_Cartas* pila_cartas, SRegla* regla = nullptr)
-		: m_pila_cartas(pila_cartas), m_regla(regla)
+	SCasilla(SPila_Cartas* pila_cartas, STablero* tablero = nullptr, SRegla* regla = nullptr)
+		: m_pila_cartas(pila_cartas), m_tablero(tablero), m_regla(regla)
 	{}
 
 	//! Devuelve la pila de cartas que tenga la casilla
