@@ -86,10 +86,20 @@ public:
 
 	//! Retira un jugador del juego
 	/*!
-	   En caso de que el jugador no se necesite mas en el juego
+	   En caso de que el jugador no se necesite mas en el juego, a diferencia del destructor
+	   en este caso todas las fichas del jugador son eliminadas del tablero, las cartas
+	   regresan a la SPila_Cartas de donde fueron extraidas, pero no se libera la memoria
+	   allocada a las SFichas*.
 	 */
 
-	virtual void retirar(){};
+	virtual void retirar()
+	{
+		for (int i = 0; i < m_fichas.size(); ++i)
+		{
+			if (m_fichas[i]->enTablero())
+				m_fichas[i]->getCasilla()->rmFicha(m_fichas[i]);
+		}
+	}
 	//! Destructor
 	/*!
 	  Elimina todas la fichas que tenga el jugador

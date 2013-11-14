@@ -49,12 +49,20 @@ public:
 	  m_posicion = posicion;
 	}
 	
+	//!Devuelve si la ficha se encuentra en alguna casilla
+	/*!
+	  \sa  getCasilla(), getPosicion()
+	 */
+	bool enTablero()
+	{
+		return (m_posicion >= 0)
+	}
+
 	//!Asigna a la ficha un Jugador
 	/*!
 	  \param jugador es un puntero al jugador que posee la ficha
 	  \sa  getJugador(), SJugador
 	 */
-
 	void setJugador(SJugador* jugador)
 	{
 		m_jugador = jugador;
