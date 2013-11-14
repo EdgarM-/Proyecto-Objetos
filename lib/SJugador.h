@@ -43,7 +43,7 @@ public:
 	   \param equipo Entero que indica en que grupo esta
 	   	   
 	 */
-	SJugador(std::string nombre, int n_fichas, int equipo = 0)
+	SJugador(int n_fichas, std::string nombre, int equipo = 0)
 	: m_nombre(nombre), m_equipo(equipo), m_puntaje(0);
 	{
 		for (int i = 0; i < n_fichas; ++i)
