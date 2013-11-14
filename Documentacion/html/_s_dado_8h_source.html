@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
 <title>Saem Games: Fichero Fuente lib/SDado.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -39,7 +39,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.8.5 -->
+<!-- Generado por Doxygen 1.8.3.1 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 </script>
@@ -113,39 +113,35 @@ $(document).ready(function(){initNavTree('_s_dado_8h_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_s_dado.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_dado.html">SDado</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_s_dado.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_dado.html" title="La clase SDado es la base de un dado.">SDado</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::uniform_int_distribution&lt;int&gt; m_distribucion;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::mt19937 m_generador;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_s_dado.html#a3e03e8fbc04318f89aa353b1a1b8e907">   24</a></span>&#160;    <a class="code" href="class_s_dado.html#a3e03e8fbc04318f89aa353b1a1b8e907">SDado</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; min, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; max)</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_s_dado.html#a3e03e8fbc04318f89aa353b1a1b8e907">   24</a></span>&#160;    <a class="code" href="class_s_dado.html#a3e03e8fbc04318f89aa353b1a1b8e907" title="Constructor.">SDado</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; min, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; max)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        : m_distribucion(min, max), m_generador(time(NULL))</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_s_dado.html#a63d00af8aaf5cf102f4a9d097cc397b3">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_dado.html#a63d00af8aaf5cf102f4a9d097cc397b3">tirar</a>()</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_s_dado.html#a63d00af8aaf5cf102f4a9d097cc397b3">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_dado.html#a63d00af8aaf5cf102f4a9d097cc397b3" title="Tirar dado.">tirar</a>()</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> m_distribucion(m_generador);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_s_dado.html#ad8b37588654450e7cd8a74dd3e4a094b">   37</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_s_dado.html#ad8b37588654450e7cd8a74dd3e4a094b">~SDado</a>(){}</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_s_dado.html#ad8b37588654450e7cd8a74dd3e4a094b">   37</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_s_dado.html#ad8b37588654450e7cd8a74dd3e4a094b" title="Destructor.">~SDado</a>(){}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // SDado_h</span></div>
-<div class="ttc" id="class_s_dado_html_ad8b37588654450e7cd8a74dd3e4a094b"><div class="ttname"><a href="class_s_dado.html#ad8b37588654450e7cd8a74dd3e4a094b">SDado::~SDado</a></div><div class="ttdeci">virtual ~SDado()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> SDado.h:37</div></div>
-<div class="ttc" id="class_s_dado_html_a63d00af8aaf5cf102f4a9d097cc397b3"><div class="ttname"><a href="class_s_dado.html#a63d00af8aaf5cf102f4a9d097cc397b3">SDado::tirar</a></div><div class="ttdeci">int tirar()</div><div class="ttdoc">Tirar dado. </div><div class="ttdef"><b>Definition:</b> SDado.h:32</div></div>
-<div class="ttc" id="class_s_dado_html_a3e03e8fbc04318f89aa353b1a1b8e907"><div class="ttname"><a href="class_s_dado.html#a3e03e8fbc04318f89aa353b1a1b8e907">SDado::SDado</a></div><div class="ttdeci">SDado(const int &amp;min, const int &amp;max)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> SDado.h:24</div></div>
-<div class="ttc" id="class_s_dado_html"><div class="ttname"><a href="class_s_dado.html">SDado</a></div><div class="ttdoc">La clase SDado es la base de un dado. </div><div class="ttdef"><b>Definition:</b> SDado.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_s_dado_8h.html">SDado.h</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 10:22:59 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 10:33:17 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 </body>

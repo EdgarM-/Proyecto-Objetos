@@ -32,7 +32,9 @@ public:
 
 	explicit STablero(int tamano, tipoSTablero tipo = LINEAL_REBOTE)
 	{
-		m_casillas.resize(tamano, new SCasilla(this));
+		m_casillas.resize(tamano);
+		for (int i = 0; i < tamano; ++i)
+			m_casillas[i] = new SCasilla(this);
 		m_tipo = tipo;
 	}
 	

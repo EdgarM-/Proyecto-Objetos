@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
 <title>Saem Games: Referencia de la Clase SCasilla</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -39,7 +39,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.8.5 -->
+<!-- Generado por Doxygen 1.8.3.1 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 </script>
@@ -232,6 +232,7 @@ Atributos protegidos</h2></td></tr>
 <p>Constructor por defecto, no coloca pila de cartas </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
+    <tr><td class="paramname">tablero</td><td>Tablero en el que esta la casilla </td></tr>
     <tr><td class="paramname">regla</td><td>Regla que aplica en la casilla </td></tr>
   </table>
   </dd>
@@ -332,6 +333,7 @@ Atributos protegidos</h2></td></tr>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">fichas</td><td>Vector de SFicha* pasado por referencia, contiene las fichas que se van a poner a la casilla </td></tr>
+    <tr><td class="paramname">tablero</td><td>Tablero en el que esta la casilla </td></tr>
     <tr><td class="paramname">regla</td><td>Regla que aplica en la casilla </td></tr>
   </table>
   </dd>
@@ -382,6 +384,7 @@ Atributos protegidos</h2></td></tr>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">carta</td><td>Carta que se va a agregar a la casilla </td></tr>
+    <tr><td class="paramname">tablero</td><td>Tablero en el que esta la casilla </td></tr>
     <tr><td class="paramname">regla</td><td>Regla que aplica en la casilla </td></tr>
   </table>
   </dd>
@@ -432,6 +435,7 @@ Atributos protegidos</h2></td></tr>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">fichas</td><td>Vector de SCarta* pasado por referencia, contiene las cartas que se van a poner a la casilla </td></tr>
+    <tr><td class="paramname">tablero</td><td>Tablero en el que esta la casilla </td></tr>
     <tr><td class="paramname">regla</td><td>Regla que aplica en la casilla </td></tr>
   </table>
   </dd>
@@ -482,6 +486,7 @@ Atributos protegidos</h2></td></tr>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">pila_cartas</td><td>Es la pila de cartas que se le asignara a la casilla </td></tr>
+    <tr><td class="paramname">tablero</td><td>Tablero en el que esta la casilla </td></tr>
     <tr><td class="paramname">regla</td><td>Regla que aplica en la casilla </td></tr>
   </table>
   </dd>
@@ -545,7 +550,7 @@ Atributos protegidos</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas. ">SCarta</a>, <a class="el" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd" title="Devuelve todas las cartas que hay en la casilla. ">getCartas()</a>, rmCarta() </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas.">SCarta</a>, <a class="el" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd" title="Devuelve todas las cartas que hay en la casilla.">getCartas()</a>, rmCarta() </dd></dl>
 
 </div>
 </div>
@@ -578,7 +583,7 @@ Atributos protegidos</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47" title="Quita una ficha de la casilla. ">rmFicha()</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla.">getFichas()</a>, <a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47" title="Quita una ficha de la casilla.">rmFicha()</a> </dd></dl>
 
 </div>
 </div>
@@ -604,7 +609,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve la primera carta que este en la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd" title="Devuelve todas las cartas que hay en la casilla. ">getCartas()</a>, <a class="el" href="class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a" title="Devuelve la pila de cartas que tenga la casilla. ">getPila()</a>, <a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas. ">SCarta</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd" title="Devuelve todas las cartas que hay en la casilla.">getCartas()</a>, <a class="el" href="class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a" title="Devuelve la pila de cartas que tenga la casilla.">getPila()</a>, <a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas.">SCarta</a> </dd></dl>
 
 </div>
 </div>
@@ -630,7 +635,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve todas las cartas que hay en la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a1789f9b5b5ec2917f6880f91b60668fc" title="Devuelve la primera carta que este en la casilla. ">getCarta()</a>, <a class="el" href="class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a" title="Devuelve la pila de cartas que tenga la casilla. ">getPila()</a>, <a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas. ">SCarta</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a1789f9b5b5ec2917f6880f91b60668fc" title="Devuelve la primera carta que este en la casilla.">getCarta()</a>, <a class="el" href="class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a" title="Devuelve la pila de cartas que tenga la casilla.">getPila()</a>, <a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas.">SCarta</a> </dd></dl>
 
 </div>
 </div>
@@ -656,7 +661,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve la ficha que tenga en la casilla, la primera que entro. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla. ">addFicha()</a>, <a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47" title="Quita una ficha de la casilla. ">rmFicha()</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla.">getFichas()</a>, <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla.">addFicha()</a>, <a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47" title="Quita una ficha de la casilla.">rmFicha()</a> </dd></dl>
 
 </div>
 </div>
@@ -682,7 +687,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve todas las fichas que hay en la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a76309113df9bbcf03a269dcfa15b4272" title="Devuelve la ficha que tenga en la casilla, la primera que entro. ">getFicha()</a>, <a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a76309113df9bbcf03a269dcfa15b4272" title="Devuelve la ficha que tenga en la casilla, la primera que entro.">getFicha()</a>, <a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a> </dd></dl>
 
 </div>
 </div>
@@ -708,7 +713,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve la pila de cartas que tenga la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_pila___cartas.html" title="la clase SPila_Cartas es la base para modelar una pila de cartas ">SPila_Cartas</a>, <a class="el" href="class_s_casilla.html#a1789f9b5b5ec2917f6880f91b60668fc" title="Devuelve la primera carta que este en la casilla. ">getCarta()</a>, <a class="el" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd" title="Devuelve todas las cartas que hay en la casilla. ">getCartas()</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_pila___cartas.html" title="la clase SPila_Cartas es la base para modelar una pila de cartas">SPila_Cartas</a>, <a class="el" href="class_s_casilla.html#a1789f9b5b5ec2917f6880f91b60668fc" title="Devuelve la primera carta que este en la casilla.">getCarta()</a>, <a class="el" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd" title="Devuelve todas las cartas que hay en la casilla.">getCartas()</a> </dd></dl>
 
 </div>
 </div>
@@ -734,7 +739,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve el tablero que contiene a casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_tablero.html" title="La clase STablero modela lo que sera el tablero de juego. ">STablero</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_tablero.html" title="La clase STablero modela lo que sera el tablero de juego.">STablero</a> </dd></dl>
 
 </div>
 </div>
@@ -760,7 +765,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Elimina permanentemente todas las cartas de la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a1d979735942cb0d9c2c7b05e07693a5f" title="Agrega una carta a la casilla. ">addCarta()</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_casilla.html#a1d979735942cb0d9c2c7b05e07693a5f" title="Agrega una carta a la casilla.">addCarta()</a> </dd></dl>
 
 </div>
 </div>
@@ -793,8 +798,8 @@ Atributos protegidos</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>bool false si la <a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas. ">SRegla</a> asociada a la casilla altera el movimiento normal de la ficha en el tablero, true si se ejecuta normalmente. </dd></dl>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla. ">addFicha()</a> </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>bool false si la <a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas.">SRegla</a> asociada a la casilla altera el movimiento normal de la ficha en el tablero, true si se ejecuta normalmente. </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla.">getFichas()</a>, <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla.">addFicha()</a> </dd></dl>
 
 </div>
 </div>
@@ -821,14 +826,14 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indica las reglas a ejecutar en la casilla. </p>
-<p><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas. ">SRegla</a> implementa las acciones a toma cuando una ficha es agregada a la casilla o deja la casilla, solo puede haber maximo una regla por casilla. </p>
+<p><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas.">SRegla</a> implementa las acciones a toma cuando una ficha es agregada a la casilla o deja la casilla, solo puede haber maximo una regla por casilla. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regla</td><td><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas. ">SRegla</a> que se va a addicionar </td></tr>
+    <tr><td class="paramname">regla</td><td><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas.">SRegla</a> que se va a addicionar </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas. ">SRegla</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas.">SRegla</a> </dd></dl>
 
 </div>
 </div>
@@ -852,7 +857,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cartas asignadas a la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas. ">SCarta</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas.">SCarta</a> </dd></dl>
 
 </div>
 </div>
@@ -875,7 +880,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fichas que se encuentran en la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a> </dd></dl>
 
 </div>
 </div>
@@ -898,7 +903,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pila de cartas. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_pila___cartas.html" title="la clase SPila_Cartas es la base para modelar una pila de cartas ">SPila_Cartas</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_pila___cartas.html" title="la clase SPila_Cartas es la base para modelar una pila de cartas">SPila_Cartas</a> </dd></dl>
 
 </div>
 </div>
@@ -921,7 +926,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reglas asociadas a la entrada y salida de Fichas en la casilla. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas. ">SRegla</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas.">SRegla</a> </dd></dl>
 
 </div>
 </div>
@@ -944,7 +949,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Tablero de juego. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_tablero.html" title="La clase STablero modela lo que sera el tablero de juego. ">STablero</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_tablero.html" title="La clase STablero modela lo que sera el tablero de juego.">STablero</a> </dd></dl>
 
 </div>
 </div>
@@ -954,9 +959,9 @@ Atributos protegidos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_s_casilla.html">SCasilla</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 10:22:59 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 10:33:18 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 </body>

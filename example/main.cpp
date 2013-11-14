@@ -32,30 +32,36 @@ public:
 	void fichaEntra(SFicha* ficha)
 	{
 		/* Optenemos el numero de la carta */
-		int carta = ficha->getCasilla()->getCarta()->getNumero();
-		/* Optenemos el tablero de juego */
-		STablero* tablero = ficha->getCasilla()->getTablero();
-		/* Revisamos si es una carta negativa o positiva */
-		if (carta < 0) // Negativa
+		SCarta* carta = ficha->getCasilla()->getCarta();
+		int n_carta;
+		/* Revisamos que la casilla determinada tenga una carta */
+		if(carta != nullptr)
 		{
-			carta = carta * m_dado.tirar() * (-1);
-			/* Tomamos la casilla donde se encuentra y retrocedemos la ficha 
-			 * el numero inticado de casillas o hasta la posicion 0 */
-			if (ficha->getPosicion() <= carta)
+			n_carta = carta->getNumero();
+			/* Optenemos el tablero de juego */
+			STablero* tablero = ficha->getCasilla()->getTablero();
+			/* Revisamos si es una carta negativa o positiva */
+			if (n_carta < 0) // Negativa
 			{
-				tablero->removerFicha(ficha);
-				tablero->agregarFicha(ficha, 0);
+				n_carta = n_carta * m_dado.tirar() * (-1);
+				/* Tomamos la casilla donde se encuentra y retrocedemos la ficha 
+				 * el numero inticado de casillas o hasta la posicion 0 */
+				if (ficha->getPosicion() <= n_carta)
+				{
+					tablero->removerFicha(ficha);
+					tablero->agregarFicha(ficha, 0);
+				}
+				else
+				{
+					int tmp = ficha->getPosicion();
+					tablero->removerFicha(ficha);
+					tablero->agregarFicha(ficha, tmp - n_carta);
+				}
 			}
-			else
+			else // Positiva
 			{
-				int tmp = ficha->getPosicion();
-				tablero->removerFicha(ficha);
-				tablero->agregarFicha(ficha, tmp - carta);
+				tablero->moverFicha(ficha, n_carta);
 			}
-		}
-		else // Positiva
-		{
-			tablero->moverFicha(ficha, carta);
 		}
 	}
 
@@ -206,6 +212,7 @@ public:
 		 * las reglas especificadas previamente se haran cargo de las escaleras, serpientes o cartas
 		 * especiales en las casillas y el tipo de tablero LINEAL_REBOTE se hara cargo del desbordamiento */
 		m_tablero->moverFicha(ficha, dado);
+		std::cout<< "Pasa mover  \n";
 		 /* Rebisamos si hay ganador */
 		if(ganar() || m_estado == GANADO)
 		{

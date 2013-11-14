@@ -47,6 +47,7 @@ public:
 	//! Constructor
 	/*!
 	   Constructor por defecto, no coloca pila de cartas
+	   \param tablero Tablero en el que esta la casilla
 	   \param regla Regla que aplica en la casilla
 	 */
 	SCasilla(STablero* tablero = nullptr, SRegla* regla = nullptr)
@@ -70,6 +71,7 @@ public:
 	/*!
 	   Crea una casilla y asigna a las fichas de la casilla fichas por referencia sin pila de cartas
 	   \param fichas Vector de SFicha* pasado por referencia, contiene las fichas que se van a poner a la casilla
+	   \param tablero Tablero en el que esta la casilla
 	   \param regla Regla que aplica en la casilla
 	 */
 	SCasilla(const std::vector< SFicha* >& fichas, STablero* tablero = nullptr, SRegla* regla = nullptr)
@@ -80,6 +82,7 @@ public:
 	/*!
 	   Crea una casilla y coloca una carta en la casilla y sin pila de cartas
 	   \param carta Carta que se va a agregar a la casilla
+	   \param tablero Tablero en el que esta la casilla
 	   \param regla Regla que aplica en la casilla
 	 */
 	SCasilla(SCarta* carta, STablero* tablero = nullptr, SRegla* regla = nullptr)
@@ -92,6 +95,7 @@ public:
 	/*!
 	   Crea una casilla y asigna a la casilla cartas por referencia y sin pila de cartas
 	   \param fichas Vector de SCarta*  pasado por referencia, contiene las cartas que se van a poner a la casilla
+	   \param tablero Tablero en el que esta la casilla
 	   \param regla Regla que aplica en la casilla
 	 */
 
@@ -103,6 +107,7 @@ public:
 	/*!
 	   Crea una Casilla y le asigna una pila de cartas
 	   \param pila_cartas Es la pila de cartas que se le asignara a la casilla
+	   \param tablero Tablero en el que esta la casilla
 	   \param regla Regla que aplica en la casilla
 	 */
 
@@ -204,6 +209,7 @@ public:
 				break;
 			}
 		}
+		std::cout<<result<<std::endl;
 		return result;
 	}
 
