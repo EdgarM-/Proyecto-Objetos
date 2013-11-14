@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "SPila_Cartas.h"
-#include "Tablero"
+#include "STablero.h"
 #include "SFicha.h"
 #include "SRegla.h"
 
