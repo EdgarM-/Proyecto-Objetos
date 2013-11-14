@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.13)  14 NOV 2013 04:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.13)  14 NOV 2013 05:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -838,34 +838,34 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 78.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \hbox (badness 1117) in paragraph at lines 97--97
+Underfull \hbox (badness 1117) in paragraph at lines 89--89
 \T1/ppl/m/n/10 doc-u-menta-cion para el proyecto de ob-je-tos y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 97.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 97.
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 89.
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 2080) in paragraph at lines 111--111
+Underfull \hbox (badness 2080) in paragraph at lines 103--103
 \T1/ppl/m/n/10 No ne-sesari-a-mente debe haber da-dos en un
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 111--111
+Underfull \hbox (badness 1803) in paragraph at lines 103--103
 \T1/ppl/m/n/10 generar un nu-mero aleato-rio en-tre un rengo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 
  []
 
@@ -879,7 +879,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 
  []
 
