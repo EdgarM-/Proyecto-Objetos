@@ -165,7 +165,9 @@ public:
 	}
 	//! Quita una ficha de la casilla
 	/*!
-	   \sa   SFicha, getFichas(), addFicha() */
+	  \param ficha Ficha que se va quitar de la casilla 
+	  \sa   SFicha, getFichas(), addFicha() 	   
+	*/
 	void rmFicha(SFicha* ficha)
 	{
 		for (int i = 0; i < m_fichas.size(); ++i)

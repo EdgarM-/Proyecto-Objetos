@@ -15,15 +15,25 @@ class SDado
 	std::mt19937 m_generador;
 	
 public:
+	//!Constructor
+	/*!
+	 Crea el dado con los valores desde @ref min hasta @ref max
+	 \param min numero minimo para el dado
+	 \param max numero maximo para el dado
+	 */
 	SDado(const int& min, const int& max)
 		: m_distribucion(min, max), m_generador(time(NULL))
 	{}
-
+	
+	//!Tirar dado
+	/*!
+	  Se tira el dado y devuelve el numero que salga
+	 */
 	int tirar()
 	{
 		return m_distribucion(m_generador);
 	}
-
+	//!Destructor
 	virtual ~SDado(){}
 };
 
