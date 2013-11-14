@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
@@ -115,7 +116,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,6 +133,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875">SCasilla</a>
 , <a class="el" href="class_s_jugador.html#a3615ce9b49c44777c35ad6fe3f744c35">SJugador</a>
 </li>
+<li>addPuntaje()
+: <a class="el" href="class_s_jugador.html#a182d75540589627501d8dd72cd490fda">SJugador</a>
+</li>
 <li>agregarCarta()
 : <a class="el" href="class_s_tablero.html#acbb09199040d5749a6c467412abec982">STablero</a>
 </li>
@@ -143,6 +147,13 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>agregarPila()
 : <a class="el" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">SJuego</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cambiarEstado()
+: <a class="el" href="class_s_juego.html#a5b764ae67832b343db83497255f34f2a">SJuego</a>
 </li>
 </ul>
 
@@ -162,7 +173,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_s_regla.html#a4a1f4cd3bcd3fd764f8bbddaf2683af5">SRegla</a>
 </li>
 <li>fichaSale()
-: <a class="el" href="class_s_regla.html#a320b5ac9cf80290f8bd01acfabffc4ff">SRegla</a>
+: <a class="el" href="class_s_regla.html#a7e85d6cd8a079fc8f82c6040d95b1a84">SRegla</a>
 </li>
 </ul>
 
@@ -190,8 +201,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="class_s_tablero.html#aa72c111986ef9c6aa0d8e12689f2fe28">STablero</a>
 </li>
 <li>getFichas()
-: <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb">SCasilla</a>
-, <a class="el" href="class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226">STablero</a>
+: <a class="el" href="class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226">STablero</a>
+, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb">SCasilla</a>
 </li>
 <li>getJugador()
 : <a class="el" href="class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654">SFicha</a>
@@ -208,6 +219,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getPosicion()
 : <a class="el" href="class_s_ficha.html#aba45427f741034dce05a1358430e561a">SFicha</a>
 </li>
+<li>getPuntaje()
+: <a class="el" href="class_s_jugador.html#a7244401657fdda3b7f1d4adb921f2664">SJugador</a>
+</li>
 </ul>
 
 
@@ -219,8 +233,17 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>m_equipo()
+: <a class="el" href="class_s_jugador.html#a9a3ef7d658ee1fb3fab9c60b364b6c95">SJugador</a>
+</li>
+<li>m_puntaje()
+: <a class="el" href="class_s_jugador.html#a649a8af37d39458e1623f25c5c614b6d">SJugador</a>
+</li>
 <li>mismoEquipo()
 : <a class="el" href="class_s_jugador.html#ad67abdbe0a67d3e007990de553fbc76e">SJugador</a>
+</li>
+<li>moverFicha()
+: <a class="el" href="class_s_tablero.html#ae46e39720223e759e386485a5fcf1111">STablero</a>
 </li>
 </ul>
 
@@ -249,7 +272,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_s_casilla.html#aae8e1ca24ff7054a9a7e6381c6357214">SCasilla</a>
 </li>
 <li>rmFicha()
-: <a class="el" href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe">SCasilla</a>
+: <a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47">SCasilla</a>
+</li>
+<li>rmPuntaje()
+: <a class="el" href="class_s_jugador.html#a12843bc0367b7dcd75b8990be2a58ce6">SJugador</a>
 </li>
 </ul>
 
@@ -282,6 +308,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>setPosicion()
 : <a class="el" href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680">SFicha</a>
 </li>
+<li>setPuntaje()
+: <a class="el" href="class_s_jugador.html#ad128593351c95c9597dce01d5f95a332">SJugador</a>
+</li>
 <li>setRegla()
 : <a class="el" href="class_s_casilla.html#a61a6ff2c1dc5616fefb820c743ffa778">SCasilla</a>
 </li>
@@ -297,9 +326,6 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>SJuego()
 : <a class="el" href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">SJuego</a>
 </li>
-<li>SJugador()
-: <a class="el" href="class_s_jugador.html#aac72f32e723704c18f1659500405c6a4">SJugador</a>
-</li>
 <li>SPila_Cartas()
 : <a class="el" href="class_s_pila___cartas.html#a7b18f8e2aa25e55e4066c1c302ea1664">SPila_Cartas</a>
 </li>
@@ -307,7 +333,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_s_regla.html#a79c263621554c2904f548b827fbd4647">SRegla</a>
 </li>
 <li>STablero()
-: <a class="el" href="class_s_tablero.html#acc94aa128d19cf840349eb2492b069d4">STablero</a>
+: <a class="el" href="class_s_tablero.html#a5502fbb2398759d163add6ea0bb08022">STablero</a>
 </li>
 </ul>
 
@@ -347,7 +373,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

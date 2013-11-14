@@ -14,7 +14,7 @@ var class_s_casilla =
     [ "getFichas", "class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb", null ],
     [ "getPila", "class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a", null ],
     [ "rmCartas", "class_s_casilla.html#aae8e1ca24ff7054a9a7e6381c6357214", null ],
-    [ "rmFicha", "class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe", null ],
+    [ "rmFicha", "class_s_casilla.html#a97257f2917d2d767380daf102a902e47", null ],
     [ "setRegla", "class_s_casilla.html#a61a6ff2c1dc5616fefb820c743ffa778", null ],
     [ "m_cartas", "class_s_casilla.html#ad319007d7de55723239e662c8eb56c86", null ],
     [ "m_fichas", "class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e", null ],

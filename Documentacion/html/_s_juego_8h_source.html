@@ -69,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +92,7 @@ $(document).ready(function(){initNavTree('_s_juego_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,63 +116,77 @@ $(document).ready(function(){initNavTree('_s_juego_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_pila___cartas_8h.html">SPila_Cartas.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_tablero_8h.html">STablero.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">   11</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> {<a class="code" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94a1814edc9f0d01d62b0e14686f31d199d">EN_CURSO</a>, <a class="code" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94ae0ebfe250256438c33e2cf5697a0f942">GANADO</a>, <a class="code" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94a75ebf07eb4db3864ba0d148949487cd3">EMPATE</a>};</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_s_juego.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_juego.html">SJuego</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">m_jugador_actual</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">   20</a></span>&#160;    <a class="code" href="class_s_tablero.html">STablero</a>* <a class="code" href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">m_tablero</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">   22</a></span>&#160;    std::vector&lt; SJugador* &gt; <a class="code" href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">m_jugadores</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">   24</a></span>&#160;    std::vector&lt; SDado &gt; <a class="code" href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">m_dados</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">   26</a></span>&#160;    std::vector&lt; SPila_Cartas* &gt; <a class="code" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">m_pilas</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">   33</a></span>&#160;    <a class="code" href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">SJuego</a>()</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : <a class="code" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">m_jugador_actual</a>(0), <a class="code" href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">m_tablero</a>(nullptr) </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_s_juego.html#aa5ea60aa2cff29338036b8f1aee6839d">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#aa5ea60aa2cff29338036b8f1aee6839d">agregarJugador</a>(<a class="code" href="class_s_jugador.html">SJugador</a>* jugador)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">m_jugadores</a>.push_back(jugador);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">agregarPila</a>(<a class="code" href="class_s_pila___cartas.html">SPila_Cartas</a>* pila)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">m_pilas</a>.push_back(pila);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a>()  = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#a651892e6fdfb25e189724604aa53ec57">turno</a>()  = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_juego.html#a365b88a843cd187bde70360390269f3a">ganar</a>()  = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_juego.html#aaa8d4f20e37af89ce6d22db8c5cd08b6">empate</a>()  = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // SJuego_h</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_s_juego.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_juego.html">SJuego</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">m_jugador_actual</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">   22</a></span>&#160;    <a class="code" href="class_s_tablero.html">STablero</a>* <a class="code" href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">m_tablero</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">   24</a></span>&#160;    std::vector&lt; SJugador* &gt; <a class="code" href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">m_jugadores</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">   26</a></span>&#160;    std::vector&lt; SDado &gt; <a class="code" href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">m_dados</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">   28</a></span>&#160;    std::vector&lt; SPila_Cartas* &gt; <a class="code" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">m_pilas</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_s_juego.html#ad72e6d093bedd4f77b4d1da1ce93b255">   30</a></span>&#160;    <a class="code" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> <a class="code" href="class_s_juego.html#ad72e6d093bedd4f77b4d1da1ce93b255">m_estado</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">   37</a></span>&#160;    <a class="code" href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">SJuego</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : <a class="code" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">m_jugador_actual</a>(0), <a class="code" href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">m_tablero</a>(nullptr) </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_s_juego.html#aa5ea60aa2cff29338036b8f1aee6839d">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#aa5ea60aa2cff29338036b8f1aee6839d">agregarJugador</a>(<a class="code" href="class_s_jugador.html">SJugador</a>* jugador)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">m_jugadores</a>.push_back(jugador);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">agregarPila</a>(<a class="code" href="class_s_pila___cartas.html">SPila_Cartas</a>* pila)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">m_pilas</a>.push_back(pila);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_s_juego.html#a5b764ae67832b343db83497255f34f2a">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#a5b764ae67832b343db83497255f34f2a">cambiarEstado</a>(<a class="code" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> estado)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_s_juego.html#ad72e6d093bedd4f77b4d1da1ce93b255">m_estado</a>(estado);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a>()  = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_juego.html#a651892e6fdfb25e189724604aa53ec57">turno</a>()  = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_juego.html#a365b88a843cd187bde70360390269f3a">ganar</a>()  = 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_juego.html#aaa8d4f20e37af89ce6d22db8c5cd08b6">empate</a>()  = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // SJuego_h</span></div>
+<div class="ttc" id="_s_juego_8h_html_a700cd4eb8f1695daf7b74a3b5088ad94ae0ebfe250256438c33e2cf5697a0f942"><div class="ttname"><a href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94ae0ebfe250256438c33e2cf5697a0f942">GANADO</a></div><div class="ttdef"><b>Definition:</b> SJuego.h:11</div></div>
 <div class="ttc" id="class_s_juego_html_a99b85ab9cc32c53da7a50c373ee6c10d"><div class="ttname"><a href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">SJuego::init</a></div><div class="ttdeci">virtual void init()=0</div><div class="ttdoc">Inicializadora del juego. </div></div>
 <div class="ttc" id="_s_pila___cartas_8h_html"><div class="ttname"><a href="_s_pila___cartas_8h.html">SPila_Cartas.h</a></div></div>
+<div class="ttc" id="_s_juego_8h_html_a700cd4eb8f1695daf7b74a3b5088ad94a1814edc9f0d01d62b0e14686f31d199d"><div class="ttname"><a href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94a1814edc9f0d01d62b0e14686f31d199d">EN_CURSO</a></div><div class="ttdef"><b>Definition:</b> SJuego.h:11</div></div>
 <div class="ttc" id="class_s_juego_html_a651892e6fdfb25e189724604aa53ec57"><div class="ttname"><a href="class_s_juego.html#a651892e6fdfb25e189724604aa53ec57">SJuego::turno</a></div><div class="ttdeci">virtual void turno()=0</div><div class="ttdoc">Definir Turno. </div></div>
-<div class="ttc" id="class_s_juego_html_aa5ea60aa2cff29338036b8f1aee6839d"><div class="ttname"><a href="class_s_juego.html#aa5ea60aa2cff29338036b8f1aee6839d">SJuego::agregarJugador</a></div><div class="ttdeci">void agregarJugador(SJugador *jugador)</div><div class="ttdoc">Agrega un jugador al juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:42</div></div>
-<div class="ttc" id="class_s_juego_html_ae61e4c6be0f02f7440e4b4a3c8a7f9f0"><div class="ttname"><a href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">SJuego::m_tablero</a></div><div class="ttdeci">STablero * m_tablero</div><div class="ttdoc">Es el tablero de juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:20</div></div>
+<div class="ttc" id="_s_juego_8h_html_a700cd4eb8f1695daf7b74a3b5088ad94a75ebf07eb4db3864ba0d148949487cd3"><div class="ttname"><a href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94a75ebf07eb4db3864ba0d148949487cd3">EMPATE</a></div><div class="ttdef"><b>Definition:</b> SJuego.h:11</div></div>
+<div class="ttc" id="class_s_juego_html_aa5ea60aa2cff29338036b8f1aee6839d"><div class="ttname"><a href="class_s_juego.html#aa5ea60aa2cff29338036b8f1aee6839d">SJuego::agregarJugador</a></div><div class="ttdeci">void agregarJugador(SJugador *jugador)</div><div class="ttdoc">Agrega un jugador al juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:46</div></div>
+<div class="ttc" id="class_s_juego_html_ae61e4c6be0f02f7440e4b4a3c8a7f9f0"><div class="ttname"><a href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">SJuego::m_tablero</a></div><div class="ttdeci">STablero * m_tablero</div><div class="ttdoc">Es el tablero de juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:22</div></div>
 <div class="ttc" id="class_s_juego_html_aaa8d4f20e37af89ce6d22db8c5cd08b6"><div class="ttname"><a href="class_s_juego.html#aaa8d4f20e37af89ce6d22db8c5cd08b6">SJuego::empate</a></div><div class="ttdeci">virtual bool empate()=0</div><div class="ttdoc">Definir Turno. </div></div>
-<div class="ttc" id="class_s_juego_html_a779024ddc53d11c0fce919a8c53714ea"><div class="ttname"><a href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">SJuego::m_pilas</a></div><div class="ttdeci">std::vector&lt; SPila_Cartas * &gt; m_pilas</div><div class="ttdoc">Vector de SPila_Cartas que contiene las pilas de cartas del juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:26</div></div>
+<div class="ttc" id="class_s_juego_html_a5b764ae67832b343db83497255f34f2a"><div class="ttname"><a href="class_s_juego.html#a5b764ae67832b343db83497255f34f2a">SJuego::cambiarEstado</a></div><div class="ttdeci">void cambiarEstado(SEstado estado)</div><div class="ttdoc">Cambia es estado del juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:62</div></div>
+<div class="ttc" id="class_s_juego_html_a779024ddc53d11c0fce919a8c53714ea"><div class="ttname"><a href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">SJuego::m_pilas</a></div><div class="ttdeci">std::vector&lt; SPila_Cartas * &gt; m_pilas</div><div class="ttdoc">Vector de SPila_Cartas que contiene las pilas de cartas del juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:28</div></div>
 <div class="ttc" id="_s_dado_8h_html"><div class="ttname"><a href="_s_dado_8h.html">SDado.h</a></div></div>
 <div class="ttc" id="class_s_jugador_html"><div class="ttname"><a href="class_s_jugador.html">SJugador</a></div><div class="ttdoc">La Clase SJugador es la base para modelar los jugadores. </div><div class="ttdef"><b>Definition:</b> SJugador.h:15</div></div>
-<div class="ttc" id="class_s_juego_html_a833196277c3a859de2c408b422b2cd91"><div class="ttname"><a href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">SJuego::agregarPila</a></div><div class="ttdeci">void agregarPila(SPila_Cartas *pila)</div><div class="ttdoc">Agrega una pila de cartas al juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:50</div></div>
+<div class="ttc" id="class_s_juego_html_a833196277c3a859de2c408b422b2cd91"><div class="ttname"><a href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">SJuego::agregarPila</a></div><div class="ttdeci">void agregarPila(SPila_Cartas *pila)</div><div class="ttdoc">Agrega una pila de cartas al juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:54</div></div>
 <div class="ttc" id="_s_tablero_8h_html"><div class="ttname"><a href="_s_tablero_8h.html">STablero.h</a></div></div>
-<div class="ttc" id="class_s_tablero_html"><div class="ttname"><a href="class_s_tablero.html">STablero</a></div><div class="ttdoc">La clase STablero modela lo que sera el tablero de juego. </div><div class="ttdef"><b>Definition:</b> STablero.h:14</div></div>
+<div class="ttc" id="class_s_tablero_html"><div class="ttname"><a href="class_s_tablero.html">STablero</a></div><div class="ttdoc">La clase STablero modela lo que sera el tablero de juego. </div><div class="ttdef"><b>Definition:</b> STablero.h:16</div></div>
 <div class="ttc" id="class_s_pila___cartas_html"><div class="ttname"><a href="class_s_pila___cartas.html">SPila_Cartas</a></div><div class="ttdoc">la clase SPila_Cartas es la base para modelar una pila de cartas </div><div class="ttdef"><b>Definition:</b> SPila_Cartas.h:14</div></div>
 <div class="ttc" id="class_s_juego_html_a365b88a843cd187bde70360390269f3a"><div class="ttname"><a href="class_s_juego.html#a365b88a843cd187bde70360390269f3a">SJuego::ganar</a></div><div class="ttdeci">virtual bool ganar()=0</div><div class="ttdoc">Definir Ganar. </div></div>
-<div class="ttc" id="class_s_juego_html_ae3d7864e2a6ffc47b999d9fb47fa0752"><div class="ttname"><a href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">SJuego::m_jugadores</a></div><div class="ttdeci">std::vector&lt; SJugador * &gt; m_jugadores</div><div class="ttdoc">Vector de SJugador que contiene todos los jugadores. </div><div class="ttdef"><b>Definition:</b> SJuego.h:22</div></div>
-<div class="ttc" id="class_s_juego_html_a394f1b3145f2ac15a10b0fe02d3dd610"><div class="ttname"><a href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">SJuego::m_jugador_actual</a></div><div class="ttdeci">int m_jugador_actual</div><div class="ttdoc">Indica que jugador esta en su turno. </div><div class="ttdef"><b>Definition:</b> SJuego.h:18</div></div>
-<div class="ttc" id="class_s_juego_html_acf39daf5ab9cdb485c0cc675f18dcfa8"><div class="ttname"><a href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">SJuego::SJuego</a></div><div class="ttdeci">SJuego()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> SJuego.h:33</div></div>
-<div class="ttc" id="class_s_juego_html_a02ea46f7fc60a1beeb571d98bbf9dd80"><div class="ttname"><a href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">SJuego::m_dados</a></div><div class="ttdeci">std::vector&lt; SDado &gt; m_dados</div><div class="ttdoc">Vector de SDado que contiene todos los dados que posee el juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:24</div></div>
-<div class="ttc" id="class_s_juego_html"><div class="ttname"><a href="class_s_juego.html">SJuego</a></div><div class="ttdoc">La clase SJuego tiene unas funciones para modelar lo que seria un juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:15</div></div>
+<div class="ttc" id="class_s_juego_html_ad72e6d093bedd4f77b4d1da1ce93b255"><div class="ttname"><a href="class_s_juego.html#ad72e6d093bedd4f77b4d1da1ce93b255">SJuego::m_estado</a></div><div class="ttdeci">SEstado m_estado</div><div class="ttdoc">SEstado indica el estado actual del juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:30</div></div>
+<div class="ttc" id="class_s_juego_html_ae3d7864e2a6ffc47b999d9fb47fa0752"><div class="ttname"><a href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">SJuego::m_jugadores</a></div><div class="ttdeci">std::vector&lt; SJugador * &gt; m_jugadores</div><div class="ttdoc">Vector de SJugador que contiene todos los jugadores. </div><div class="ttdef"><b>Definition:</b> SJuego.h:24</div></div>
+<div class="ttc" id="class_s_juego_html_a394f1b3145f2ac15a10b0fe02d3dd610"><div class="ttname"><a href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">SJuego::m_jugador_actual</a></div><div class="ttdeci">int m_jugador_actual</div><div class="ttdoc">Indica que jugador esta en su turno. </div><div class="ttdef"><b>Definition:</b> SJuego.h:20</div></div>
+<div class="ttc" id="class_s_juego_html_acf39daf5ab9cdb485c0cc675f18dcfa8"><div class="ttname"><a href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">SJuego::SJuego</a></div><div class="ttdeci">SJuego()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> SJuego.h:37</div></div>
+<div class="ttc" id="_s_juego_8h_html_a700cd4eb8f1695daf7b74a3b5088ad94"><div class="ttname"><a href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a></div><div class="ttdeci">SEstado</div><div class="ttdef"><b>Definition:</b> SJuego.h:11</div></div>
+<div class="ttc" id="class_s_juego_html_a02ea46f7fc60a1beeb571d98bbf9dd80"><div class="ttname"><a href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">SJuego::m_dados</a></div><div class="ttdeci">std::vector&lt; SDado &gt; m_dados</div><div class="ttdoc">Vector de SDado que contiene todos los dados que posee el juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:26</div></div>
+<div class="ttc" id="class_s_juego_html"><div class="ttname"><a href="class_s_juego.html">SJuego</a></div><div class="ttdoc">La clase SJuego tiene unas funciones para modelar lo que seria un juego. </div><div class="ttdef"><b>Definition:</b> SJuego.h:17</div></div>
 <div class="ttc" id="_s_jugador_8h_html"><div class="ttname"><a href="_s_jugador_8h.html">SJugador.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -179,7 +194,7 @@ $(document).ready(function(){initNavTree('_s_juego_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_s_juego_8h.html">SJuego.h</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

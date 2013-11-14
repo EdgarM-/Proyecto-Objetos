@@ -12,9 +12,7 @@ var dir_97aefd0d527b934f1d99a682da8fe6a9 =
     [ "SFicha.h", "_s_ficha_8h.html", [
       [ "SFicha", "class_s_ficha.html", "class_s_ficha" ]
     ] ],
-    [ "SJuego.h", "_s_juego_8h.html", [
-      [ "SJuego", "class_s_juego.html", "class_s_juego" ]
-    ] ],
+    [ "SJuego.h", "_s_juego_8h.html", "_s_juego_8h" ],
     [ "SJugador.h", "_s_jugador_8h.html", [
       [ "SJugador", "class_s_jugador.html", "class_s_jugador" ]
     ] ],
@@ -24,7 +22,5 @@ var dir_97aefd0d527b934f1d99a682da8fe6a9 =
     [ "SRegla.h", "_s_regla_8h.html", [
       [ "SRegla", "class_s_regla.html", "class_s_regla" ]
     ] ],
-    [ "STablero.h", "_s_tablero_8h.html", [
-      [ "STablero", "class_s_tablero.html", "class_s_tablero" ]
-    ] ]
+    [ "STablero.h", "_s_tablero_8h.html", "_s_tablero_8h" ]
 ];

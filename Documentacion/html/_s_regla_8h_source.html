@@ -69,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +92,7 @@ $(document).ready(function(){initNavTree('_s_regla_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,25 +119,25 @@ $(document).ready(function(){initNavTree('_s_regla_8h_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_regla.html#a4a1f4cd3bcd3fd764f8bbddaf2683af5">fichaEntra</a>(<a class="code" href="class_s_ficha.html">SFicha</a>* ficha) = 0;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_regla.html#a320b5ac9cf80290f8bd01acfabffc4ff">fichaSale</a>(<a class="code" href="class_s_ficha.html">SFicha</a>* ficha) = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_s_regla.html#a6e14c2578f15493899d0c046bc1db8cf">   29</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_s_regla.html#a6e14c2578f15493899d0c046bc1db8cf">~SRegla</a>(){}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRegla_h */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_regla.html#a7e85d6cd8a079fc8f82c6040d95b1a84">fichaSale</a>(<a class="code" href="class_s_ficha.html">SFicha</a>* ficha) = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_s_regla.html#a6e14c2578f15493899d0c046bc1db8cf">   33</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_s_regla.html#a6e14c2578f15493899d0c046bc1db8cf">~SRegla</a>(){}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRegla_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_s_regla_html_a7e85d6cd8a079fc8f82c6040d95b1a84"><div class="ttname"><a href="class_s_regla.html#a7e85d6cd8a079fc8f82c6040d95b1a84">SRegla::fichaSale</a></div><div class="ttdeci">virtual bool fichaSale(SFicha *ficha)=0</div><div class="ttdoc">Define Sale una ficha. </div></div>
 <div class="ttc" id="class_s_regla_html_a4a1f4cd3bcd3fd764f8bbddaf2683af5"><div class="ttname"><a href="class_s_regla.html#a4a1f4cd3bcd3fd764f8bbddaf2683af5">SRegla::fichaEntra</a></div><div class="ttdeci">virtual void fichaEntra(SFicha *ficha)=0</div><div class="ttdoc">Define Entra de una ficha. </div></div>
-<div class="ttc" id="class_s_regla_html_a320b5ac9cf80290f8bd01acfabffc4ff"><div class="ttname"><a href="class_s_regla.html#a320b5ac9cf80290f8bd01acfabffc4ff">SRegla::fichaSale</a></div><div class="ttdeci">virtual void fichaSale(SFicha *ficha)=0</div><div class="ttdoc">Define Sale una ficha. </div></div>
 <div class="ttc" id="class_s_ficha_html"><div class="ttname"><a href="class_s_ficha.html">SFicha</a></div><div class="ttdoc">La clase SFicha es la base para las fichas. </div><div class="ttdef"><b>Definition:</b> SFicha.h:12</div></div>
 <div class="ttc" id="class_s_regla_html_a79c263621554c2904f548b827fbd4647"><div class="ttname"><a href="class_s_regla.html#a79c263621554c2904f548b827fbd4647">SRegla::SRegla</a></div><div class="ttdeci">SRegla()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> SRegla.h:15</div></div>
 <div class="ttc" id="_s_ficha_8h_html"><div class="ttname"><a href="_s_ficha_8h.html">SFicha.h</a></div></div>
 <div class="ttc" id="class_s_regla_html"><div class="ttname"><a href="class_s_regla.html">SRegla</a></div><div class="ttdoc">La clase SRegla manejas las reglas. </div><div class="ttdef"><b>Definition:</b> SRegla.h:8</div></div>
-<div class="ttc" id="class_s_regla_html_a6e14c2578f15493899d0c046bc1db8cf"><div class="ttname"><a href="class_s_regla.html#a6e14c2578f15493899d0c046bc1db8cf">SRegla::~SRegla</a></div><div class="ttdeci">virtual ~SRegla()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> SRegla.h:29</div></div>
+<div class="ttc" id="class_s_regla_html_a6e14c2578f15493899d0c046bc1db8cf"><div class="ttname"><a href="class_s_regla.html#a6e14c2578f15493899d0c046bc1db8cf">SRegla::~SRegla</a></div><div class="ttdeci">virtual ~SRegla()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> SRegla.h:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_s_regla_8h.html">SRegla.h</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

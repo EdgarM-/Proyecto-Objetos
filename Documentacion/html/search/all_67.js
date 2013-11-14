@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ganado',['GANADO',['../_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94ae0ebfe250256438c33e2cf5697a0f942',1,'SJuego.h']]],
   ['ganar',['ganar',['../class_s_juego.html#a365b88a843cd187bde70360390269f3a',1,'SJuego']]],
   ['getcarta',['getCarta',['../class_s_casilla.html#a1789f9b5b5ec2917f6880f91b60668fc',1,'SCasilla::getCarta()'],['../class_s_tablero.html#a2e2e568188cd1d968faeaf4c09607d31',1,'STablero::getCarta()']]],
   ['getcartas',['getCartas',['../class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd',1,'SCasilla::getCartas()'],['../class_s_tablero.html#a35aa305bab271b3abd86d196a0e90f18',1,'STablero::getCartas()']]],
@@ -11,5 +12,6 @@ var searchData=
   ['getnombre',['getNombre',['../class_s_carta.html#a223487d5105e2468a5fec633dc4b6ae9',1,'SCarta']]],
   ['getnumero',['getNumero',['../class_s_carta.html#acdfd2f65ecdc2d6360fc317fe7f4ad3b',1,'SCarta']]],
   ['getpila',['getPila',['../class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a',1,'SCasilla']]],
-  ['getposicion',['getPosicion',['../class_s_ficha.html#aba45427f741034dce05a1358430e561a',1,'SFicha']]]
+  ['getposicion',['getPosicion',['../class_s_ficha.html#aba45427f741034dce05a1358430e561a',1,'SFicha']]],
+  ['getpuntaje',['getPuntaje',['../class_s_jugador.html#a7244401657fdda3b7f1d4adb921f2664',1,'SJugador']]]
 ];

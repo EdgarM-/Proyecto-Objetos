@@ -69,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +92,7 @@ $(document).ready(function(){initNavTree('_s_juego_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,7 +103,8 @@ $(document).ready(function(){initNavTree('_s_juego_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Clases</a>  </div>
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#enum-members">Enumeraciones</a>  </div>
   <div class="headertitle">
 <div class="title">Referencia del Archivo SJuego.h</div>  </div>
 </div><!--header-->
@@ -120,14 +122,43 @@ Clases</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html">SJuego</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">La clase <a class="el" href="class_s_juego.html" title="La clase SJuego tiene unas funciones para modelar lo que seria un juego. ">SJuego</a> tiene unas funciones para modelar lo que seria un juego.  <a href="class_s_juego.html#details">Más...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a700cd4eb8f1695daf7b74a3b5088ad94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> { <a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94a1814edc9f0d01d62b0e14686f31d199d">EN_CURSO</a>, 
+<a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94ae0ebfe250256438c33e2cf5697a0f942">GANADO</a>, 
+<a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94a75ebf07eb4db3864ba0d148949487cd3">EMPATE</a>
+ }</td></tr>
+<tr class="separator:a700cd4eb8f1695daf7b74a3b5088ad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a class="anchor" id="a700cd4eb8f1695daf7b74a3b5088ad94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a700cd4eb8f1695daf7b74a3b5088ad94a1814edc9f0d01d62b0e14686f31d199d"></a>EN_CURSO</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a700cd4eb8f1695daf7b74a3b5088ad94ae0ebfe250256438c33e2cf5697a0f942"></a>GANADO</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a700cd4eb8f1695daf7b74a3b5088ad94a75ebf07eb4db3864ba0d148949487cd3"></a>EMPATE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_s_juego_8h.html">SJuego.h</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

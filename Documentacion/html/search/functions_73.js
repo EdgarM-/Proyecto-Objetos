@@ -9,13 +9,13 @@ var searchData=
   ['setnombre',['setNombre',['../class_s_carta.html#a88905d176a383a2191affb82694ace6c',1,'SCarta']]],
   ['setnumero',['setNumero',['../class_s_carta.html#aaf424036702e8678fa4c1fcd56a7e63d',1,'SCarta']]],
   ['setposicion',['setPosicion',['../class_s_ficha.html#aa543aa19fef77f697379d819b481b680',1,'SFicha']]],
+  ['setpuntaje',['setPuntaje',['../class_s_jugador.html#ad128593351c95c9597dce01d5f95a332',1,'SJugador']]],
   ['setregla',['setRegla',['../class_s_casilla.html#a61a6ff2c1dc5616fefb820c743ffa778',1,'SCasilla']]],
   ['sficha',['SFicha',['../class_s_ficha.html#a0a7d650cbd0635ce09cc8870597720fa',1,'SFicha']]],
   ['shuffle',['shuffle',['../class_s_pila___cartas.html#a0e4b39c282b3b89855fd2890b467d0e8',1,'SPila_Cartas']]],
   ['size',['size',['../class_s_pila___cartas.html#a298cdea0f1b412f39fb71ed1c8d11012',1,'SPila_Cartas']]],
   ['sjuego',['SJuego',['../class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8',1,'SJuego']]],
-  ['sjugador',['SJugador',['../class_s_jugador.html#aac72f32e723704c18f1659500405c6a4',1,'SJugador::SJugador(std::string nombre, int equipo=0)'],['../class_s_jugador.html#a8e2a6569f2b9920755f69e2e9ac3b545',1,'SJugador::SJugador(std::string nombre, int n_fichas, int equipo=0)']]],
   ['spila_5fcartas',['SPila_Cartas',['../class_s_pila___cartas.html#a7b18f8e2aa25e55e4066c1c302ea1664',1,'SPila_Cartas']]],
   ['sregla',['SRegla',['../class_s_regla.html#a79c263621554c2904f548b827fbd4647',1,'SRegla']]],
-  ['stablero',['STablero',['../class_s_tablero.html#acc94aa128d19cf840349eb2492b069d4',1,'STablero']]]
+  ['stablero',['STablero',['../class_s_tablero.html#a5502fbb2398759d163add6ea0bb08022',1,'STablero']]]
 ];

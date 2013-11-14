@@ -11,5 +11,6 @@ var searchData=
   ['getnombre',['getNombre',['../class_s_carta.html#a223487d5105e2468a5fec633dc4b6ae9',1,'SCarta']]],
   ['getnumero',['getNumero',['../class_s_carta.html#acdfd2f65ecdc2d6360fc317fe7f4ad3b',1,'SCarta']]],
   ['getpila',['getPila',['../class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a',1,'SCasilla']]],
-  ['getposicion',['getPosicion',['../class_s_ficha.html#aba45427f741034dce05a1358430e561a',1,'SFicha']]]
+  ['getposicion',['getPosicion',['../class_s_ficha.html#aba45427f741034dce05a1358430e561a',1,'SFicha']]],
+  ['getpuntaje',['getPuntaje',['../class_s_jugador.html#a7244401657fdda3b7f1d4adb921f2664',1,'SJugador']]]
 ];

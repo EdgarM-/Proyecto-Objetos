@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_s_jugador.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('class_s_jugador.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Atributos públicos</a> &#124;
 <a href="#pro-attribs">Atributos protegidos</a> &#124;
 <a href="class_s_jugador-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle">
@@ -119,12 +120,10 @@ $(document).ready(function(){initNavTree('class_s_jugador.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
-<tr class="memitem:aac72f32e723704c18f1659500405c6a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#aac72f32e723704c18f1659500405c6a4">SJugador</a> (std::string nombre, int equipo=0)</td></tr>
-<tr class="memdesc:aac72f32e723704c18f1659500405c6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aac72f32e723704c18f1659500405c6a4">Más...</a><br/></td></tr>
-<tr class="separator:aac72f32e723704c18f1659500405c6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e2a6569f2b9920755f69e2e9ac3b545"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a8e2a6569f2b9920755f69e2e9ac3b545">SJugador</a> (std::string nombre, int n_fichas, int equipo=0)</td></tr>
-<tr class="memdesc:a8e2a6569f2b9920755f69e2e9ac3b545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a8e2a6569f2b9920755f69e2e9ac3b545">Más...</a><br/></td></tr>
-<tr class="separator:a8e2a6569f2b9920755f69e2e9ac3b545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3ef7d658ee1fb3fab9c60b364b6c95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a9a3ef7d658ee1fb3fab9c60b364b6c95">m_equipo</a> (equipo)</td></tr>
+<tr class="separator:a9a3ef7d658ee1fb3fab9c60b364b6c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649a8af37d39458e1623f25c5c614b6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a649a8af37d39458e1623f25c5c614b6d">m_puntaje</a> (0)</td></tr>
+<tr class="separator:a649a8af37d39458e1623f25c5c614b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3615ce9b49c44777c35ad6fe3f744c35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a3615ce9b49c44777c35ad6fe3f744c35">addFicha</a> (<a class="el" href="class_s_ficha.html">SFicha</a> *ficha)</td></tr>
 <tr class="memdesc:a3615ce9b49c44777c35ad6fe3f744c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agregar una ficha, le entra un puntero a una ficha y la guarda en el jugador.  <a href="#a3615ce9b49c44777c35ad6fe3f744c35">Más...</a><br/></td></tr>
 <tr class="separator:a3615ce9b49c44777c35ad6fe3f744c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,12 +136,30 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:ad67abdbe0a67d3e007990de553fbc76e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#ad67abdbe0a67d3e007990de553fbc76e">mismoEquipo</a> (<a class="el" href="class_s_jugador.html">SJugador</a> *jugador) const </td></tr>
 <tr class="memdesc:ad67abdbe0a67d3e007990de553fbc76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba si dos jugadores son del mismo equipo.  <a href="#ad67abdbe0a67d3e007990de553fbc76e">Más...</a><br/></td></tr>
 <tr class="separator:ad67abdbe0a67d3e007990de553fbc76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7244401657fdda3b7f1d4adb921f2664"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a7244401657fdda3b7f1d4adb921f2664">getPuntaje</a> () const </td></tr>
+<tr class="memdesc:a7244401657fdda3b7f1d4adb921f2664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el puntaje actual del jugador.  <a href="#a7244401657fdda3b7f1d4adb921f2664">Más...</a><br/></td></tr>
+<tr class="separator:a7244401657fdda3b7f1d4adb921f2664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad128593351c95c9597dce01d5f95a332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#ad128593351c95c9597dce01d5f95a332">setPuntaje</a> (int puntaje)</td></tr>
+<tr class="memdesc:ad128593351c95c9597dce01d5f95a332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambia el valor del puntaje del jugador por uno nuevo.  <a href="#ad128593351c95c9597dce01d5f95a332">Más...</a><br/></td></tr>
+<tr class="separator:ad128593351c95c9597dce01d5f95a332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182d75540589627501d8dd72cd490fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a182d75540589627501d8dd72cd490fda">addPuntaje</a> (int puntos)</td></tr>
+<tr class="memdesc:a182d75540589627501d8dd72cd490fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega puntos al valor del puntaje del jugador.  <a href="#a182d75540589627501d8dd72cd490fda">Más...</a><br/></td></tr>
+<tr class="separator:a182d75540589627501d8dd72cd490fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12843bc0367b7dcd75b8990be2a58ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a12843bc0367b7dcd75b8990be2a58ce6">rmPuntaje</a> (int puntos)</td></tr>
+<tr class="memdesc:a12843bc0367b7dcd75b8990be2a58ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resta puntos al valor del puntaje del jugador.  <a href="#a12843bc0367b7dcd75b8990be2a58ce6">Más...</a><br/></td></tr>
+<tr class="separator:a12843bc0367b7dcd75b8990be2a58ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4b29adcc2ce0f3384f2f963fd7d8e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#afe4b29adcc2ce0f3384f2f963fd7d8e4">retirar</a> ()</td></tr>
 <tr class="memdesc:afe4b29adcc2ce0f3384f2f963fd7d8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retira un jugador del juego.  <a href="#afe4b29adcc2ce0f3384f2f963fd7d8e4">Más...</a><br/></td></tr>
 <tr class="separator:afe4b29adcc2ce0f3384f2f963fd7d8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6ef2ab6704bba5725284728568fb6d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a9a6ef2ab6704bba5725284728568fb6d">~SJugador</a> ()</td></tr>
 <tr class="memdesc:a9a6ef2ab6704bba5725284728568fb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a9a6ef2ab6704bba5725284728568fb6d">Más...</a><br/></td></tr>
 <tr class="separator:a9a6ef2ab6704bba5725284728568fb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:a69a565c37dd7f3d996675c9341677c20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a69a565c37dd7f3d996675c9341677c20">SJugador</a> (std::string nombre, int equipo=0)</td></tr>
+<tr class="memdesc:a69a565c37dd7f3d996675c9341677c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a69a565c37dd7f3d996675c9341677c20">Más...</a><br/></td></tr>
+<tr class="separator:a69a565c37dd7f3d996675c9341677c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atributos protegidos</h2></td></tr>
@@ -155,106 +172,14 @@ Atributos protegidos</h2></td></tr>
 <tr class="memitem:a32bcda94de8f7312c010a50d283b53b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a32bcda94de8f7312c010a50d283b53b5">m_equipo</a></td></tr>
 <tr class="memdesc:a32bcda94de8f7312c010a50d283b53b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">entero que representa a que equipo pertenece el jugador, 0 es igual a que no pertenece a algun equipo  <a href="#a32bcda94de8f7312c010a50d283b53b5">Más...</a><br/></td></tr>
 <tr class="separator:a32bcda94de8f7312c010a50d283b53b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aef8d85f91b6f5dd7750795584dde70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_jugador.html#a9aef8d85f91b6f5dd7750795584dde70">m_puntaje</a></td></tr>
+<tr class="memdesc:a9aef8d85f91b6f5dd7750795584dde70"><td class="mdescLeft">&#160;</td><td class="mdescRight">entero que representa la cantidad de puntaje que el jugador posee, por defecto empieza en 0  <a href="#a9aef8d85f91b6f5dd7750795584dde70">Más...</a><br/></td></tr>
+<tr class="separator:a9aef8d85f91b6f5dd7750795584dde70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>La Clase <a class="el" href="class_s_jugador.html" title="La Clase SJugador es la base para modelar los jugadores. ">SJugador</a> es la base para modelar los jugadores. </p>
 <p>La clase define las funciones basicas para modelar un jugador, este tiene fichas, un nombre y pertenece a un equipo. Se puede asignar un equipo, fichas, saber a que equipo pertenece y retirar el jugador de ser necesario. </p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
-<a class="anchor" id="aac72f32e723704c18f1659500405c6a4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SJugador::SJugador </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>nombre</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>equipo</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-<p><a class="el" href="class_s_jugador.html#a945afb702b9e4e9ed20a40672f122599">m_nombre</a> empezara con el nombre que entre al metodo y <a class="el" href="class_s_jugador.html#a32bcda94de8f7312c010a50d283b53b5">m_equipo</a> empieza con el entero que ingrese al metodo, de lo contrario el equipo sera 0 </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nombre</td><td>Nombre del jugador </td></tr>
-    <tr><td class="paramname">equipo</td><td>Entero que indica en que grupo esta </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8e2a6569f2b9920755f69e2e9ac3b545"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">SJugador::SJugador </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>nombre</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n_fichas</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>equipo</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-<p>Construye un <a class="el" href="class_s_jugador.html" title="La Clase SJugador es la base para modelar los jugadores. ">SJugador</a> con un nombre especificado y con un numero n_fichas de fichas tipo <a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a> asignadas, de no ser especificado el equipo sera por default 0 </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nombre</td><td>Nombre del jugador </td></tr>
-    <tr><td class="paramname">n_fichas</td><td>cantidad de fichas que se le asignaran al jugador </td></tr>
-    <tr><td class="paramname">equipo</td><td>Entero que indica en que grupo esta </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a9a6ef2ab6704bba5725284728568fb6d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -315,6 +240,39 @@ Atributos protegidos</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a182d75540589627501d8dd72cd490fda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SJugador::addPuntaje </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>puntos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Agrega puntos al valor del puntaje del jugador. </p>
+<p>Agrega al valor de m_puntaje la cantidad en puntos</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">puntos</td><td>entero con la cantidad de puntos a adicionar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="adeed38c6024fff695032af7ab5b1a67c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -338,6 +296,64 @@ Atributos protegidos</h2></td></tr>
 
 <p>Obtener el equipo al que pertenece el jugador. </p>
 <dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_jugador.html#ac1a867c96bf634a458dc473a3b8b2ed4" title="Asignacion de equipo. ">setEquipo()</a>, <a class="el" href="class_s_jugador.html#ad67abdbe0a67d3e007990de553fbc76e" title="Comprueba si dos jugadores son del mismo equipo. ">mismoEquipo()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7244401657fdda3b7f1d4adb921f2664"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SJugador::getPuntaje </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna el puntaje actual del jugador. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>entero con el valor de m_puntaje, equivalente al puntaje del jugador </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a3ef7d658ee1fb3fab9c60b364b6c95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SJugador::m_equipo </td>
+          <td>(</td>
+          <td class="paramtype">equipo&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a649a8af37d39458e1623f25c5c614b6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SJugador::m_puntaje </td>
+          <td>(</td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -371,7 +387,7 @@ Atributos protegidos</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_jugador.html#ac1a867c96bf634a458dc473a3b8b2ed4" title="Asignacion de equipo. ">setEquipo()</a>, <a class="el" href="class_s_jugador.html#adeed38c6024fff695032af7ab5b1a67c" title="Obtener el equipo al que pertenece el jugador. ">getEquipo()</a>, <a class="el" href="class_s_jugador.html#aac72f32e723704c18f1659500405c6a4" title="Constructor. ">SJugador()</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_jugador.html#ac1a867c96bf634a458dc473a3b8b2ed4" title="Asignacion de equipo. ">setEquipo()</a>, <a class="el" href="class_s_jugador.html#adeed38c6024fff695032af7ab5b1a67c" title="Obtener el equipo al que pertenece el jugador. ">getEquipo()</a>, <a class="el" href="class_s_jugador.html#a69a565c37dd7f3d996675c9341677c20" title="Constructor. ">SJugador()</a> </dd></dl>
 
 </div>
 </div>
@@ -398,6 +414,39 @@ Atributos protegidos</h2></td></tr>
 
 <p>Retira un jugador del juego. </p>
 <p>En caso de que el jugador no se necesite mas en el juego, a diferencia del destructor en este caso todas las fichas del jugador son eliminadas del tablero, las cartas regresan a la <a class="el" href="class_s_pila___cartas.html" title="la clase SPila_Cartas es la base para modelar una pila de cartas ">SPila_Cartas</a> de donde fueron extraidas, pero no se libera la memoria allocada a las SFichas*. </p>
+
+</div>
+</div>
+<a class="anchor" id="a12843bc0367b7dcd75b8990be2a58ce6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SJugador::rmPuntaje </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>puntos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resta puntos al valor del puntaje del jugador. </p>
+<p>Resta al valor de m_puntaje la cantidad en puntos</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">puntos</td><td>entero con la cantidad de puntos a restar </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -432,6 +481,39 @@ Atributos protegidos</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_jugador.html#adeed38c6024fff695032af7ab5b1a67c" title="Obtener el equipo al que pertenece el jugador. ">getEquipo()</a>, <a class="el" href="class_s_jugador.html#ad67abdbe0a67d3e007990de553fbc76e" title="Comprueba si dos jugadores son del mismo equipo. ">mismoEquipo()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad128593351c95c9597dce01d5f95a332"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SJugador::setPuntaje </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>puntaje</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cambia el valor del puntaje del jugador por uno nuevo. </p>
+<p>Reemplaza cualquier valor guardado en m_puntaje con el valor de puntaje</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">puntaje</td><td>entero que representa el nuevo puntaje </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -502,13 +584,63 @@ Atributos protegidos</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9aef8d85f91b6f5dd7750795584dde70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SJugador::m_puntaje</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>entero que representa la cantidad de puntaje que el jugador posee, por defecto empieza en 0 </p>
+
+</div>
+</div>
+<a class="anchor" id="a69a565c37dd7f3d996675c9341677c20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SJugador::SJugador(std::string nombre, int equipo=0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{}</div>
+<div class="line"></div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line">    <a class="code" href="class_s_jugador.html#a69a565c37dd7f3d996675c9341677c20">SJugador</a>(std::string nombre, <span class="keywordtype">int</span> n_fichas, <span class="keywordtype">int</span> equipo = 0)</div>
+<div class="line">    : <a class="code" href="class_s_jugador.html#a945afb702b9e4e9ed20a40672f122599">m_nombre</a>(nombre)</div>
+</div><!-- fragment -->
+<p>Constructor. </p>
+<p><a class="el" href="class_s_jugador.html#a945afb702b9e4e9ed20a40672f122599">m_nombre</a> empezara con el nombre que entre al metodo y <a class="el" href="class_s_jugador.html#a32bcda94de8f7312c010a50d283b53b5">m_equipo</a> empieza con el entero que ingrese al metodo, de lo contrario el equipo sera 0 </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Nombre del jugador </td></tr>
+    <tr><td class="paramname">equipo</td><td>Entero que indica en que grupo esta </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_s_jugador.html">SJugador</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

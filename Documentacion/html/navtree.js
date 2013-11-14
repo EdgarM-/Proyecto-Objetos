@@ -11,7 +11,12 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Archivos", null, [
-      [ "Lista de archivos", "files.html", "files" ]
+      [ "Lista de archivos", "files.html", "files" ],
+      [ "Miembros de los ficheros", "globals.html", [
+        [ "Todo", "globals.html", null ],
+        [ "Enumeraciones", "globals_enum.html", null ],
+        [ "Valores de enumeraciones", "globals_eval.html", null ]
+      ] ]
     ] ]
   ] ]
 ];

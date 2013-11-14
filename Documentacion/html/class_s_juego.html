@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_s_juego.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,6 +128,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a833196277c3a859de2c408b422b2cd91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">agregarPila</a> (<a class="el" href="class_s_pila___cartas.html">SPila_Cartas</a> *pila)</td></tr>
 <tr class="memdesc:a833196277c3a859de2c408b422b2cd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega una pila de cartas al juego.  <a href="#a833196277c3a859de2c408b422b2cd91">Más...</a><br/></td></tr>
 <tr class="separator:a833196277c3a859de2c408b422b2cd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b764ae67832b343db83497255f34f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#a5b764ae67832b343db83497255f34f2a">cambiarEstado</a> (<a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> estado)</td></tr>
+<tr class="memdesc:a5b764ae67832b343db83497255f34f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambia es estado del juego.  <a href="#a5b764ae67832b343db83497255f34f2a">Más...</a><br/></td></tr>
+<tr class="separator:a5b764ae67832b343db83497255f34f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b85ab9cc32c53da7a50c373ee6c10d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a> ()=0</td></tr>
 <tr class="memdesc:a99b85ab9cc32c53da7a50c373ee6c10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializadora del juego.  <a href="#a99b85ab9cc32c53da7a50c373ee6c10d">Más...</a><br/></td></tr>
 <tr class="separator:a99b85ab9cc32c53da7a50c373ee6c10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +161,9 @@ Atributos protegidos</h2></td></tr>
 <tr class="memitem:a779024ddc53d11c0fce919a8c53714ea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_s_pila___cartas.html">SPila_Cartas</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">m_pilas</a></td></tr>
 <tr class="memdesc:a779024ddc53d11c0fce919a8c53714ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector de <a class="el" href="class_s_pila___cartas.html" title="la clase SPila_Cartas es la base para modelar una pila de cartas ">SPila_Cartas</a> que contiene las pilas de cartas del juego.  <a href="#a779024ddc53d11c0fce919a8c53714ea">Más...</a><br/></td></tr>
 <tr class="separator:a779024ddc53d11c0fce919a8c53714ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72e6d093bedd4f77b4d1da1ce93b255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#ad72e6d093bedd4f77b4d1da1ce93b255">m_estado</a></td></tr>
+<tr class="memdesc:ad72e6d093bedd4f77b4d1da1ce93b255"><td class="mdescLeft">&#160;</td><td class="mdescRight">SEstado indica el estado actual del juego.  <a href="#ad72e6d093bedd4f77b4d1da1ce93b255">Más...</a><br/></td></tr>
+<tr class="separator:ad72e6d093bedd4f77b4d1da1ce93b255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>La clase <a class="el" href="class_s_juego.html" title="La clase SJuego tiene unas funciones para modelar lo que seria un juego. ">SJuego</a> tiene unas funciones para modelar lo que seria un juego. </p>
@@ -248,6 +254,38 @@ Atributos protegidos</h2></td></tr>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">pila</td><td>Pila de cartas que entra al juego </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b764ae67832b343db83497255f34f2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SJuego::cambiarEstado </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a>&#160;</td>
+          <td class="paramname"><em>estado</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cambia es estado del juego. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">estado</td><td>SEstado en el que se encuentra el juego </td></tr>
   </table>
   </dd>
 </dl>
@@ -381,6 +419,28 @@ Atributos protegidos</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad72e6d093bedd4f77b4d1da1ce93b255"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> SJuego::m_estado</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SEstado indica el estado actual del juego. </p>
+
+</div>
+</div>
 <a class="anchor" id="a394f1b3145f2ac15a10b0fe02d3dd610"></a>
 <div class="memitem">
 <div class="memproto">
@@ -475,7 +535,7 @@ Atributos protegidos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_s_juego.html">SJuego</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

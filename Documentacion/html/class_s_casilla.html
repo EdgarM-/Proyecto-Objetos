@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_s_casilla.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -155,9 +155,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a50b48684a46b36b9cc3b190ae5106875"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875">addFicha</a> (<a class="el" href="class_s_ficha.html">SFicha</a> *ficha)</td></tr>
 <tr class="memdesc:a50b48684a46b36b9cc3b190ae5106875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega una ficha a la casilla.  <a href="#a50b48684a46b36b9cc3b190ae5106875">Más...</a><br/></td></tr>
 <tr class="separator:a50b48684a46b36b9cc3b190ae5106875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac445101a5de0f8d16eb73ab5e2c841fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe">rmFicha</a> (<a class="el" href="class_s_ficha.html">SFicha</a> *ficha)</td></tr>
-<tr class="memdesc:ac445101a5de0f8d16eb73ab5e2c841fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quita una ficha de la casilla.  <a href="#ac445101a5de0f8d16eb73ab5e2c841fe">Más...</a><br/></td></tr>
-<tr class="separator:ac445101a5de0f8d16eb73ab5e2c841fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97257f2917d2d767380daf102a902e47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47">rmFicha</a> (<a class="el" href="class_s_ficha.html">SFicha</a> *ficha)</td></tr>
+<tr class="memdesc:a97257f2917d2d767380daf102a902e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quita una ficha de la casilla.  <a href="#a97257f2917d2d767380daf102a902e47">Más...</a><br/></td></tr>
+<tr class="separator:a97257f2917d2d767380daf102a902e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae8e1ca24ff7054a9a7e6381c6357214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_casilla.html#aae8e1ca24ff7054a9a7e6381c6357214">rmCartas</a> ()</td></tr>
 <tr class="separator:aae8e1ca24ff7054a9a7e6381c6357214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61a6ff2c1dc5616fefb820c743ffa778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_casilla.html#a61a6ff2c1dc5616fefb820c743ffa778">setRegla</a> (<a class="el" href="class_s_regla.html">SRegla</a> *regla)</td></tr>
@@ -495,7 +495,7 @@ Atributos protegidos</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe" title="Quita una ficha de la casilla. ">rmFicha()</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47" title="Quita una ficha de la casilla. ">rmFicha()</a> </dd></dl>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve la ficha que tenga en la casilla, la primera que entro. </p>
-<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla. ">addFicha()</a>, <a class="el" href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe" title="Quita una ficha de la casilla. ">rmFicha()</a> </dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla. ">addFicha()</a>, <a class="el" href="class_s_casilla.html#a97257f2917d2d767380daf102a902e47" title="Quita una ficha de la casilla. ">rmFicha()</a> </dd></dl>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Atributos protegidos</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac445101a5de0f8d16eb73ab5e2c841fe"></a>
+<a class="anchor" id="a97257f2917d2d767380daf102a902e47"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -660,7 +660,7 @@ Atributos protegidos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SCasilla::rmFicha </td>
+          <td class="memname">bool SCasilla::rmFicha </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_s_ficha.html">SFicha</a> *&#160;</td>
           <td class="paramname"><em>ficha</em></td><td>)</td>
@@ -681,6 +681,7 @@ Atributos protegidos</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Devuelve</dt><dd>bool false si la <a class="el" href="class_s_regla.html" title="La clase SRegla manejas las reglas. ">SRegla</a> asociada a la casilla altera el movimiento normal de la ficha en el tablero, true si se ejecuta normalmente. </dd></dl>
 <dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas. ">SFicha</a>, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla. ">getFichas()</a>, <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla. ">addFicha()</a> </dd></dl>
 
 </div>
@@ -818,7 +819,7 @@ Atributos protegidos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_s_casilla.html">SCasilla</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

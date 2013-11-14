@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_s_juego.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,10 +112,12 @@ $(document).ready(function(){initNavTree('class_s_juego.html','');});
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#aa5ea60aa2cff29338036b8f1aee6839d">agregarJugador</a>(SJugador *jugador)</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">agregarPila</a>(SPila_Cartas *pila)</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#aaa8d4f20e37af89ce6d22db8c5cd08b6">empate</a>()=0</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_s_juego.html#a365b88a843cd187bde70360390269f3a">ganar</a>()=0</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a>()=0</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">m_dados</a></td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#a5b764ae67832b343db83497255f34f2a">cambiarEstado</a>(SEstado estado)</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_s_juego.html#aaa8d4f20e37af89ce6d22db8c5cd08b6">empate</a>()=0</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#a365b88a843cd187bde70360390269f3a">ganar</a>()=0</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a>()=0</td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#a02ea46f7fc60a1beeb571d98bbf9dd80">m_dados</a></td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_s_juego.html#ad72e6d093bedd4f77b4d1da1ce93b255">m_estado</a></td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">m_jugador_actual</a></td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_s_juego.html#ae3d7864e2a6ffc47b999d9fb47fa0752">m_jugadores</a></td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_s_juego.html#a779024ddc53d11c0fce919a8c53714ea">m_pilas</a></td><td class="entry"><a class="el" href="class_s_juego.html">SJuego</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -127,7 +129,7 @@ $(document).ready(function(){initNavTree('class_s_juego.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:11:42 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
