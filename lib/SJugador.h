@@ -134,6 +134,16 @@ public:
 		m_puntaje -= puntos;
 	}
 
+	//! Devuelve todas las fichas que posee el jugador
+	/*!
+	   \sa SFicha
+	 */
+
+	std::vector< SFicha* > getFichas()
+	{
+		return m_fichas;
+	}
+
 	//! Retira un jugador del juego
 	/*!
 	   En caso de que el jugador no se necesite mas en el juego, a diferencia del destructor

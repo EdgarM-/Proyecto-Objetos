@@ -142,12 +142,26 @@ public:
 		{
 			m_tablero->agregarRegla(new ReglaSE(pinicial[i], pfinal[i]), pinicial[i]);
 		}
-		std::vector< SCasillas* > casillas = m_tablero->getCasillas();
 		/* Para hacer el juego mas intersante hay casillas dentro del tablero que tienen cartas negativas y positivas
 		 * en este caso una carta negativa (x < 0) retrocedera al jugador un numero correspondientede dados multiplicado
 		 * por el valor absoluto de la carta (1-6),y una carta positiva lo adelantara un numero correspondiente al dado */
-
+		m_tablero->agregarCarta(new SCarta("power", 5), 48);
+		m_tablero->agregarRegla(new ReglaCartas(), 48);
+		m_tablero->agregarCarta(new SCarta("bad", -3), 24);
+		m_tablero->agregarRegla(new ReglaCartas(), 24);
+		m_tablero->agregarCarta(new SCarta("bad", -6), 75);
+		m_tablero->agregarRegla(new ReglaCartas(), 75);
 	}
+	/* Implementamos la funcion para saber si hay un ganador */
+	bool ganar()
+	{
+		for (int i = 0; i < m_jugadores.size(); ++i)
+		{
+			
+		}
+	}
+	/* Como no hay forma de empatar implementar empate es facil */
+	bool empate() { return false; }
 };
 
 /* La funcion principal del programa, donde creamos una instancia de nuestro Juego. */
