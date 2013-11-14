@@ -61,8 +61,6 @@ public:
 		m_casillas[posicion]->rmCartas();
 	}
 
-	int 
-
 };
 
 #endif // STablero_h
