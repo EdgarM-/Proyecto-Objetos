@@ -26,6 +26,8 @@ public:
 	//! Constructor
 	/*!
 	   @ref m_nombre empezara con el nombre que entre al metodo y @ref m_equipo empieza con el entero que ingrese al metodo, de lo contrario el equipo sera 0
+	   \param nombre Nombre del jugador
+	   \param equipo Entero que indica en que grupo esta
 	 */
 	SJugador(std::string nombre, int equipo = 0)
 	: m_nombre(nombre), m_equipo(equipo)
@@ -34,6 +36,10 @@ public:
 	//! Constructor
 	/*!
 	   Construye un SJugador con un nombre especificado y con un numero @ref n_fichas de fichas tipo SFicha asignadas, de no ser especificado el equipo sera por default 0 
+	   \param nombre Nombre del jugador
+	   \param n_fichas cantidad de fichas que se le asignaran al jugador
+	   \param equipo Entero que indica en que grupo esta
+	   	   
 	 */
 	SJugador(std::string nombre, int n_fichas, int equipo = 0)
 	: m_nombre(nombre), m_equipo(equipo)
