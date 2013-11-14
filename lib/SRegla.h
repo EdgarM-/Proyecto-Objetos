@@ -8,11 +8,11 @@ class SRegla
 public:
 	SRegla(){}
 
-	virtual void fichaEntra(SFicha* ficha);
+	virtual void fichaEntra(SFicha* ficha) = 0;
 
-	virtual void fichaSale(SFicha* ficha);
+	virtual void fichaSale(SFicha* ficha) = 0;
 
-	~SRegla(){}
+	virtual ~SRegla(){}
 };
 
 #endif /* SRegla_h */

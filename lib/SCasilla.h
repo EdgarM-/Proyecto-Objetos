@@ -162,6 +162,8 @@ public:
 	{
 		ficha->setCasilla(this);
 		m_fichas.push_back(ficha);
+		if (m_regla != nullptr)
+			m_regla->entraFicha(ficha);
 	}
 	//! Quita una ficha de la casilla
 	/*!
@@ -179,12 +181,30 @@ public:
 			}
 		}
 	}
+
+
+
+	//! Indica las reglas a ejecutar en la casilla
+	/*!
+	  SRegla implementa las acciones a toma cuando una ficha es agregada a
+	  la casilla o deja la casilla, solo puede haber maximo una regla por casilla.
+	  \param regla SRegla que se va a addicionar
+	   \sa   SRegla */
+	void setRegla(SRegla* regla)
+	{
+		m_regla = regla;
+	}
+
 	//! Destructor
 	/*!
-	  Vacia @ref m_fichas y @ref m_cartas
+	  Vacia @ref m_fichas y @ref m_cartas, libera la memoria alocada por cada carta en @ref m_cartas
+	  y la memoria alocada para @ref m_regla
 	 */
 	virtual ~SCasilla()
 	{
+		for (int i = 0; i < m_cartas.size(); ++i)
+			delete m_cartas[i];
+		delete m_regla;
 		m_fichas.clear();
 		m_cartas.clear();
 	}

@@ -20,39 +20,48 @@ public:
 	}
 
 
-	SFicha* getFicha(int position)
+	SFicha* getFicha(int posicion)
 	{
-		return m_casillas[position].getFicha();
+		return m_casillas[posicion]->getFicha();
 	}
 
-	std::vector< SFicha* > v getFichas(int position)
+	std::vector< SFicha* > getFichas(int posicion)
 	{
-		return m_casillas[position].getFichas();
+		return m_casillas[posicion]->getFichas();
 	}
 
-	SCarta* getCarta(int position)
+	SCarta* getCarta(int posicion)
 	{
-		return m_casillas[position].getCarta();
+		return m_casillas[posicion]->getCarta();
 	}
 
 	std::vector< SCarta* > getCartas()
 	{
-		return m_casillas[position].getCartas();
+		return m_casillas[posicion]->getCartas();
 	}
 
-	void agregarFicha(SFicha* ficha, int position)
+	void agregarFicha(SFicha* ficha, int posicion)
 	{
-		m_casillas[position].addFicha(ficha);
+		ficha->setPosicion(posicion);
+		m_casillas[posicion]->addFicha(ficha);
 	}
 
-	void agregarCarta(SCarta* carta, int position)
+	void agregarCarta(SCarta* carta, int posicion)
 	{
-		m_casillas[position].addCarta(carta);
+		m_casillas[posicion]->addCarta(carta);
 	}
 
-	void removerFicha();
+	void removerFicha(SFicha* ficha)
+	{
+		ficha->getCasilla()->rmFicha(ficha);
+	}
 
-	void removerCarta();
+	void removerCartas(int posicion)
+	{
+		m_casillas[posicion]->rmCartas();
+	}
+
+	int 
 
 };
 
