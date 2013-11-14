@@ -60,7 +60,7 @@ public:
 	  \param numero es el numero que va a tomar la carta
 	   \sa getNumero();
 	 */
-	void setNombre(int numero)
+	void setNumero(int numero)
 	{
 		m_numero = numero;
 	}
