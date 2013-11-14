@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Saem Games: Fichero Fuente lib/SCasilla.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logohtml2.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Saem Games
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_s_casilla_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SCasilla.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_casilla_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SCasilla_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SCasilla_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_pila___cartas_8h.html">SPila_Cartas.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_ficha_8h.html">SFicha.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_regla_8h.html">SRegla.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_s_casilla.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_casilla.html" title="La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas...">SCasilla</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b">   22</a></span>&#160;    <a class="code" href="class_s_pila___cartas.html">SPila_Cartas</a>* <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e">   27</a></span>&#160;    std::vector&lt; SFicha* &gt; <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86">   32</a></span>&#160;    std::vector&lt; SCarta* &gt; <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6">   37</a></span>&#160;    <a class="code" href="class_s_regla.html">SRegla</a>* <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f">   45</a></span>&#160;    <a class="code" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f" title="Constructor.">SCasilla</a>(<a class="code" href="class_s_regla.html">SRegla</a>* regla = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        : <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>(nullptr), <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>(regla)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a02f97c3b35b45d27f842ccc047546509">   56</a></span>&#160;    <a class="code" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f" title="Constructor.">SCasilla</a>(<a class="code" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a>* ficha, <a class="code" href="class_s_regla.html">SRegla</a>* regla = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        : <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>(nullptr), <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>(regla)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>.push_back(ficha);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="class_s_casilla.html#ab1e063a017ffb91ffc15eca1886c577b">   68</a></span>&#160;    <a class="code" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f" title="Constructor.">SCasilla</a>(<span class="keyword">const</span> std::vector&lt; SFicha* &gt;&amp; fichas, <a class="code" href="class_s_regla.html">SRegla</a>* regla = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>(nullptr), <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>(fichas), <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>(regla)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a667f6bf69fe948f30a2a71a5de574660">   78</a></span>&#160;    <a class="code" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f" title="Constructor.">SCasilla</a>(<a class="code" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas.">SCarta</a>* carta, <a class="code" href="class_s_regla.html">SRegla</a>* regla = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        : <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>(nullptr), <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>(regla)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>.push_back(carta);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a457f9ee085a7001431a27834c315eacb">   91</a></span>&#160;    <a class="code" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f" title="Constructor.">SCasilla</a>(<span class="keyword">const</span> std::vector&lt; SCarta* &gt;&amp; cartas, <a class="code" href="class_s_regla.html">SRegla</a>* regla = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        : <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>(nullptr), <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>(cartas), <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>(regla)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a0f3f8fb32d15fbc9539fb4d43870a92d">  102</a></span>&#160;    <a class="code" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f" title="Constructor.">SCasilla</a>(<a class="code" href="class_s_pila___cartas.html">SPila_Cartas</a>* pila_cartas, <a class="code" href="class_s_regla.html">SRegla</a>* regla = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        : <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>(pila_cartas), <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>(regla)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a">  109</a></span>&#160;    <a class="code" href="class_s_pila___cartas.html">SPila_Cartas</a>* <a class="code" href="class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a" title="Devuelve la pila de cartas que tenga la casilla.">getPila</a>()</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_casilla.html#afa8d484c443584bcf34530a96c45c66b" title="Pila de cartas.">m_pila_cartas</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a76309113df9bbcf03a269dcfa15b4272">  118</a></span>&#160;    <a class="code" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a>* <a class="code" href="class_s_casilla.html#a76309113df9bbcf03a269dcfa15b4272" title="Devuelve la ficha que tenga en la casilla, la primera que entro.">getFicha</a>()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>.empty())</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>[0];</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb">  130</a></span>&#160;    std::vector&lt; SFicha* &gt; <a class="code" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb" title="Devuelve todas las fichas que hay en la casilla.">getFichas</a>()</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a1789f9b5b5ec2917f6880f91b60668fc">  140</a></span>&#160;    <a class="code" href="class_s_carta.html" title="La clase SCarta es la base para modelar cartas.">SCarta</a>* <a class="code" href="class_s_casilla.html#a1789f9b5b5ec2917f6880f91b60668fc" title="Devuelve la primera carta que este en la casilla.">getCarta</a>()</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>.empty())</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>[0];</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd">  152</a></span>&#160;    std::vector&lt; SCarta* &gt; <a class="code" href="class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd" title="Devuelve todas las cartas que hay en la casilla.">getCartas</a>()</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875">  161</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875" title="Agrega una ficha a la casilla.">addFicha</a>(<a class="code" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a>* ficha)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        ficha-&gt;<a class="code" href="class_s_ficha.html#ac619d85528d969e2d7fc2c2a6fb29c79" title="Asigna a la ficha una casilla.">setCasilla</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>.push_back(ficha);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>-&gt;entraFicha(ficha);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe">  173</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe" title="Quita una ficha de la casilla.">rmFicha</a>(<a class="code" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a>* ficha)</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>.size(); ++i)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>[i] == ficha)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>[i]-&gt;setPosicion(-1);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>[i]-&gt;setCasilla(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>.erase(i);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a61a6ff2c1dc5616fefb820c743ffa778">  195</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_casilla.html#a61a6ff2c1dc5616fefb820c743ffa778" title="Indica las reglas a ejecutar en la casilla.">setRegla</a>(<a class="code" href="class_s_regla.html">SRegla</a>* regla)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a> = regla;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="code" href="class_s_casilla.html#a3cfdeeaaa97824363cca29daf585328b">  205</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_s_casilla.html#a3cfdeeaaa97824363cca29daf585328b" title="Destructor.">~SCasilla</a>()</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>.size(); ++i)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keyword">delete</span> <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>[i];</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6" title="Reglas asociadas a la entrada y salida de Fichas en la casilla.">m_regla</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="class_s_casilla.html#ac812fd77dd4ca41f9a9fc2a48524f66e" title="Fichas que se encuentran en la casilla.">m_fichas</a>.clear();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <a class="code" href="class_s_casilla.html#ad319007d7de55723239e662c8eb56c86" title="Cartas asignadas a la casilla.">m_cartas</a>.clear();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;};</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#endif // SCasilla_h</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_s_casilla_8h.html">SCasilla.h</a></li>
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 04:00:00 para Saem Games por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>
