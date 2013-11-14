@@ -136,6 +136,12 @@ public:
 		agregarJugador(new SJugador(1, "Rojo"));
 		agregarJugador(new SJugador(1, "Azul"));
 		/* Agregamos las reglas a las casillas */
+		std::vector<int> pinicial = {0, 3, 8, 16, 20, 27, 50, 53, 61, 63, 70, 79, 92, 94, 97};
+		std::vector<int> pfinal = {37, 13, 30, 6, 41, 83, 66, 33, 18, 59, 90, 99, 72, 74, 78};
+		for (int i = 0; i < pinicial.size(); ++i)
+		{
+			m_tablero->agregarRegla(new ReglaSE(pinicial[i], pfinal[i]), pinicial[i]);
+		}
 		std::vector< SCasillas* > casillas = m_tablero->getCasillas();
 		/* Para hacer el juego mas intersante hay casillas dentro del tablero que tienen cartas negativas y positivas
 		 * en este caso una carta negativa (x < 0) retrocedera al jugador un numero correspondientede dados multiplicado

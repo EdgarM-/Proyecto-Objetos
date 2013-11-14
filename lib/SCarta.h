@@ -22,9 +22,10 @@ public:
 	/*!
 	  @ref m_nombre toma el valor del  string que halla entrado al constructor, o sera vacio en caso de que no entre nada al constructor
 	  \param nombre String que se asigna al nombre de la carta
+	  \param numero Int que se asigna al numero de la carta
 	 */
-	SCarta(std::string nombre = "")
-		: m_nombre(nombre)
+	SCarta(std::string nombre = "", int numero = 0)
+		: m_nombre(nombre), m_numero(numero)
 	{}
 
 	//! Devuelve el nombre de la carta
