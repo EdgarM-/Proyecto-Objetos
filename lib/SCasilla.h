@@ -109,6 +109,13 @@ public:
 		: m_pila_cartas(pila_cartas), m_tablero(tablero), m_regla(regla)
 	{}
 
+	//! Devuelve el tablero que contiene a casilla
+	/*! \sa STablero */
+	STablero* getTablero()
+	{
+		return m_tablero;
+	}
+
 	//! Devuelve la pila de cartas que tenga la casilla
 	/*! \sa SPila_Cartas, getCarta(), getCartas()*/
 
