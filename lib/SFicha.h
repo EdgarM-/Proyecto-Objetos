@@ -1,7 +1,6 @@
 #ifndef SFicha_h
 #define SFicha_h
 
-#include "SPareja.h"
 #include "SJugador.h"
 #include "SCasilla.h"
 
@@ -26,7 +25,7 @@ public:
 	/*!
 	   @ref m_jugador y @ref m_casilla empiezan en nullpointer.
 	 */
-	SFicha(int posicion = 0)
+	SFicha(int posicion = -1)
 		: m_jugador(nullptr), m_casilla(nullptr), m_posicion(posicion)
 	{}
 
