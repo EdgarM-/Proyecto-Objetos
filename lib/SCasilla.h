@@ -64,6 +64,7 @@ public:
 	SCasilla(SFicha* ficha, STablero* tablero = nullptr, SRegla* regla = nullptr)
 		: m_pila_cartas(nullptr), m_tablero(tablero), m_regla(regla)
 	{
+		ficha->setCasilla(this);
 		m_fichas.push_back(ficha);
 	}
 
@@ -209,7 +210,6 @@ public:
 				break;
 			}
 		}
-		std::cout<<result<<std::endl;
 		return result;
 	}
 

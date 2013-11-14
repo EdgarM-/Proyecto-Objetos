@@ -44,6 +44,7 @@ public:
 			if (n_carta < 0) // Negativa
 			{
 				n_carta = n_carta * m_dado.tirar() * (-1);
+				std::cout << "Dark: n_carta = " << n_carta << std::endl;
 				/* Tomamos la casilla donde se encuentra y retrocedemos la ficha 
 				 * el numero inticado de casillas o hasta la posicion 0 */
 				if (ficha->getPosicion() <= n_carta)
@@ -60,6 +61,7 @@ public:
 			}
 			else // Positiva
 			{
+				std::cout << "Light: n_carta = " << n_carta << std::endl;
 				tablero->moverFicha(ficha, n_carta);
 			}
 		}
@@ -97,6 +99,7 @@ public:
 		STablero* tablero = ficha->getCasilla()->getTablero();
 		if (m_a == casilla)
 		{
+			std::cout << ((m_a - m_b > 0) ? "Escalera: ":"Serpiente: ") << m_a - m_b << std::endl;
 			tablero->removerFicha(ficha);
 			tablero->agregarFicha(ficha, m_b);
 		} 
@@ -212,8 +215,9 @@ public:
 		 * las reglas especificadas previamente se haran cargo de las escaleras, serpientes o cartas
 		 * especiales en las casillas y el tipo de tablero LINEAL_REBOTE se hara cargo del desbordamiento */
 		m_tablero->moverFicha(ficha, dado);
-		std::cout<< "Pasa mover  \n";
-		 /* Rebisamos si hay ganador */
+		/* Imprimimos la casilla en la que se encuentra la ficha despues de moverla */
+		// std::cout << " Casilla: " << ficha->getPosicion() + 1 << std::endl;
+		 /* Revisamos si hay ganador */
 		if(ganar() || m_estado == GANADO)
 		{
 			/* Anunciamos el ganador por salida estandar */
@@ -236,7 +240,7 @@ int main()
 	/* Para probar el juego paso a paso
 	 * hasta que halla un ganador */
 	std::string dummyString; // Para la captura de entrada
-	std::cout << "SaemEscalera cli edition!";
+	std::cout << "SaemEscalera cli edition!\n";
 	/* Creamos nuestro ciclo */
 	while(SaemEscalera.getEstado() == EN_CURSO)
 	{

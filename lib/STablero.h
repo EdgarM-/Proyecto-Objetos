@@ -78,6 +78,7 @@ public:
 	 */
 	void agregarFicha(SFicha* ficha, int posicion)
 	{
+		std::cout << "STablero::agregarFicha(SFicha* ficha = "<< ficha <<", int posicion = "<< posicion <<")" << std::endl;
 		ficha->setPosicion(posicion);
 		m_casillas[posicion]->addFicha(ficha);
 	}
