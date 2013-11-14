@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-#include "SFicha.h"
+#include "SCasilla.h"
 
 //! La Clase SJugador es la base para modelar los jugadores
 	/*!

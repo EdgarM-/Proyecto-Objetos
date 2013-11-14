@@ -1,8 +1,8 @@
 #ifndef SFicha_h
 #define SFicha_h
 
-//#include "SJugador.h"
-//#include "SCasilla.h"
+class SJugador;
+class SCasilla;
 
 //! La clase SFicha es la base para las fichas
 /*!

@@ -3,10 +3,11 @@
 
 #include <vector>
 
-//#include "SPila_Cartas.h"
-//#include "STablero.h"
 #include "SFicha.h"
 #include "SRegla.h"
+#include "SPila_Cartas.h"
+
+class STablero;
 
 //! La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas
 /*!
