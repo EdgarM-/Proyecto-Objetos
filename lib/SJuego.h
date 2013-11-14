@@ -55,6 +55,15 @@ public:
 	{
 		m_pilas.push_back(pila);
 	}
+	//!Cambia al siguiente jugador
+	/*!
+	  Cambia al siguiente jugador en m_jugadores aumentando m_jugador_actual, si llega al ultimo comienza desde 0;
+	*/
+	void cambiarJugador()
+	{
+		++m_jugador_actual;
+		if (m_jugador_actual == m_jugadores.size()) m_jugador_actual = 0;
+	}
 	//!Cambia es estado del juego
 	/*!
 	  \param estado SEstado en el que se encuentra el juego
