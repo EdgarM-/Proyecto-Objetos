@@ -8,6 +8,8 @@
 #include "SPila_Cartas.h"
 #include "STablero.h"
 
+enum SEstado {EN_CURSO, GANADO, EMPATE};
+
 //! La clase SJuego tiene unas funciones para modelar lo que seria un juego
 /*!
   Esta Clase es un clase semi abstracta porque toca implementar varias funciones, para que este pueda usarla y se pueda jugar
@@ -24,6 +26,8 @@ protected:
 	std::vector< SDado > m_dados;
 	//!Vector de SPila_Cartas que contiene las pilas de cartas del juego
 	std::vector< SPila_Cartas* > m_pilas;
+	//!SEstado indica el estado actual del juego
+	SEstado m_estado;
 
 public:
 	//!Constructor
@@ -50,6 +54,14 @@ public:
 	void agregarPila(SPila_Cartas* pila)
 	{
 		m_pilas.push_back(pila);
+	}
+	//!Cambia es estado del juego
+	/*!
+	  \param estado SEstado en el que se encuentra el juego
+	 */
+	void cambiarEstado(SEstado estado)
+	{
+		m_estado(estado);
 	}
 	//!Inicializadora del juego
 	/*!

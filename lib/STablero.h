@@ -3,20 +3,23 @@
 
 #include <vector>
 
-#include "SCarta.h"
 #include "SCasilla.h"
-#include "SFicha.h"
+
+enum tipoSTablero { CIRCULAR, LINEAL_REBOTE, LINEAL_NOREBOTE };
 
 class STablero {
 
 protected:
+
     std::vector< SCasilla* > m_casillas;
+    tipoSTablero m_tipo;
 
 public:
 
-	explicit STablero(int tamano)
+	explicit STablero(int tamano, tipoSTablero tipo = LINEAL_REBOTE)
 	{
-		m_casillas.resize(tamano, new SCasilla())
+		m_casillas.resize(tamano, new SCasilla());
+		m_tipo = tipo;
 	}
 
 
@@ -54,6 +57,23 @@ public:
 	void removerFicha(SFicha* ficha)
 	{
 		ficha->getCasilla()->rmFicha(ficha);
+	}
+
+	void moverFicha(SFicha* ficha, int n_casillas)
+	{
+		int pos = ficha->getPosicion();
+		if (ficha->enTablero())
+			removerFicha(ficha);
+		pos += n_casillas;
+		if (pos >= m_casillas.size())
+		{
+			if (m_tipo == CIRCULAR)
+				agregarFicha(ficha, pos - m_casillas.size());
+			else if (m_tipo == LINEAL_REBOTE)
+				agregarFicha(ficha, 2 * m_casillas.size() - 2 - pos ))
+		}
+		else
+			agregarFicha(ficha, pos + n_casillas);
 	}
 
 	void removerCartas(int posicion)

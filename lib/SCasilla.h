@@ -168,22 +168,29 @@ public:
 	//! Quita una ficha de la casilla
 	/*!
 	  \param ficha Ficha que se va quitar de la casilla 
+	  \return bool false si la SRegla asociada a la casilla altera el movimiento normal de la ficha en el tablero,
+	  true si se ejecuta normalmente.
 	  \sa   SFicha, getFichas(), addFicha() 	   
 	*/
-	void rmFicha(SFicha* ficha)
+	bool rmFicha(SFicha* ficha)
 	{
-		/* TODO: implementar una forma de llamar a SRegla::saleFicha(SFicha*) y que tome el control
-		 * sin volver inservible las acciones por defecto de rmFicha */
+		bool result = true;
 		for (int i = 0; i < m_fichas.size(); ++i)
 		{
 			if (m_fichas[i] == ficha)
 			{
-				m_fichas[i]->setPosicion(-1);
-				m_fichas[i]->setCasilla(nullptr);
-				m_fichas.erase(i);
+				if  (m_regla != nullptr)
+					result = !(m_regla->fichaSale(ficha));
+				if (result)
+				{
+					m_fichas[i]->setPosicion(-1);
+					m_fichas[i]->setCasilla(nullptr);
+					m_fichas.erase(i);
+				}
 				break;
 			}
 		}
+		return result;
 	}
 
 	void rmCartas()

@@ -21,6 +21,8 @@ protected:
 	std::vector< SFicha* > m_fichas;
 	//! entero que representa a que equipo pertenece el jugador, 0 es igual a que no pertenece a algun equipo
 	int m_equipo;
+	//! entero que representa la cantidad de puntaje que el jugador posee, por defecto empieza en 0
+	int m_puntaje;
 	
 public:
 	//! Constructor
@@ -28,7 +30,7 @@ public:
 	   @ref m_nombre empezara con el nombre que entre al metodo y @ref m_equipo empieza con el entero que ingrese al metodo, de lo contrario el equipo sera 0
 	 */
 	SJugador(std::string nombre, int equipo = 0)
-	: m_nombre(nombre), m_equipo(equipo)
+	: m_nombre(nombre), m_equipo(equipo), m_puntaje(0);
 	{}
 
 	//! Constructor
@@ -36,7 +38,7 @@ public:
 	   Construye un SJugador con un nombre especificado y con un numero @ref n_fichas de fichas tipo SFicha asignadas, de no ser especificado el equipo sera por default 0 
 	 */
 	SJugador(std::string nombre, int n_fichas, int equipo = 0)
-	: m_nombre(nombre), m_equipo(equipo)
+	: m_nombre(nombre), m_equipo(equipo), m_puntaje(0);
 	{
 		for (int i = 0; i < n_fichas; ++i)
 			addFicha(new SFicha());
@@ -82,6 +84,48 @@ public:
 	bool mismoEquipo(SJugador* jugador) const
 	{
 		return (m_equipo == jugador.getEquipo());
+	}
+
+	/**
+	 * @brief Retorna el puntaje actual del jugador
+	 * @return entero con el valor de m_puntaje, equivalente al puntaje del jugador
+	 */
+	int getPuntaje() const
+	{
+		return m_puntaje;
+	}
+
+	/**
+	 * @brief Cambia el valor del puntaje del jugador por uno nuevo
+	 * @details Reemplaza cualquier valor guardado en m_puntaje con el valor de puntaje
+	 * 
+	 * @param puntaje entero que representa el nuevo puntaje
+	 */
+	void setPuntaje(int puntaje)
+	{
+		m_puntaje = puntaje;
+	}
+
+	/**
+	 * @brief Agrega puntos al valor del puntaje del jugador
+	 * @details Agrega al valor de m_puntaje la cantidad en puntos
+	 * 
+	 * @param puntos entero con la cantidad de puntos a adicionar
+	 */
+	void addPuntaje(int puntos)
+	{
+		m_puntaje += puntos;
+	}
+
+	/**
+	 * @brief Resta puntos al valor del puntaje del jugador
+	 * @details Resta al valor de m_puntaje la cantidad en puntos
+	 * 
+	 * @param puntos entero con la cantidad de puntos a restar
+	 */
+	void rmPuntaje(int puntos)
+	{
+		m_puntaje -= puntos;
 	}
 
 	//! Retira un jugador del juego
