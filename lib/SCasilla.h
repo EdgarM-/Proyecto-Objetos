@@ -2,6 +2,7 @@
 #define SCasilla_h
 
 #include <vector>
+
 #include "SPila_Cartas.h"
 #include "SFicha.h"
 #include "SRegla.h"
@@ -159,13 +160,24 @@ public:
 	   \sa   SFicha, getFichas(), rmFicha() */
 	void addFicha(SFicha* ficha)
 	{
+		ficha->setCasilla(this);
 		m_fichas.push_back(ficha);
 	}
-	//! Quita una ficha a la casilla
+	//! Quita una ficha de la casilla
 	/*!
 	   \sa   SFicha, getFichas(), addFicha() */
-	void rmFicha()
+	void rmFicha(SFicha* ficha)
 	{
+		for (int i = 0; i < m_fichas.size(); ++i)
+		{
+			if (m_fichas[i] == ficha)
+			{
+				m_fichas[i]->setPosicion(-1);
+				m_fichas[i]->setCasilla(nullptr);
+				m_fichas.erase(i);
+				break;
+			}
+		}
 	}
 	//! Destructor
 	/*!
