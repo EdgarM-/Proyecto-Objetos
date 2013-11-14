@@ -21,7 +21,9 @@ public:
 
 	SJuego()
 	: m_jugador_actual(0), m_tablero(nullptr) 
-	{}
+	{
+		init();
+	}
 
 	void agregarJugador(SJugador* jugador)
 	{
@@ -33,13 +35,13 @@ public:
 		m_pilas.push_back(pila);
 	}
 
-	void init()  = 0;
+	virtual void init()  = 0;
 
-	void turno()  = 0;
+	virtual void turno()  = 0;
 
-	bool ganar()  = 0;
+	virtual bool ganar()  = 0;
 
-	bool empate()  = 0;
+	virtual bool empate()  = 0;
 
 };
 
