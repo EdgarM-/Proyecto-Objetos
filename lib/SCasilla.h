@@ -172,6 +172,8 @@ public:
 	*/
 	void rmFicha(SFicha* ficha)
 	{
+		/* TODO: implementar una forma de llamar a SRegla::saleFicha(SFicha*) y que tome el control
+		 * sin volver inservible las acciones por defecto de rmFicha */
 		for (int i = 0; i < m_fichas.size(); ++i)
 		{
 			if (m_fichas[i] == ficha)
@@ -184,7 +186,12 @@ public:
 		}
 	}
 
-
+	void rmCartas()
+	{
+		for (int i = 0; i < m_cartas.size(); ++i)
+			delete m_cartas[i];
+		m_cartas.clear();
+	}
 
 	//! Indica las reglas a ejecutar en la casilla
 	/*!
