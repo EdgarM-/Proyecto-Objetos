@@ -39,7 +39,7 @@ public:
 	//! Constructor
 	/*!
 	   Constructor por defecto, no coloca pila de cartas
-	   \param regla regla que aplica en la casilla
+	   \param regla Regla que aplica en la casilla
 	 */
 	SCasilla(SRegla* regla = nullptr)
 		: m_pila_cartas(nullptr), m_regla(regla)
@@ -48,8 +48,8 @@ public:
 	//! Constructor
 	/*!
 	  Crea una casilla y coloca una ficha en la casilla, sin pila de cartas
-	  \param ficha ficha que se va a asignar a la casilla
-	  \param regla regla que aplica en la casilla
+	  \param ficha Ficha que se va a asignar a la casilla
+	  \param regla Regla que aplica en la casilla
 	 */
 
 	SCasilla(SFicha* ficha, SRegla* regla = nullptr)
@@ -60,7 +60,9 @@ public:
 
 	//! Constructor
 	/*!
-	   Crea una casilla y asigna a las fichas de la casilla fichas por referencia sin pila de cartass
+	   Crea una casilla y asigna a las fichas de la casilla fichas por referencia sin pila de cartas
+	   \param fichas Vector de SFicha* pasado por referencia, contiene las fichas que se van a poner a la casilla
+	   \param regla Regla que aplica en la casilla
 	 */
 	SCasilla(const std::vector< SFicha* >& fichas, SRegla* regla = nullptr)
 		: m_pila_cartas(nullptr), m_fichas(fichas), m_regla(regla)
@@ -69,6 +71,8 @@ public:
 	//! Constructor
 	/*!
 	   Crea una casilla y coloca una carta en la casilla y sin pila de cartas
+	   \param carta Carta que se va a agregar a la casilla
+	   \param regla Regla que aplica en la casilla
 	 */
 	SCasilla(SCarta* carta, SRegla* regla = nullptr)
 		: m_pila_cartas(nullptr), m_regla(regla)
@@ -79,6 +83,8 @@ public:
 	//! Constructor
 	/*!
 	   Crea una casilla y asigna a la casilla cartas por referencia y sin pila de cartas
+	   \param fichas Vector de SCarta*  pasado por referencia, contiene las cartas que se van a poner a la casilla
+	   \param regla Regla que aplica en la casilla
 	 */
 
 	SCasilla(const std::vector< SCarta* >& cartas, SRegla* regla = nullptr)
@@ -88,6 +94,8 @@ public:
 	//! Constructor
 	/*!
 	   Crea una Casilla y le asigna una pila de cartas
+	   \param pila_cartas Es la pila de cartas que se le asignara a la casilla
+	   \param regla Regla que aplica en la casilla
 	 */
 
 	SCasilla(SPila_Cartas* pila_cartas, SRegla* regla = nullptr)
@@ -147,6 +155,7 @@ public:
 
 	//! Agrega una ficha a la casilla
 	/*!
+	  \param ficha Ficha que se va a addicionar
 	   \sa   SFicha, getFichas(), rmFicha() */
 	void addFicha(SFicha* ficha)
 	{
