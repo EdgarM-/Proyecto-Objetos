@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% baposter Landscape Poster
+% LaTeX Template
+% Version 1.0 (11/06/13)
+%
+% baposter Class Created by:
+% Brian Amberg (baposter@brian-amberg.de)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[landscape,a0paper,fontscale=0.285]{baposter} % Adjust the font scale/size here
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Directory in which figures are stored
+
+\usepackage{amsmath} % For typesetting math
+\usepackage{amssymb} % Adds new symbols to be used in math mode
+
+\usepackage{booktabs} % Top and bottom rules for tables
+\usepackage{enumitem} % Used to reduce itemize/enumerate spacing
+\usepackage{palatino} % Use the Palatino font
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+
+\usepackage{multicol} % Required for multiple columns
+\setlength{\columnsep}{1.5em} % Slightly increase the space between columns
+\setlength{\columnseprule}{0mm} % No horizontal rule between columns
+
+\usepackage{tikz} % Required for flow chart
+\usetikzlibrary{shapes,arrows} % Tikz libraries required for the flow chart in the template
+
+\newcommand{\compresslist}{ % Define a command to reduce spacing within itemize/enumerate environments, this is used right after \begin{itemize} or \begin{enumerate}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+}
+
+\definecolor{lightblue}{rgb}{0.145,0.6666,1} % Defines the color used for content box headers
+
+\begin{document}
+
+\begin{poster}
+{
+headerborder=closed, % Adds a border around the header of content boxes
+colspacing=1em, % Column spacing
+bgColorOne=white, % Background color for the gradient on the left side of the poster
+bgColorTwo=white, % Background color for the gradient on the right side of the poster
+borderColor=lightblue, % Border color
+headerColorOne=black, % Background color for the header in the content boxes (left side)
+headerColorTwo=lightblue, % Background color for the header in the content boxes (right side)
+headerFontColor=white, % Text color for the header text in the content boxes
+boxColorOne=white, % Background color of the content boxes
+textborder=roundedleft, % Format of the border around content boxes, can be: none, bars, coils, triangles, rectangle, rounded, roundedsmall, roundedright or faded
+eyecatcher=true, % Set to false for ignoring the left logo in the title and move the title left
+headerheight=0.1\textheight, % Height of the header
+headershape=roundedright, % Specify the rounded corner in the content box headers, can be: rectangle, small-rounded, roundedright, roundedleft or rounded
+headerfont=\Large\bf\textsc, % Large, bold and sans serif font in the headers of content boxes
+%textfont={\setlength{\parindent}{1.5em}}, % Uncomment for paragraph indentation
+linewidth=2pt % Width of the border lines around content boxes
+}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+%
+{\includegraphics[height=7em]{logohtml.png}} % First university/lab logo on the left
+{\bf\textsc{Liberia para juegos de mesa SAEM GAMES}\vspace{0.5em}} % Poster title
+{\textsc{ Santiago Quintero, Edgar Am\'ezquita y Camilo Ar\'evalo
+\newline Pontificia Universidad Javeriana}} % Author names and institution
+{\includegraphics[height=7em]{img-logoHeader.png}} % Second university/lab logo on the right
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVES
+%----------------------------------------------------------------------------------------
+
+\headerbox{Objetivos}{name=objectives,column=0,row=0}{
+
+\textbf{Saem Games} es un libreria para crear juegos de mesa que tengan un tablero, debe soportar 2 o mas jugadores, Este projecto debe ser implementado en C++ y debe contar con su propia documentacion para el proyecto de objetos y programacion a media escala.\\
+
+\vspace{0.3em} % When there are two boxes, some whitespace may need to be added if the one on the right has more content
+}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\headerbox{Analisis}{name=Analisis,column=1,row=0}{
+
+La libreria debe soportar la creacion de diversos juegos de mesa, por tanto la libreria debe poseer objetos que modelen la base del juego, como tablero, jugadores, fichas, cartas y dados. La libreria contendra fnciones basicas para un juego, las cuales se pueden extender dependiendo la complejidad del juego. \\
+Para muchos juegos un jugador puede poseer varias fichas en un juego, las cuales pueden ser manipuladas agregando, quitando o moviendo las fichas en el respectivo tablero. Ademas que el movimiento de cada ficha debe determinarse por un numero constante relacionado a una regla o ser fijado por el resultado de uno o mas dados contenidos en el juego.\\
+No nesesariamente debe haber dados en un juego, pero en el caso de tenerlos, el dado debe generar un numero aleatorio entre un rengo especificado por le usuario.\\
+
+
+
+}
+
+%----------------------------------------------------------------------------------------
+%	RESULTS 1
+%----------------------------------------------------------------------------------------
+
+\headerbox{Results 1}{name=results,column=2,span=2,row=0}{
+
+\begin{multicols}{2}
+
+\end{multicols}
+
+%------------------------------------------------
+
+\begin{multicols}{2}
+
+
+\end{multicols}
+}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\headerbox{Conclusion}{name=conclusion,column=2,span=2,row=0,below=results,above=bottom}{
+
+\begin{multicols}{2}
+
+
+\end{multicols}
+}
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS AND METHODS
+%----------------------------------------------------------------------------------------
+
+\headerbox{Introduccion}{name=introduction,column=0,below=objectives}{
+
+Para este projecto se debia crear una librer\'ia que ayudar\'a al usuario a crear algunos juegos de mesa como escalera, monopoly y otros juegos que maneje un tablero para jugar, aunque esta que la libreria no puede cubrir ciertos tipos de juegos de mesa, tales como risk, *inserte nombres de juegos*. Esta libreria nos permitira extender varias de sus clases para ajustarlas a un tipo espec\'ifico de juego y agregar la l\'ogica al juego, ya que la libreria pretende dar una base para crear el juego y en algunos casos no dara abasto para todo el juego.\\
+
+Para probar la funcionalidad de la libreria se realizo un juego de escalera con power ups, en el cual, a diferencia del escalera normal, hay casillas que le dan ciertos poderes a una ficha de un jugador.  
+
+
+}
+
+\headerbox{Herramientas de Desarrollo}{name=herradesarrollo,column=0,below=introduction,bottomaligned=conclusion}{
+
+En este projecto se hizo uso de:
+
+\begin{enumerate}\compresslist
+\item Git Hub como manejador de versiones del projecto.
+\item Doxygen para documentacion de codigo.
+\item C++ 11 para la implementacion de la libreria.
+\item Latex para la realizacion del poster.
+\end{enumerate}
+
+
+
+}
+
+%----------------------------------------------------------------------------------------
+%	RESULTS 2
+%----------------------------------------------------------------------------------------
+
+\headerbox{Results 2}{name=results2,column=1,below=Analisis,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
+
+
+}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+%\headerbox{Referencias}{name=references,column=0,above=bottom}{
+%\begin{itemize}\compresslist
+%\item template de latex http://www.latextemplates.com/template/baposter-landscape-poster created by Brian Amberg 
+%\end{itemize}
+%}
+
+\end{poster}
+
+\end{document}

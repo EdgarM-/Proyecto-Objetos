@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Saem Games: Fichero Fuente lib/STablero.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logohtml2.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Saem Games
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_s_tablero_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">STablero.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_tablero_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STablero_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STablero_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_carta_8h.html">SCarta.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_casilla_8h.html">SCasilla.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_ficha_8h.html">SFicha.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_s_tablero.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_tablero.html">STablero</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">   21</a></span>&#160;    std::vector&lt; SCasilla* &gt; <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_s_tablero.html#acc94aa128d19cf840349eb2492b069d4">   29</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_s_tablero.html#acc94aa128d19cf840349eb2492b069d4">STablero</a>(<span class="keywordtype">int</span> tamano)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>.resize(tamano, <span class="keyword">new</span> <a class="code" href="class_s_casilla.html">SCasilla</a>())</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_s_tablero.html#aa72c111986ef9c6aa0d8e12689f2fe28">   38</a></span>&#160;    <a class="code" href="class_s_ficha.html">SFicha</a>* <a class="code" href="class_s_tablero.html#aa72c111986ef9c6aa0d8e12689f2fe28">getFicha</a>(<span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>[posicion]-&gt;getFicha();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226">   46</a></span>&#160;    std::vector&lt; SFicha* &gt; <a class="code" href="class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226">getFichas</a>(<span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>[posicion]-&gt;getFichas();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_s_tablero.html#a2e2e568188cd1d968faeaf4c09607d31">   54</a></span>&#160;    <a class="code" href="class_s_carta.html">SCarta</a>* <a class="code" href="class_s_tablero.html#a2e2e568188cd1d968faeaf4c09607d31">getCarta</a>(<span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>[posicion]-&gt;getCarta();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_s_tablero.html#a35aa305bab271b3abd86d196a0e90f18">   62</a></span>&#160;    std::vector&lt; SCarta* &gt; <a class="code" href="class_s_tablero.html#a35aa305bab271b3abd86d196a0e90f18">getCartas</a>(<span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>[posicion]-&gt;getCartas();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_s_tablero.html#a0ae6f8de6fb8adf209e93f6de3c4134f">   72</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_tablero.html#a0ae6f8de6fb8adf209e93f6de3c4134f">agregarFicha</a>(<a class="code" href="class_s_ficha.html">SFicha</a>* ficha, <span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        ficha-&gt;<a class="code" href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680">setPosicion</a>(posicion);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>[posicion]-&gt;addFicha(ficha);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_s_tablero.html#acbb09199040d5749a6c467412abec982">   82</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_tablero.html#acbb09199040d5749a6c467412abec982">agregarCarta</a>(<a class="code" href="class_s_carta.html">SCarta</a>* carta, <span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>[posicion]-&gt;addCarta(carta);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_s_tablero.html#acbb568c73f42bf1488f1b2d9749cfab7">   90</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_tablero.html#acbb568c73f42bf1488f1b2d9749cfab7">removerFicha</a>(<a class="code" href="class_s_ficha.html">SFicha</a>* ficha)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        ficha-&gt;<a class="code" href="class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb">getCasilla</a>()-&gt;<a class="code" href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe">rmFicha</a>(ficha);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_s_tablero.html#a2d0c4fd19a4b754a038432b1ca705bdb">   98</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_tablero.html#a2d0c4fd19a4b754a038432b1ca705bdb">removerCartas</a>(<span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">m_casillas</a>[posicion]-&gt;rmCartas();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif // STablero_h</span></div>
+<div class="ttc" id="class_s_tablero_html_a2e2e568188cd1d968faeaf4c09607d31"><div class="ttname"><a href="class_s_tablero.html#a2e2e568188cd1d968faeaf4c09607d31">STablero::getCarta</a></div><div class="ttdeci">SCarta * getCarta(int posicion)</div><div class="ttdoc">Devuelve la carta que hay en una posicion. </div><div class="ttdef"><b>Definition:</b> STablero.h:54</div></div>
+<div class="ttc" id="class_s_ficha_html_a0aad9f92e7c84b0a0d4319e458ddfacb"><div class="ttname"><a href="class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb">SFicha::getCasilla</a></div><div class="ttdeci">SCasilla * getCasilla()</div><div class="ttdoc">Devuelve la casilla en la cual esta la ficha. </div><div class="ttdef"><b>Definition:</b> SFicha.h:94</div></div>
+<div class="ttc" id="_s_carta_8h_html"><div class="ttname"><a href="_s_carta_8h.html">SCarta.h</a></div></div>
+<div class="ttc" id="class_s_carta_html"><div class="ttname"><a href="class_s_carta.html">SCarta</a></div><div class="ttdoc">La clase SCarta es la base para modelar cartas. </div><div class="ttdef"><b>Definition:</b> SCarta.h:11</div></div>
+<div class="ttc" id="class_s_casilla_html_ac445101a5de0f8d16eb73ab5e2c841fe"><div class="ttname"><a href="class_s_casilla.html#ac445101a5de0f8d16eb73ab5e2c841fe">SCasilla::rmFicha</a></div><div class="ttdeci">void rmFicha(SFicha *ficha)</div><div class="ttdoc">Quita una ficha de la casilla. </div><div class="ttdef"><b>Definition:</b> SCasilla.h:173</div></div>
+<div class="ttc" id="class_s_tablero_html_abf5a193cfc361fa9c6484631a26a0226"><div class="ttname"><a href="class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226">STablero::getFichas</a></div><div class="ttdeci">std::vector&lt; SFicha * &gt; getFichas(int posicion)</div><div class="ttdoc">Devuelve todas las fichas que hay en una posicion. </div><div class="ttdef"><b>Definition:</b> STablero.h:46</div></div>
+<div class="ttc" id="class_s_ficha_html"><div class="ttname"><a href="class_s_ficha.html">SFicha</a></div><div class="ttdoc">La clase SFicha es la base para las fichas. </div><div class="ttdef"><b>Definition:</b> SFicha.h:12</div></div>
+<div class="ttc" id="class_s_tablero_html_acbb09199040d5749a6c467412abec982"><div class="ttname"><a href="class_s_tablero.html#acbb09199040d5749a6c467412abec982">STablero::agregarCarta</a></div><div class="ttdeci">void agregarCarta(SCarta *carta, int posicion)</div><div class="ttdoc">Agrega una carta en una posicion. </div><div class="ttdef"><b>Definition:</b> STablero.h:82</div></div>
+<div class="ttc" id="class_s_tablero_html_a0ae6f8de6fb8adf209e93f6de3c4134f"><div class="ttname"><a href="class_s_tablero.html#a0ae6f8de6fb8adf209e93f6de3c4134f">STablero::agregarFicha</a></div><div class="ttdeci">void agregarFicha(SFicha *ficha, int posicion)</div><div class="ttdoc">Agrega una ficha en una posicion. </div><div class="ttdef"><b>Definition:</b> STablero.h:72</div></div>
+<div class="ttc" id="class_s_tablero_html_a35aa305bab271b3abd86d196a0e90f18"><div class="ttname"><a href="class_s_tablero.html#a35aa305bab271b3abd86d196a0e90f18">STablero::getCartas</a></div><div class="ttdeci">std::vector&lt; SCarta * &gt; getCartas(int posicion)</div><div class="ttdoc">Devuelve todas las cartas que hay en una posicion. </div><div class="ttdef"><b>Definition:</b> STablero.h:62</div></div>
+<div class="ttc" id="class_s_tablero_html_aa72c111986ef9c6aa0d8e12689f2fe28"><div class="ttname"><a href="class_s_tablero.html#aa72c111986ef9c6aa0d8e12689f2fe28">STablero::getFicha</a></div><div class="ttdeci">SFicha * getFicha(int posicion)</div><div class="ttdoc">Devuelve una de las fichas que hay en una posicion. </div><div class="ttdef"><b>Definition:</b> STablero.h:38</div></div>
+<div class="ttc" id="class_s_tablero_html_a2d0c4fd19a4b754a038432b1ca705bdb"><div class="ttname"><a href="class_s_tablero.html#a2d0c4fd19a4b754a038432b1ca705bdb">STablero::removerCartas</a></div><div class="ttdeci">void removerCartas(int posicion)</div><div class="ttdoc">Remueve las cartas en una posicion. </div><div class="ttdef"><b>Definition:</b> STablero.h:98</div></div>
+<div class="ttc" id="class_s_tablero_html"><div class="ttname"><a href="class_s_tablero.html">STablero</a></div><div class="ttdoc">La clase STablero modela lo que sera el tablero de juego. </div><div class="ttdef"><b>Definition:</b> STablero.h:14</div></div>
+<div class="ttc" id="class_s_tablero_html_acc94aa128d19cf840349eb2492b069d4"><div class="ttname"><a href="class_s_tablero.html#acc94aa128d19cf840349eb2492b069d4">STablero::STablero</a></div><div class="ttdeci">STablero(int tamano)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> STablero.h:29</div></div>
+<div class="ttc" id="class_s_tablero_html_acbb568c73f42bf1488f1b2d9749cfab7"><div class="ttname"><a href="class_s_tablero.html#acbb568c73f42bf1488f1b2d9749cfab7">STablero::removerFicha</a></div><div class="ttdeci">void removerFicha(SFicha *ficha)</div><div class="ttdoc">Remueve una ficha. </div><div class="ttdef"><b>Definition:</b> STablero.h:90</div></div>
+<div class="ttc" id="class_s_tablero_html_a61884ddbdf5f826d052a12ee9feebe87"><div class="ttname"><a href="class_s_tablero.html#a61884ddbdf5f826d052a12ee9feebe87">STablero::m_casillas</a></div><div class="ttdeci">std::vector&lt; SCasilla * &gt; m_casillas</div><div class="ttdoc">Vector de casillas que respresnta al tablero. </div><div class="ttdef"><b>Definition:</b> STablero.h:21</div></div>
+<div class="ttc" id="_s_ficha_8h_html"><div class="ttname"><a href="_s_ficha_8h.html">SFicha.h</a></div></div>
+<div class="ttc" id="class_s_ficha_html_aa543aa19fef77f697379d819b481b680"><div class="ttname"><a href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680">SFicha::setPosicion</a></div><div class="ttdeci">void setPosicion(int posicion)</div><div class="ttdoc">Asigna a la ficha una posicion. </div><div class="ttdef"><b>Definition:</b> SFicha.h:48</div></div>
+<div class="ttc" id="class_s_casilla_html"><div class="ttname"><a href="class_s_casilla.html">SCasilla</a></div><div class="ttdoc">La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas...</div><div class="ttdef"><b>Definition:</b> SCasilla.h:15</div></div>
+<div class="ttc" id="_s_casilla_8h_html"><div class="ttname"><a href="_s_casilla_8h.html">SCasilla.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_s_tablero_8h.html">STablero.h</a></li>
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 05:32:48 para Saem Games por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>
