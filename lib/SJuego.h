@@ -32,13 +32,11 @@ protected:
 public:
 	//!Constructor
 	/*!
-	  Inicia sin tablero y con el @ref m_jugador_actual en 0
+	  Inicia sin tablero, con el @ref m_jugador_actual en 0 y con @ref m_estado en EN_CURSO
 	 */
 	SJuego()
-	: m_jugador_actual(0), m_tablero(nullptr) 
-	{
-		init();
-	}
+	: m_jugador_actual(0), m_tablero(nullptr), m_estado(EN_CURSO)
+	{}
 	//!Agrega un jugador al juego
 	/*!
 	  \param jugador Jugador que entra al juego
@@ -70,7 +68,15 @@ public:
 	 */
 	void cambiarEstado(SEstado estado)
 	{
-		m_estado(estado);
+		m_estado = estado;
+	}
+	//!Retorna el estado actual del juego
+	/*!
+	  \return m_estado SEstado en el que se encuentra el juego
+	 */
+	SEstado getEstado() const
+	{
+		return m_estado;
 	}
 	//!Inicializadora del juego
 	/*!
@@ -92,6 +98,25 @@ public:
 	  Este metodo es el encargado de saber cuando se empata el juego, se debe implementar cuando se herede
 	 */
 	virtual bool empate()  = 0;
+
+	//! Destructor
+	/*!
+		Libera toda la memoria alocada posible para el desarrollo del juego.
+	*/
+	virtual ~SJuego()
+	{
+		for(int i = 0; i < m_jugadores.size(); ++i)
+		{
+			delete m_jugadores[i];
+		}
+		for(int i = 0; i < m_pilas.size(); ++i)
+		{
+			delete m_pilas[i];
+		}
+		delete m_tablero;
+		m_jugadores.clear();
+		m_pilas.clear();
+	}
 
 };
 

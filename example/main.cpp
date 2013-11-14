@@ -121,12 +121,23 @@ class Juego
 	/* Definimos la implementacion del metodo abstracto init que se encarga de la inicializacion del juego.
 	 * Dentro de esta funcion debemos alocar la memoria que va a utilizar nuestro juego
 	 * ademas de crear los elementos basicos como el tablero. */
+	 /* Vamos a crear un nuevo atributo solo para hacer mas facil la identificacion del ganador */
+	 SJugador* m_jugador_ganador;
 public:
+	/* Es muy importante crear el constructor de la Clase derivada de SJuego y llamar a init() */
+	Juego()
+	: SJuego()
+	{
+		init();
+	}
 	void init()
 	{
 		/* Creamos el dado a utilizar en este juego, estandar de 6 caras. */
 		SDado dado(1,6);
-		/* Creamos el tablero donde se desarrolla el juego, en escalera es de 100 casillas */
+		/* Creamos el tablero donde se desarrolla el juego, en escalera es de 100 casillas
+		 * por defecto el constructor crea un tablero de tipo LINEAL_REBOTE de n casillas tipo SCasilla 
+		 * es decir que cuando una fiche se mueva con STablero::moverFigura(...), si el valor es mayor
+		 * al total de casillas la ficha 'rebota' y retrocede el numero de pasos restantes. */
 		m_tablero = new STablero(100);
 		/* Agregamos el dado al Juego insertandolo en el vector de dados para poder usarlo
 		 * mas adelante. */
@@ -158,17 +169,78 @@ public:
 		for (int i = 0; i < m_jugadores.size(); ++i)
 		{
 			if(m_jugadores[i]->getFichas()[0]->getPosicion() == 99)
+			{
+				m_estado = GANADO;
+				m_jugador_ganador = m_jugadores[i];
 				return true;
+			}
 		}
 		return false;
 	}
 	/* Como no hay forma de empatar implementar empate es facil */
 	bool empate() { return false; }
+
+	/* Creamos una forma de sacar y cambiar el dato del jugador ganador por fuera de la clase */
+	SJugador* getJGanador()
+	{
+		return m_jugador_ganador;
+	}
+	void setJGanador(SJugador* jugador)
+	{
+		m_jugador_ganador = jugador;
+	}
+
+	/* Finalmente de si no hay interfaz grafica solo queda definir lo que ocurre en un turno
+	 * revisar el si hay un ganador o un empate con las funciones previamente implementadas
+	 * y si no llamar a SJuego::cambiarJugador(), m_jugadores_actual es numero en rotacion
+	 * que se relaciona con un jugador de m_jugadores */
+	void turno()
+	{
+		/* Definimos la logica de un turno */
+		/* Conseguimos la ficha del jugador actual */
+		SFicha* ficha = m_jugadores[m_jugador_actual]->getFichas()[0];
+		/* Obtenomos el valor del dado y anunciamos el valor */
+		int dado = m_dados[0].tirar();
+		std::cout << dado << std::endl;
+		/* Desplazamos la figura del jugador actual las casillas indicadas por el dado
+		 * las reglas especificadas previamente se haran cargo de las escaleras, serpientes o cartas
+		 * especiales en las casillas y el tipo de tablero LINEAL_REBOTE se hara cargo del desbordamiento */
+		m_tablero->moverFicha(ficha, dado);
+		 /* Rebisamos si hay ganador */
+		if(ganar() || m_estado == GANADO)
+		{
+			/* Anunciamos el ganador por salida estandar */
+			std::cout << "El ganador es " << m_jugador_ganador->getNombre() << std::endl;
+		}
+		else
+		{
+			/* Si no hay ganador cambiamos al siguiente jugador para el proximo turno */
+			cambiarJugador();
+		}
+	}
+
 };
 
 /* La funcion principal del programa, donde creamos una instancia de nuestro Juego. */
 int main()
 {
-	std::cout << "Hello World!";
+	/* Creamos una instancia de nuestro nuevo juego */
+	Juego SaemEscalera;
+	/* Para probar el juego paso a paso
+	 * hasta que halla un ganador */
+	std::string dummyString; // Para la captura de entrada
+	std::cout << "SaemEscalera cli edition!";
+	/* Creamos nuestro ciclo */
+	while(SaemEscalera.getEstado() == EN_CURSO)
+	{
+		std::cout << "Ingresa tirar: ";
+		std::cin >> dummyString;
+		if (dummyString == "tirar")
+		{
+			SaemEscalera.turno();
+		}
+	}
+	/* y listo! */
+
 	return 0;
 }

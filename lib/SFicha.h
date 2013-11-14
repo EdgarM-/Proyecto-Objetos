@@ -1,8 +1,8 @@
 #ifndef SFicha_h
 #define SFicha_h
 
-#include "SJugador.h"
-#include "SCasilla.h"
+//#include "SJugador.h"
+//#include "SCasilla.h"
 
 //! La clase SFicha es la base para las fichas
 /*!
@@ -78,7 +78,7 @@ public:
 	{
 		return m_jugador;
 	}
-2	//!Asigna a la ficha una casilla
+	//!Asigna a la ficha una casilla
 	/*!
 	  \param casilla es una SCasilla la cual indica en que casilla esta la ficha
 	  \sa getCasilla(),SCasilla

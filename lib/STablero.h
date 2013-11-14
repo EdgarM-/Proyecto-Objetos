@@ -7,7 +7,6 @@
 
 enum tipoSTablero { CIRCULAR, LINEAL_REBOTE, LINEAL_NOREBOTE };
 
-#include "SFicha.h"
 //!La clase STablero modela lo que sera el tablero de juego
 /*!
   Esta clase implementa funciones para conseguir o agregar cartas y fichas
@@ -109,7 +108,7 @@ public:
 			if (m_tipo == CIRCULAR)
 				agregarFicha(ficha, pos - m_casillas.size());
 			else if (m_tipo == LINEAL_REBOTE)
-				agregarFicha(ficha, 2 * m_casillas.size() - 2 - pos ))
+				agregarFicha(ficha, 2 * m_casillas.size() - 2 - pos );	
 		}
 		else
 			agregarFicha(ficha, pos + n_casillas);

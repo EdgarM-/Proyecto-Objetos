@@ -32,7 +32,7 @@ public:
 	   \param equipo Entero que indica en que grupo esta
 	 */
 	SJugador(std::string nombre, int equipo = 0)
-	  : m_nombre(nombre), m_equipo(equipo), m_puntaje(0);
+	  : m_nombre(nombre), m_equipo(equipo), m_puntaje(0)	
 	{}
 
 	//! Constructor
@@ -44,10 +44,29 @@ public:
 	   	   
 	 */
 	SJugador(int n_fichas, std::string nombre, int equipo = 0)
-	: m_nombre(nombre), m_equipo(equipo), m_puntaje(0);
+	: m_nombre(nombre), m_equipo(equipo), m_puntaje(0)
 	{
 		for (int i = 0; i < n_fichas; ++i)
 			addFicha(new SFicha());
+	}
+
+	//! Devuelve el nombre del jugador
+	/*!
+	  \sa setNombre();
+	*/
+	std::string getNombre() const
+	{
+		return m_nombre;
+	}
+
+	//! Cambiar el nombre del jugador
+	/*!
+	  \param nombre es el nombre que va a tomar el jugador
+	   \sa getNombre();
+	 */
+	void setNombre(std::string nombre)
+	{
+		m_nombre = nombre;
 	}
 
 	//! Agregar una ficha, le entra un puntero a una ficha y la guarda en el jugador
@@ -57,7 +76,7 @@ public:
 	 */
 	void addFicha(SFicha* ficha)
 	{
-		ficha.setJugador(this);
+		ficha->setJugador(this);
 		m_fichas.push_back(ficha);
 	}
 
@@ -89,7 +108,7 @@ public:
 	 */
 	bool mismoEquipo(SJugador* jugador) const
 	{
-		return (m_equipo == jugador.getEquipo());
+		return (m_equipo == jugador->getEquipo());
 	}
 
 	/**

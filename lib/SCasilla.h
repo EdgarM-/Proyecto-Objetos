@@ -3,8 +3,8 @@
 
 #include <vector>
 
-#include "SPila_Cartas.h"
-#include "STablero.h"
+//#include "SPila_Cartas.h"
+//#include "STablero.h"
 #include "SFicha.h"
 #include "SRegla.h"
 
@@ -198,7 +198,7 @@ public:
 				{
 					m_fichas[i]->setPosicion(-1);
 					m_fichas[i]->setCasilla(nullptr);
-					m_fichas.erase(i);
+					m_fichas.erase(m_fichas.begin() + i);
 				}
 				break;
 			}
@@ -206,12 +206,28 @@ public:
 		return result;
 	}
 
+	//! Agrega una carta a la casilla
+	/*!
+	  \param carta Carta que se va a addicionar
+	   \sa   SCarta, getCartas(), rmCarta() */
+
+	void addCarta(SCarta* carta)
+	{
+		m_cartas.push_back(carta);
+	}
+
+	//! Elimina permanentemente todas las cartas de la casilla
+	/*!
+	  \sa   addCarta() 	   
+	*/
 	void rmCartas()
 	{
 		for (int i = 0; i < m_cartas.size(); ++i)
 			delete m_cartas[i];
 		m_cartas.clear();
 	}
+
+
 
 	//! Indica las reglas a ejecutar en la casilla
 	/*!
