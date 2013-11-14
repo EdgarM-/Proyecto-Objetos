@@ -15,7 +15,7 @@ class SCasilla {
 
 protected:
 	//! Pila de cartas
-        /*!
+	/*!
 	 \sa SPila_Cartas
 	 */
 	SPila_Cartas* m_pila_cartas;
@@ -142,7 +142,7 @@ public:
 		return m_cartas;
 	}
 
-        //! Agrega una ficha a la casilla
+	//! Agrega una ficha a la casilla
 	/*!
 	   \sa   SFicha, getFichas(), rmFicha() */
 	void addFicha(SFicha* ficha)
