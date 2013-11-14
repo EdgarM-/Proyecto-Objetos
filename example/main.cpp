@@ -157,8 +157,10 @@ public:
 	{
 		for (int i = 0; i < m_jugadores.size(); ++i)
 		{
-			
+			if(m_jugadores[i]->getFichas()[0]->getPosicion() == 99)
+				return true;
 		}
+		return false;
 	}
 	/* Como no hay forma de empatar implementar empate es facil */
 	bool empate() { return false; }
