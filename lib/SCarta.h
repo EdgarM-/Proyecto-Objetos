@@ -5,7 +5,7 @@
 
 //! La clase SCarta es la base para modelar cartas
 /*!
-   Se definen las funciones las funciones para modelar lo basico de una carta, como colocar un nombre a una carta o obtener el nombre de la carta
+   Se definen las funciones para modelar lo basico de una carta, como colocar un nombre a una carta u obtener el nombre de la carta
 */
 
 class SCarta {
@@ -14,6 +14,8 @@ protected:
 
 	//! Nombre que identifica la carta
 	std::string m_nombre;
+	//! Numero de la carta
+	int m_numero;
 
 public:
 	//! Constructor
@@ -29,7 +31,7 @@ public:
 	/*!
 	  \sa setNombre();
 	*/
-	std::string getNombre()
+	std::string getNombre() const
 	{
 		return m_nombre;
 	}
@@ -42,6 +44,25 @@ public:
 	void setNombre(std::string nombre)
 	{
 		m_nombre = nombre;
+	}
+
+	//! Devuelve el numero de la carta
+	/*!
+	  \sa setNumero();
+	*/
+	int getNumero() const
+	{
+		return m_numero;
+	}
+
+	//! Cambiar el numero de la carta
+	/*!
+	  \param numero es el numero que va a tomar la carta
+	   \sa getNumero();
+	 */
+	void setNombre(int numero)
+	{
+		m_numero = numero;
 	}
 
 	//! Destructor

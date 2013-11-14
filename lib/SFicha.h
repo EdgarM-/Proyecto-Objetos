@@ -1,7 +1,6 @@
 #ifndef SFicha_h
 #define SFicha_h
 
-#include "SPareja.h"
 #include "SJugador.h"
 #include "SCasilla.h"
 
@@ -18,69 +17,36 @@ protected:
 	//! Casilla en la que esta la ficha
 	/*! \sa SCasilla*/
 	SCasilla* m_casilla;
-	 //! Entero que indica la fila
-	int m_fila;
-	 //! Entero que indica la columna
-	int m_columna;
+	 //! Entero que indica la casilla en la que se encuentra la ficha respecto al tablero empezando en 0, -1 indica que no esta en el tablero.
+	int m_posicion; 
 
 public:
 	//! Constructor
 	/*!
 	   @ref m_jugador y @ref m_casilla empiezan en nullpointer.
 	 */
-	SFicha()
-		: m_jugador(nullptr), m_casilla(nullptr)
+	SFicha(int posicion = -1)
+		: m_jugador(nullptr), m_casilla(nullptr), m_posicion(posicion)
 	{}
 
-	//!Devuelve la fila en la que esta la ficha
+	//!Devuelve la posicion en la que se encuentra la ficha respecto al tablero
 	/*!
-	  \sa getPareja(), getColumna()
+	  \sa setPosicion(), getCasilla()
 	 */
-	int getFila()
+	int getPosicion()
 	{
-	  return m_fila;
-	}
-	//!Devuelve la columna en la que esta la ficha
-	/*!
-	  \sa getPareja(), getFila()
-	 */
-
-	int getColumna()
-	{
-	  return m_columna;
+	  return m_posicion;
 	}
 
-	//!Devuelve la Pareja en la que esta la ficha
+	//!Asigna a la ficha una posicion
 	/*!
-	  \sa getFila() , getColumna(), SPareja
-	*/
-
-	SPareja getPareja()
-	{
-	  SPareja actual(m_columna,m_fila);
-	  return actual;
-	}
-
-	//!Asigna a la ficha una fila
-	/*!
-	  \param fila es un entero que indica en que fila esta
-	  \sa setColumna(), setCasilla(), setPareja()
+	  \param posicion es un entero que indica en que fila esta
+	  \sa getPosicion(), setCasilla()
 	 */
 
-	void setFila(int fila)
+	void setPosicion(int posicion)
 	{
-	  m_fila = fila;
-	}
-	
-	//!Asigna a la ficha una columna
-	/*!
-	  \param columna es un entero que indica en que fila esta la ficha
-	  \sa setFila(), setCasilla(), setPareja()
-	 */
-
-	void setColumna(int columna)
-	{
-	  m_columna = columna;
+	  m_posicion = posicion;
 	}
 	
 	//!Asigna a la ficha un Jugador
@@ -119,18 +85,6 @@ public:
 	SCasilla* getCasilla()
 	{
 		return m_casilla;
-	}
-	
-	//!Asigna una pareja en la cual esta la ficha
-	/*!
-	  \param pareja es una SPareja que indica en que columna y fila esta la ficha
-	  \sa  getPareja(), getColumna(), getFila()
-	 */
-	
-	void setPareja(SPareja pareja )
-	{
-	  m_columna = pareja.x;
-	  m_fila = pareja.y;
 	}
 };
 

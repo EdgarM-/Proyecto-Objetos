@@ -4,10 +4,10 @@
 #include <random>
 #include <functional>
 #include <ctime>
-//! La Clase SDado es la base de un dado
+//! La clase SDado es la base de un dado
 /*!
    Con esta clase se puede conseguir la funcionalidad de un dado,
-   genera numeros aleatorios.
+   genera numeros aleatorios entre un numero entero minimo y uno maximo inclusivo.
 */
 class SDado
 {
