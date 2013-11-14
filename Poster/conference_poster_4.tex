@@ -94,8 +94,8 @@ linewidth=2pt % Width of the border lines around content boxes
 
 \headerbox{Analisis}{name=Analisis,column=1,row=0}{
 
-La libreria debe soportar la creacion de diversos juegos de mesa, por tanto la libreria debe poseer objetos que modelen la base del juego, como tablero, jugadores, fichas, cartas y dados. La libreria contendra funciones basicas para un juego, las cuales se pueden extender dependiendo la complejidad del juego. \\
-Para muchos juegos un jugador puede poseer varias fichas en un juego, las cuales pueden ser manipuladas agregando, quitando o moviendo las fichas en el respectivo tablero. Ademas que el movimiento de cada ficha debe determinarse por un numero constante relacionado a una regla o ser fijado por el resultado de uno o mas dados contenidos en el juego.\\
+La libreria debe soportar la creacion de diversos juegos de mesa, por tanto la libreria debe poseer objetos que modelen un juego, como tablero, jugadores, fichas, cartas y dados. La libreria contendra funciones basicas para un juego, las cuales se pueden extender dependiendo la complejidad del juego. \\
+Para muchos juegos un jugador puede poseer varias fichas en un juego, las cuales pueden ser manipuladas agregando, quitando o moviendo las fichas en el tablero. Ademas que el movimiento de la ficha debe determinarse por un numero constante relacionado a una regla o ser fijado por el resultado de uno o mas dados contenidos en el juego.\\
 No nesesariamente debe haber dados en un juego, pero en el caso de tenerlos, el dado debe generar un numero aleatorio entre un rengo especificado por le usuario.\\
 
 
@@ -107,17 +107,22 @@ No nesesariamente debe haber dados en un juego, pero en el caso de tenerlos, el 
 %----------------------------------------------------------------------------------------
 
 \headerbox{Conclusion}{name=results,column=2,span=2,row=0,}{
+Como conclusion podemos ver un juego de escalera con power ups(poderes) con esta libreria, la cual usa cartas que te retroceden o avanzan segun el tiro del dado.
 
-\begin{multicols}{2}
+\begin{center}
+\includegraphics[height=20em]{juego-de-serpientes-y-escaleras-en-diseño-sobre-lona-impresa-de-5030-cms-y-un-dado-de-2-cms-.jpg}
+\end{center}
 
-\end{multicols}
+% \begin{multicols}{2}
 
-%------------------------------------------------
+% \end{multicols}
 
-\begin{multicols}{2}
+% %------------------------------------------------
+
+% \begin{multicols}{2}
 
 
-\end{multicols}
+% \end{multicols}
 }
 
 
@@ -129,22 +134,27 @@ No nesesariamente debe haber dados en un juego, pero en el caso de tenerlos, el 
 
 \headerbox{Resultado}{name=conclusion,column=1,span=3,below=Analisis,above=bottom}{
 
+%\textbf{}
 \begin{multicols}{2}
 Como resultado podemos ver una libreria con todos sus componentes para poder crear un juego de mesa:
 \begin{itemize}\compresslist
-\item una clase para las cartas (SCarta), Se definen las funciones para modelar lo basico de una carta, como colocar un nombre a una carta u obtener el nombre de la carta.
-\item una clase para las casillas (SCasilla), la clase define funciones para asignar o obtener los atributos de casilla como las cartas o fichas, cuenta con varios constructores para hacer mas facil su construccion.
-\item una clase para los dados (SDados), Con esta clase se puede conseguir la funcionalidad de un dado, genera numeros aleatorios entre un numero entero minimo y uno maximo inclusivo.
-\item una clase para las fichas (SFicha), La clase define las funciones las funciones para modelar lo basico de una ficha como asignar a un jugador, conseguir o asignar la casilla donde esta la ficha.
-\item una clase para el juego en general (SJuego),  Esta Clase es un clase semi abstracta porque toca implementar varias funciones, para que este pueda usarla y se pueda jugar.
-\item una clase para los jugadores (sJugador), La clase define las funciones basicas para modelar un jugador, este tiene fichas, un nombre y pertenece a un equipo. Se puede asignar un equipo, fichas, saber a que equipo pertenece y retirar el jugador de ser necesario.
-\item una clase para las pila de cartas (SPile\_cartas), Aqui se implementan las funciones basicas de una pila de cartas, como push(), pop(), size() y shuffle().
-\item una clase para reglas (SRegla), Es una clase abstracta la cual hay que implementar para poder poner las reglas del juego, que generalmente son reglas de que pasa con las fichas.
-
-\item una clase para el tablero (STablero), Esta clase implementa funciones para conseguir o agregar cartas y fichas.
+\item una clase para las cartas \textbf{(SCarta)}, Se definen las funciones para modelar lo basico de una carta, como colocar un nombre a una carta u obtener el nombre de la carta.
+\item una clase para las casillas \textbf{(SCasilla)}, la clase define funciones para asignar o obtener los atributos de casilla como las cartas o fichas, cuenta con varios constructores para hacer mas facil su construccion.
+\item una clase para los dados \textbf{(SDados)}, Con esta clase se puede conseguir la funcionalidad de un dado, genera numeros aleatorios entre un numero entero minimo y uno maximo inclusivo.
+\item una clase para las fichas \textbf{(SFicha)}, La clase define las funciones las funciones para modelar lo basico de una ficha como asignar a un jugador, conseguir o asignar la casilla donde esta la ficha.
+\item una clase para el juego en general \textbf{(SJuego)},  Esta Clase es un clase semi abstracta porque toca implementar varias funciones, para que este pueda usarla y se pueda jugar.
+\item una clase para los jugadores \textbf{(SJugador)}, La clase define las funciones basicas para modelar un jugador, este tiene fichas, un nombre y pertenece a un equipo. Se puede asignar un equipo, fichas, saber a que equipo pertenece y retirar el jugador de ser necesario.
+\item una clase para las pila de cartas \textbf{(SPile\_cartas)}, Aqui se implementan las funciones basicas de una pila de cartas, como push(), pop(), size() y shuffle().
+\item una clase para reglas \textbf{(SRegla)}, Es una clase abstracta la cual hay que implementar para poder poner las reglas del juego, que generalmente son reglas de que pasa con las fichas.
+\item una clase para el tablero \textbf{(STablero)}, Esta clase implementa funciones para conseguir o agregar cartas y fichas.
 \end{itemize}
 
 \end{multicols}
+
+\begin{center}
+\includegraphics[height=5em]{dados.jpg}
+\end{center}
+
 }
 
 %----------------------------------------------------------------------------------------
@@ -153,7 +163,7 @@ Como resultado podemos ver una libreria con todos sus componentes para poder cre
 
 \headerbox{Introduccion}{name=introduction,column=0,below=objectives}{
 
-Para este projecto se debia crear una librer\'ia que ayudar\'a al usuario a crear algunos juegos de mesa como escalera, monopoly y otros juegos que maneje un tablero para jugar, aunque esta que la libreria no puede cubrir ciertos tipos de juegos de mesa, tales como risk. Esta libreria nos permitira extender varias de sus clases para ajustarlas a un tipo espec\'ifico de juego y agregar la l\'ogica al juego, ya que la libreria pretende dar una base para crear el juego y en algunos casos no dara abasto para todo el juego.\\
+Para este projecto se debia crear una librer\'ia que ayudar\'a al usuario a crear algunos juegos de mesa como escalera, monopoly y otros juegos que maneje un tablero para jugar, la libreria no cubre todo tipo de jeugos, tales como risk. Esta libreria nos permitira extender varias de sus clases para ajustarlas a un tipo espec\'ifico de juego y agregar la l\'ogica al juego.\\
 
 Para probar la funcionalidad de la libreria se realizo un juego de escalera con power ups, en el cual, a diferencia del escalera normal, hay casillas que le dan ciertos poderes a una ficha de un jugador.  
 
@@ -170,8 +180,9 @@ En este projecto se hizo uso de:
 \item C++ 11 para la implementacion de la libreria.
 \item Latex para la realizacion del poster.
 \end{enumerate}
-
-
+\begin{center}
+{\includegraphics[height=8em]{cartes-kem-100-plastique-arrow-poker-jumbo-black-gold-2.jpg}}
+\end{center}
 
 }
 

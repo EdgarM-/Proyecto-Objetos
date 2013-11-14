@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.12)  14 NOV 2013 08:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.12)  14 NOV 2013 09:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,6 +846,26 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/sc' tried instead on input line 89.
 Missing character: There is no ; in font nullfont!
 
+Underfull \hbox (badness 1014) in paragraph at lines 103--103
+\T1/ppl/m/n/10 ob-je-tos que mod-e-len un juego, como tablero,
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 103--103
+\T1/ppl/m/n/10 varias fichas en un juego, las cuales pueden
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+\T1/ppl/m/n/10 ser ma-nip-u-ladas agre-gando, qui-tando o
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 103--103
+\T1/ppl/m/n/10 moviendo las fichas en el tablero. Ade-mas
+ []
+
+
 Underfull \hbox (badness 2080) in paragraph at lines 103--103
 \T1/ppl/m/n/10 No ne-sesari-a-mente debe haber da-dos en un
  []
@@ -863,50 +883,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--103
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+
+<juego-de-serpientes-y-escaleras-en-diseño-sobre-lona-impresa-de-5030-cms-y-un
+-dado-de-2-cms-.jpg, id=25, 254.47183pt x 234.72482pt>
+File: juego-de-serpientes-y-escaleras-en-diseño-sobre-lona-impresa-de-5030-cms
+-y-un-dado-de-2-cms-.jpg Graphic file (type jpg)
+
+<use juego-de-serpientes-y-escaleras-en-diseño-sobre-lona-impresa-de-5030-cms-
+y-un-dado-de-2-cms-.jpg>
+Package pdftex.def Info: juego-de-serpientes-y-escaleras-en-diseño-sobre-lona-
+impresa-de-5030-cms-y-un-dado-de-2-cms-.jpg used on input line 126.
+(pdftex.def)             Requested size: 216.83015pt x 200.0pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 148.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 158.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
+
+<dados.jpg, id=26, 377.41pt x 296.10625pt>
+File: dados.jpg Graphic file (type jpg)
+ <use dados.jpg>
+Package pdftex.def Info: dados.jpg used on input line 158.
+(pdftex.def)             Requested size: 63.72693pt x 50.0pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
+Underfull \hbox (badness 1231) in paragraph at lines 171--171
+\T1/ppl/m/n/10 que maneje un tablero para ju-gar, la li-bre-ria
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
 
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+
+<cartes-kem-100-plastique-arrow-poker-jumbo-black-gold-2.jpg, id=27, 505.89pt x
+ 381.425pt>
+File: cartes-kem-100-plastique-arrow-poker-jumbo-black-gold-2.jpg Graphic file 
+(type jpg)
+ <use cartes-kem-100-plastique-arrow-poker-jumbo-black-gold-2.jpg>
+Package pdftex.def Info: cartes-kem-100-plastique-arrow-poker-jumbo-black-gold-
+2.jpg used on input line 187.
+(pdftex.def)             Requested size: 106.10107pt x 80.0pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+
 [2
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logohtml.png> <./img-log
-oHeader.png>] (./conference_poster_4.aux) ) 
+oHeader.png> <./juego-de-serpientes-y-escaleras-en-diseño-sobre-lona-impresa-d
+e-5030-cms-y-un-dado-de-2-cms-.jpg> <./dados.jpg> <./cartes-kem-100-plastique-a
+rrow-poker-jumbo-black-gold-2.jpg>] (./conference_poster_4.aux) ) 
 Here is how much of TeX's memory you used:
- 16841 strings out of 495059
- 341822 string characters out of 3182030
- 440267 words of memory out of 3000000
- 19654 multiletter control sequences out of 15000+200000
+ 16857 strings out of 495059
+ 342708 string characters out of 3182030
+ 441591 words of memory out of 3000000
+ 19666 multiletter control sequences out of 15000+200000
  20898 words of font info for 40 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,8n,92p,552b,950s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-dist/fonts
-/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on conference_poster_4.pdf (1 page, 118641 bytes).
+ 63i,9n,92p,430b,950s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/te
+xlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
+ino/uplr8a.pfb>
+Output written on conference_poster_4.pdf (1 page, 462207 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 52 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
