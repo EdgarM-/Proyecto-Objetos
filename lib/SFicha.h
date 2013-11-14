@@ -24,6 +24,7 @@ public:
 	//! Constructor
 	/*!
 	   @ref m_jugador y @ref m_casilla empiezan en nullpointer.
+	   \param posicion Entero que indica en que posicion empieza la ficha por defecto es -1
 	 */
 	SFicha(int posicion = -1)
 		: m_jugador(nullptr), m_casilla(nullptr), m_posicion(posicion)
@@ -40,7 +41,7 @@ public:
 
 	//!Asigna a la ficha una posicion
 	/*!
-	  \param posicion es un entero que indica en que fila esta
+	  \param posicion es un entero que indica en que posicion esta
 	  \sa getPosicion(), setCasilla()
 	 */
 
