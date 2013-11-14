@@ -129,6 +129,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <div class="textblock">Lista de todos los campos de clases con enlaces a las classes a que pertenecen:</div>
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>addCarta()
+: <a class="el" href="class_s_casilla.html#a1d979735942cb0d9c2c7b05e07693a5f">SCasilla</a>
+</li>
 <li>addFicha()
 : <a class="el" href="class_s_casilla.html#a50b48684a46b36b9cc3b190ae5106875">SCasilla</a>
 , <a class="el" href="class_s_jugador.html#a3615ce9b49c44777c35ad6fe3f744c35">SJugador</a>
@@ -147,6 +150,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>agregarPila()
 : <a class="el" href="class_s_juego.html#a833196277c3a859de2c408b422b2cd91">SJuego</a>
+</li>
+<li>agregarRegla()
+: <a class="el" href="class_s_tablero.html#af5fcd3366fe1dc174f3481d2d53436a0">STablero</a>
 </li>
 </ul>
 
@@ -199,19 +205,24 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>getEquipo()
 : <a class="el" href="class_s_jugador.html#adeed38c6024fff695032af7ab5b1a67c">SJugador</a>
 </li>
+<li>getEstado()
+: <a class="el" href="class_s_juego.html#acd7840a8a143a5d71cb8f075f7f1857c">SJuego</a>
+</li>
 <li>getFicha()
 : <a class="el" href="class_s_casilla.html#a76309113df9bbcf03a269dcfa15b4272">SCasilla</a>
 , <a class="el" href="class_s_tablero.html#aa72c111986ef9c6aa0d8e12689f2fe28">STablero</a>
 </li>
 <li>getFichas()
-: <a class="el" href="class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226">STablero</a>
-, <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb">SCasilla</a>
+: <a class="el" href="class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb">SCasilla</a>
+, <a class="el" href="class_s_jugador.html#aff00d2a9ca01a0ee75c9af7cb713c669">SJugador</a>
+, <a class="el" href="class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226">STablero</a>
 </li>
 <li>getJugador()
 : <a class="el" href="class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654">SFicha</a>
 </li>
 <li>getNombre()
 : <a class="el" href="class_s_carta.html#a223487d5105e2468a5fec633dc4b6ae9">SCarta</a>
+, <a class="el" href="class_s_jugador.html#ab79c67356ea49aa83f3cfa6dfce99dc7">SJugador</a>
 </li>
 <li>getNumero()
 : <a class="el" href="class_s_carta.html#acdfd2f65ecdc2d6360fc317fe7f4ad3b">SCarta</a>
@@ -224,6 +235,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>getPuntaje()
 : <a class="el" href="class_s_jugador.html#a7244401657fdda3b7f1d4adb921f2664">SJugador</a>
+</li>
+<li>getTablero()
+: <a class="el" href="class_s_casilla.html#a6ba9e54201232b992277bf2194e12b50">SCasilla</a>
 </li>
 </ul>
 
@@ -293,6 +307,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>m_tablero
 : <a class="el" href="class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0">SJuego</a>
+, <a class="el" href="class_s_casilla.html#a23a134cc495dd86135a3c3424ae40398">SCasilla</a>
 </li>
 <li>m_tipo
 : <a class="el" href="class_s_tablero.html#a95ec137609b0511a850d8c2f9d17ed52">STablero</a>
@@ -340,10 +355,10 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>SCarta()
-: <a class="el" href="class_s_carta.html#a76329f357d1d0e5417cfcc43ba826b43">SCarta</a>
+: <a class="el" href="class_s_carta.html#a2043a80cc4ff56fbd43434735d6f3507">SCarta</a>
 </li>
 <li>SCasilla()
-: <a class="el" href="class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f">SCasilla</a>
+: <a class="el" href="class_s_casilla.html#ac98c1cf2f9e5e280d6a566c56b15bfa4">SCasilla</a>
 </li>
 <li>SDado()
 : <a class="el" href="class_s_dado.html#a3e03e8fbc04318f89aa353b1a1b8e907">SDado</a>
@@ -359,6 +374,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>setNombre()
 : <a class="el" href="class_s_carta.html#a88905d176a383a2191affb82694ace6c">SCarta</a>
+, <a class="el" href="class_s_jugador.html#a322984a3ec9272263f5e722d1453783f">SJugador</a>
 </li>
 <li>setNumero()
 : <a class="el" href="class_s_carta.html#aaf424036702e8678fa4c1fcd56a7e63d">SCarta</a>
@@ -384,8 +400,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>SJuego()
 : <a class="el" href="class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8">SJuego</a>
 </li>
-<li>SJugador
-: <a class="el" href="class_s_jugador.html#a69a565c37dd7f3d996675c9341677c20">SJugador</a>
+<li>SJugador()
+: <a class="el" href="class_s_jugador.html#a62e3cdb96c51f6deddfeb08219b299fd">SJugador</a>
 </li>
 <li>SPila_Cartas()
 : <a class="el" href="class_s_pila___cartas.html#a7b18f8e2aa25e55e4066c1c302ea1664">SPila_Cartas</a>
@@ -419,6 +435,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>~SDado()
 : <a class="el" href="class_s_dado.html#ad8b37588654450e7cd8a74dd3e4a094b">SDado</a>
 </li>
+<li>~SJuego()
+: <a class="el" href="class_s_juego.html#a3a0cef727f252dc6fdbfc21943f0a20e">SJuego</a>
+</li>
 <li>~SJugador()
 : <a class="el" href="class_s_jugador.html#a9a6ef2ab6704bba5725284728568fb6d">SJugador</a>
 </li>
@@ -434,7 +453,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:21:13 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 10:22:59 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

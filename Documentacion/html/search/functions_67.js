@@ -5,12 +5,14 @@ var searchData=
   ['getcartas',['getCartas',['../class_s_casilla.html#a4766fc01acd5713c3b70f3375f099cdd',1,'SCasilla::getCartas()'],['../class_s_tablero.html#a35aa305bab271b3abd86d196a0e90f18',1,'STablero::getCartas()']]],
   ['getcasilla',['getCasilla',['../class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb',1,'SFicha']]],
   ['getequipo',['getEquipo',['../class_s_jugador.html#adeed38c6024fff695032af7ab5b1a67c',1,'SJugador']]],
+  ['getestado',['getEstado',['../class_s_juego.html#acd7840a8a143a5d71cb8f075f7f1857c',1,'SJuego']]],
   ['getficha',['getFicha',['../class_s_casilla.html#a76309113df9bbcf03a269dcfa15b4272',1,'SCasilla::getFicha()'],['../class_s_tablero.html#aa72c111986ef9c6aa0d8e12689f2fe28',1,'STablero::getFicha()']]],
-  ['getfichas',['getFichas',['../class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb',1,'SCasilla::getFichas()'],['../class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226',1,'STablero::getFichas()']]],
+  ['getfichas',['getFichas',['../class_s_casilla.html#a5c2bbf18ff9b838a872cda2ec22267eb',1,'SCasilla::getFichas()'],['../class_s_jugador.html#aff00d2a9ca01a0ee75c9af7cb713c669',1,'SJugador::getFichas()'],['../class_s_tablero.html#abf5a193cfc361fa9c6484631a26a0226',1,'STablero::getFichas()']]],
   ['getjugador',['getJugador',['../class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654',1,'SFicha']]],
-  ['getnombre',['getNombre',['../class_s_carta.html#a223487d5105e2468a5fec633dc4b6ae9',1,'SCarta']]],
+  ['getnombre',['getNombre',['../class_s_carta.html#a223487d5105e2468a5fec633dc4b6ae9',1,'SCarta::getNombre()'],['../class_s_jugador.html#ab79c67356ea49aa83f3cfa6dfce99dc7',1,'SJugador::getNombre()']]],
   ['getnumero',['getNumero',['../class_s_carta.html#acdfd2f65ecdc2d6360fc317fe7f4ad3b',1,'SCarta']]],
   ['getpila',['getPila',['../class_s_casilla.html#a51eb7e96cbdd837b2ccbb59e4b4fbb8a',1,'SCasilla']]],
   ['getposicion',['getPosicion',['../class_s_ficha.html#aba45427f741034dce05a1358430e561a',1,'SFicha']]],
-  ['getpuntaje',['getPuntaje',['../class_s_jugador.html#a7244401657fdda3b7f1d4adb921f2664',1,'SJugador']]]
+  ['getpuntaje',['getPuntaje',['../class_s_jugador.html#a7244401657fdda3b7f1d4adb921f2664',1,'SJugador']]],
+  ['gettablero',['getTablero',['../class_s_casilla.html#a6ba9e54201232b992277bf2194e12b50',1,'SCasilla']]]
 ];

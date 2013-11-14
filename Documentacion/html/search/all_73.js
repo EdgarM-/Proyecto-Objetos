@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['scarta',['SCarta',['../class_s_carta.html',1,'SCarta'],['../class_s_carta.html#a76329f357d1d0e5417cfcc43ba826b43',1,'SCarta::SCarta()']]],
+  ['scarta',['SCarta',['../class_s_carta.html',1,'SCarta'],['../class_s_carta.html#a2043a80cc4ff56fbd43434735d6f3507',1,'SCarta::SCarta()']]],
   ['scarta_2eh',['SCarta.h',['../_s_carta_8h.html',1,'']]],
-  ['scasilla',['SCasilla',['../class_s_casilla.html',1,'SCasilla'],['../class_s_casilla.html#ae9a352a2f0ba4e368e7e804fd317970f',1,'SCasilla::SCasilla(SRegla *regla=nullptr)'],['../class_s_casilla.html#a02f97c3b35b45d27f842ccc047546509',1,'SCasilla::SCasilla(SFicha *ficha, SRegla *regla=nullptr)'],['../class_s_casilla.html#ab1e063a017ffb91ffc15eca1886c577b',1,'SCasilla::SCasilla(const std::vector&lt; SFicha * &gt; &amp;fichas, SRegla *regla=nullptr)'],['../class_s_casilla.html#a667f6bf69fe948f30a2a71a5de574660',1,'SCasilla::SCasilla(SCarta *carta, SRegla *regla=nullptr)'],['../class_s_casilla.html#a457f9ee085a7001431a27834c315eacb',1,'SCasilla::SCasilla(const std::vector&lt; SCarta * &gt; &amp;cartas, SRegla *regla=nullptr)'],['../class_s_casilla.html#a0f3f8fb32d15fbc9539fb4d43870a92d',1,'SCasilla::SCasilla(SPila_Cartas *pila_cartas, SRegla *regla=nullptr)']]],
+  ['scasilla',['SCasilla',['../class_s_casilla.html',1,'SCasilla'],['../class_s_casilla.html#ac98c1cf2f9e5e280d6a566c56b15bfa4',1,'SCasilla::SCasilla(STablero *tablero=nullptr, SRegla *regla=nullptr)'],['../class_s_casilla.html#ae31cd0fa45c26195c395dfb6bd274629',1,'SCasilla::SCasilla(SFicha *ficha, STablero *tablero=nullptr, SRegla *regla=nullptr)'],['../class_s_casilla.html#a38c55791f7a1ea2221647e994010a1ea',1,'SCasilla::SCasilla(const std::vector&lt; SFicha * &gt; &amp;fichas, STablero *tablero=nullptr, SRegla *regla=nullptr)'],['../class_s_casilla.html#ac6b4ff1137c34f21880bdbd485e23bc0',1,'SCasilla::SCasilla(SCarta *carta, STablero *tablero=nullptr, SRegla *regla=nullptr)'],['../class_s_casilla.html#a8b9fe1de54abd18448724575ec1b3861',1,'SCasilla::SCasilla(const std::vector&lt; SCarta * &gt; &amp;cartas, STablero *tablero=nullptr, SRegla *regla=nullptr)'],['../class_s_casilla.html#afb8fe18b9d6f369a097c125fe8a2dd88',1,'SCasilla::SCasilla(SPila_Cartas *pila_cartas, STablero *tablero=nullptr, SRegla *regla=nullptr)']]],
   ['scasilla_2eh',['SCasilla.h',['../_s_casilla_8h.html',1,'']]],
   ['sdado',['SDado',['../class_s_dado.html',1,'SDado'],['../class_s_dado.html#a3e03e8fbc04318f89aa353b1a1b8e907',1,'SDado::SDado()']]],
   ['sdado_2eh',['SDado.h',['../_s_dado_8h.html',1,'']]],
@@ -10,7 +10,7 @@ var searchData=
   ['setcasilla',['setCasilla',['../class_s_ficha.html#ac619d85528d969e2d7fc2c2a6fb29c79',1,'SFicha']]],
   ['setequipo',['setEquipo',['../class_s_jugador.html#ac1a867c96bf634a458dc473a3b8b2ed4',1,'SJugador']]],
   ['setjugador',['setJugador',['../class_s_ficha.html#ae7ff822c8b3d7e5ab041146ff352b9b0',1,'SFicha']]],
-  ['setnombre',['setNombre',['../class_s_carta.html#a88905d176a383a2191affb82694ace6c',1,'SCarta']]],
+  ['setnombre',['setNombre',['../class_s_carta.html#a88905d176a383a2191affb82694ace6c',1,'SCarta::setNombre()'],['../class_s_jugador.html#a322984a3ec9272263f5e722d1453783f',1,'SJugador::setNombre()']]],
   ['setnumero',['setNumero',['../class_s_carta.html#aaf424036702e8678fa4c1fcd56a7e63d',1,'SCarta']]],
   ['setposicion',['setPosicion',['../class_s_ficha.html#aa543aa19fef77f697379d819b481b680',1,'SFicha']]],
   ['setpuntaje',['setPuntaje',['../class_s_jugador.html#ad128593351c95c9597dce01d5f95a332',1,'SJugador']]],
@@ -21,7 +21,7 @@ var searchData=
   ['size',['size',['../class_s_pila___cartas.html#a298cdea0f1b412f39fb71ed1c8d11012',1,'SPila_Cartas']]],
   ['sjuego',['SJuego',['../class_s_juego.html',1,'SJuego'],['../class_s_juego.html#acf39daf5ab9cdb485c0cc675f18dcfa8',1,'SJuego::SJuego()']]],
   ['sjuego_2eh',['SJuego.h',['../_s_juego_8h.html',1,'']]],
-  ['sjugador',['SJugador',['../class_s_jugador.html',1,'SJugador'],['../class_s_jugador.html#a69a565c37dd7f3d996675c9341677c20',1,'SJugador::SJugador()']]],
+  ['sjugador',['SJugador',['../class_s_jugador.html',1,'SJugador'],['../class_s_jugador.html#aac72f32e723704c18f1659500405c6a4',1,'SJugador::SJugador(std::string nombre, int equipo=0)'],['../class_s_jugador.html#a62e3cdb96c51f6deddfeb08219b299fd',1,'SJugador::SJugador(int n_fichas, std::string nombre, int equipo=0)']]],
   ['sjugador_2eh',['SJugador.h',['../_s_jugador_8h.html',1,'']]],
   ['spila_5fcartas',['SPila_Cartas',['../class_s_pila___cartas.html',1,'SPila_Cartas'],['../class_s_pila___cartas.html#a7b18f8e2aa25e55e4066c1c302ea1664',1,'SPila_Cartas::SPila_Cartas()']]],
   ['spila_5fcartas_2eh',['SPila_Cartas.h',['../_s_pila___cartas_8h.html',1,'']]],

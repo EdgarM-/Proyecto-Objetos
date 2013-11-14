@@ -17,6 +17,6 @@ var searchData=
   ['m_5fposicion',['m_posicion',['../class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe',1,'SFicha']]],
   ['m_5fpuntaje',['m_puntaje',['../class_s_jugador.html#a9aef8d85f91b6f5dd7750795584dde70',1,'SJugador']]],
   ['m_5fregla',['m_regla',['../class_s_casilla.html#a549a7a5b17d7119b70cf92bc9645dea6',1,'SCasilla']]],
-  ['m_5ftablero',['m_tablero',['../class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0',1,'SJuego']]],
+  ['m_5ftablero',['m_tablero',['../class_s_casilla.html#a23a134cc495dd86135a3c3424ae40398',1,'SCasilla::m_tablero()'],['../class_s_juego.html#ae61e4c6be0f02f7440e4b4a3c8a7f9f0',1,'SJuego::m_tablero()']]],
   ['m_5ftipo',['m_tipo',['../class_s_tablero.html#a95ec137609b0511a850d8c2f9d17ed52',1,'STablero']]]
 ];

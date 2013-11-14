@@ -3,6 +3,7 @@ var class_s_tablero =
     [ "STablero", "class_s_tablero.html#a5502fbb2398759d163add6ea0bb08022", null ],
     [ "agregarCarta", "class_s_tablero.html#acbb09199040d5749a6c467412abec982", null ],
     [ "agregarFicha", "class_s_tablero.html#a0ae6f8de6fb8adf209e93f6de3c4134f", null ],
+    [ "agregarRegla", "class_s_tablero.html#af5fcd3366fe1dc174f3481d2d53436a0", null ],
     [ "getCarta", "class_s_tablero.html#a2e2e568188cd1d968faeaf4c09607d31", null ],
     [ "getCartas", "class_s_tablero.html#a35aa305bab271b3abd86d196a0e90f18", null ],
     [ "getFicha", "class_s_tablero.html#aa72c111986ef9c6aa0d8e12689f2fe28", null ],

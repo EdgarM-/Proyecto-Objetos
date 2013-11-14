@@ -134,6 +134,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a5b764ae67832b343db83497255f34f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#a5b764ae67832b343db83497255f34f2a">cambiarEstado</a> (<a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> estado)</td></tr>
 <tr class="memdesc:a5b764ae67832b343db83497255f34f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambia es estado del juego.  <a href="#a5b764ae67832b343db83497255f34f2a">Más...</a><br/></td></tr>
 <tr class="separator:a5b764ae67832b343db83497255f34f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7840a8a143a5d71cb8f075f7f1857c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#acd7840a8a143a5d71cb8f075f7f1857c">getEstado</a> () const </td></tr>
+<tr class="memdesc:acd7840a8a143a5d71cb8f075f7f1857c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el estado actual del juego.  <a href="#acd7840a8a143a5d71cb8f075f7f1857c">Más...</a><br/></td></tr>
+<tr class="separator:acd7840a8a143a5d71cb8f075f7f1857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b85ab9cc32c53da7a50c373ee6c10d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#a99b85ab9cc32c53da7a50c373ee6c10d">init</a> ()=0</td></tr>
 <tr class="memdesc:a99b85ab9cc32c53da7a50c373ee6c10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializadora del juego.  <a href="#a99b85ab9cc32c53da7a50c373ee6c10d">Más...</a><br/></td></tr>
 <tr class="separator:a99b85ab9cc32c53da7a50c373ee6c10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:aaa8d4f20e37af89ce6d22db8c5cd08b6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#aaa8d4f20e37af89ce6d22db8c5cd08b6">empate</a> ()=0</td></tr>
 <tr class="memdesc:aaa8d4f20e37af89ce6d22db8c5cd08b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definir Turno.  <a href="#aaa8d4f20e37af89ce6d22db8c5cd08b6">Más...</a><br/></td></tr>
 <tr class="separator:aaa8d4f20e37af89ce6d22db8c5cd08b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0cef727f252dc6fdbfc21943f0a20e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_juego.html#a3a0cef727f252dc6fdbfc21943f0a20e">~SJuego</a> ()</td></tr>
+<tr class="memdesc:a3a0cef727f252dc6fdbfc21943f0a20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a3a0cef727f252dc6fdbfc21943f0a20e">Más...</a><br/></td></tr>
+<tr class="separator:a3a0cef727f252dc6fdbfc21943f0a20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atributos protegidos</h2></td></tr>
@@ -194,7 +200,33 @@ Atributos protegidos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
-<p>Inicia sin tablero y con el <a class="el" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">m_jugador_actual</a> en 0 </p>
+<p>Inicia sin tablero, con el <a class="el" href="class_s_juego.html#a394f1b3145f2ac15a10b0fe02d3dd610">m_jugador_actual</a> en 0 y con <a class="el" href="class_s_juego.html#ad72e6d093bedd4f77b4d1da1ce93b255">m_estado</a> en EN_CURSO </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a0cef727f252dc6fdbfc21943f0a20e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SJuego::~SJuego </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+<p>Libera toda la memoria alocada posible para el desarrollo del juego. </p>
 
 </div>
 </div>
@@ -370,6 +402,32 @@ Atributos protegidos</h2></td></tr>
 
 <p>Definir Ganar. </p>
 <p>Este metodo es el encargado de saber cuando se gana el juego, se debe implementar cuando se herede </p>
+
+</div>
+</div>
+<a class="anchor" id="acd7840a8a143a5d71cb8f075f7f1857c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_s_juego_8h.html#a700cd4eb8f1695daf7b74a3b5088ad94">SEstado</a> SJuego::getEstado </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna el estado actual del juego. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>m_estado SEstado en el que se encuentra el juego </dd></dl>
 
 </div>
 </div>
@@ -564,7 +622,7 @@ Atributos protegidos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_s_juego.html">SJuego</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 06:21:13 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 10:22:59 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
