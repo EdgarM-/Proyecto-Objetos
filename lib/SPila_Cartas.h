@@ -64,7 +64,7 @@ public:
 			if (v[i] == true)
 				continue;
 
-			n = rand() % m_cartas.size()
+			n = rand() % m_cartas.size();
 			if (n != i && v[n] == false)
 			{
 				std::swap(m_cartas[i], m_cartas[n]);

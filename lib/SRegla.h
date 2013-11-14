@@ -1,7 +1,7 @@
 #ifndef SRegla_h
 #define SRegla_h
-
 #include "SFicha.h"
+
 //! La clase SRegla manejas las reglas 
 /*!Es una clase abstracta la cual hay que implementar para poder poner las reglas del juego, que generalmente son reglas de que pasa con las fichas 
  */

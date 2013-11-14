@@ -163,7 +163,7 @@ public:
 		ficha->setCasilla(this);
 		m_fichas.push_back(ficha);
 		if (m_regla != nullptr)
-			m_regla->entraFicha(ficha);
+			m_regla->fichaEntra(ficha);
 	}
 	//! Quita una ficha de la casilla
 	/*!
@@ -218,11 +218,11 @@ public:
 	 */
 	virtual ~SCasilla()
 	{
-		for (int i = 0; i < m_cartas.size(); ++i)
-			delete m_cartas[i];
-		delete m_regla;
-		m_fichas.clear();
-		m_cartas.clear();
+	  for (int i = 0; i < m_cartas.size(); ++i)
+	    delete m_cartas[i];
+	  delete m_regla;
+	  m_fichas.clear();
+	  m_cartas.clear();
 	}
 
 };

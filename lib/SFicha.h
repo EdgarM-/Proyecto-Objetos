@@ -56,7 +56,7 @@ public:
 	 */
 	bool enTablero()
 	{
-		return (m_posicion >= 0)
+	  return (m_posicion >= 0);
 	}
 
 	//!Asigna a la ficha un Jugador
@@ -78,7 +78,7 @@ public:
 	{
 		return m_jugador;
 	}
-	//!Asigna a la ficha una casilla
+2	//!Asigna a la ficha una casilla
 	/*!
 	  \param casilla es una SCasilla la cual indica en que casilla esta la ficha
 	  \sa getCasilla(),SCasilla
