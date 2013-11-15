@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.3.1"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
 <title>Saem Games: Fichero Fuente lib/SFicha.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -39,7 +39,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.8.3.1 -->
+<!-- Generado por Doxygen 1.8.5 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 </script>
@@ -109,75 +109,89 @@ $(document).ready(function(){initNavTree('_s_ficha_8h_source.html','');});
 <a href="_s_ficha_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SFicha_h</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SFicha_h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span><a class="code" href="class_s_jugador.html" title="La Clase SJugador es la base para modelar los jugadores.">SJugador</a>;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="class_s_casilla.html" title="La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas...">SCasilla</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span><a class="code" href="class_s_jugador.html">SJugador</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="class_s_casilla.html">SCasilla</a>;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_s_ficha.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_ficha.html" title="La clase SFicha es la base para las fichas.">SFicha</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_s_ficha.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_ficha.html">SFicha</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1">   16</a></span>&#160;    <a class="code" href="class_s_jugador.html" title="La Clase SJugador es la base para modelar los jugadores.">SJugador</a>* <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1" title="Jugador que posee la ficha.">m_jugador</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1">   16</a></span>&#160;    <a class="code" href="class_s_jugador.html">SJugador</a>* <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1">m_jugador</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847">   19</a></span>&#160;    <a class="code" href="class_s_casilla.html" title="La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas...">SCasilla</a>* <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847" title="Casilla en la que esta la ficha.">m_casilla</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe" title="Entero que indica la casilla en la que se encuentra la ficha respecto al tablero empezando en 0...">m_posicion</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847">   19</a></span>&#160;    <a class="code" href="class_s_casilla.html">SCasilla</a>* <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847">m_casilla</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">m_posicion</a>; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_s_ficha.html#a0a7d650cbd0635ce09cc8870597720fa">   29</a></span>&#160;    <a class="code" href="class_s_ficha.html#a0a7d650cbd0635ce09cc8870597720fa" title="Constructor.">SFicha</a>(<span class="keywordtype">int</span> posicion = -1)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1" title="Jugador que posee la ficha.">m_jugador</a>(nullptr), <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847" title="Casilla en la que esta la ficha.">m_casilla</a>(nullptr), <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe" title="Entero que indica la casilla en la que se encuentra la ficha respecto al tablero empezando en 0...">m_posicion</a>(posicion)</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_s_ficha.html#a0a7d650cbd0635ce09cc8870597720fa">   29</a></span>&#160;    <a class="code" href="class_s_ficha.html#a0a7d650cbd0635ce09cc8870597720fa">SFicha</a>(<span class="keywordtype">int</span> posicion = -1)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1">m_jugador</a>(nullptr), <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847">m_casilla</a>(nullptr), <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">m_posicion</a>(posicion)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_s_ficha.html#aba45427f741034dce05a1358430e561a">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_ficha.html#aba45427f741034dce05a1358430e561a" title="Devuelve la posicion en la que se encuentra la ficha respecto al tablero.">getPosicion</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_s_ficha.html#aba45427f741034dce05a1358430e561a">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_ficha.html#aba45427f741034dce05a1358430e561a">getPosicion</a>()</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe" title="Entero que indica la casilla en la que se encuentra la ficha respecto al tablero empezando en 0...">m_posicion</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">m_posicion</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680" title="Asigna a la ficha una posicion.">setPosicion</a>(<span class="keywordtype">int</span> posicion)</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680">setPosicion</a>(<span class="keywordtype">int</span> posicion)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe" title="Entero que indica la casilla en la que se encuentra la ficha respecto al tablero empezando en 0...">m_posicion</a> = posicion;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">m_posicion</a> = posicion;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_s_ficha.html#ae4c73f3560714ed06c245260ef1fe3b6">   57</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_s_ficha.html#ae4c73f3560714ed06c245260ef1fe3b6" title="Devuelve si la ficha se encuentra en alguna casilla.">enTablero</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_s_ficha.html#ae4c73f3560714ed06c245260ef1fe3b6">   57</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_s_ficha.html#ae4c73f3560714ed06c245260ef1fe3b6">enTablero</a>()</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe" title="Entero que indica la casilla en la que se encuentra la ficha respecto al tablero empezando en 0...">m_posicion</a> &gt;= 0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">m_posicion</a> &gt;= 0);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="class_s_ficha.html#ae7ff822c8b3d7e5ab041146ff352b9b0">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_ficha.html#ae7ff822c8b3d7e5ab041146ff352b9b0" title="Asigna a la ficha un Jugador.">setJugador</a>(<a class="code" href="class_s_jugador.html" title="La Clase SJugador es la base para modelar los jugadores.">SJugador</a>* jugador)</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_s_ficha.html#ae7ff822c8b3d7e5ab041146ff352b9b0">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_ficha.html#ae7ff822c8b3d7e5ab041146ff352b9b0">setJugador</a>(<a class="code" href="class_s_jugador.html">SJugador</a>* jugador)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1" title="Jugador que posee la ficha.">m_jugador</a> = jugador;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1">m_jugador</a> = jugador;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654">   77</a></span>&#160;    <a class="code" href="class_s_jugador.html" title="La Clase SJugador es la base para modelar los jugadores.">SJugador</a>* <a class="code" href="class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654" title="Devuelve el jugador al que le pertenece la ficha.">getJugador</a>()</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654">   77</a></span>&#160;    <a class="code" href="class_s_jugador.html">SJugador</a>* <a class="code" href="class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654">getJugador</a>()</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1" title="Jugador que posee la ficha.">m_jugador</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1">m_jugador</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_s_ficha.html#ac619d85528d969e2d7fc2c2a6fb29c79">   86</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_ficha.html#ac619d85528d969e2d7fc2c2a6fb29c79" title="Asigna a la ficha una casilla.">setCasilla</a>(<a class="code" href="class_s_casilla.html" title="La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas...">SCasilla</a>* casilla)</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_s_ficha.html#ac619d85528d969e2d7fc2c2a6fb29c79">   86</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_ficha.html#ac619d85528d969e2d7fc2c2a6fb29c79">setCasilla</a>(<a class="code" href="class_s_casilla.html">SCasilla</a>* casilla)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847" title="Casilla en la que esta la ficha.">m_casilla</a> = casilla;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847">m_casilla</a> = casilla;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb">   94</a></span>&#160;    <a class="code" href="class_s_casilla.html" title="La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas...">SCasilla</a>* <a class="code" href="class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb" title="Devuelve la casilla en la cual esta la ficha.">getCasilla</a>()</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb">   94</a></span>&#160;    <a class="code" href="class_s_casilla.html">SCasilla</a>* <a class="code" href="class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb">getCasilla</a>()</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847" title="Casilla en la que esta la ficha.">m_casilla</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847">m_casilla</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // SFicha_h</span></div>
+<div class="ttc" id="class_s_ficha_html_ac619d85528d969e2d7fc2c2a6fb29c79"><div class="ttname"><a href="class_s_ficha.html#ac619d85528d969e2d7fc2c2a6fb29c79">SFicha::setCasilla</a></div><div class="ttdeci">void setCasilla(SCasilla *casilla)</div><div class="ttdoc">Asigna a la ficha una casilla. </div><div class="ttdef"><b>Definition:</b> SFicha.h:86</div></div>
+<div class="ttc" id="class_s_ficha_html_a0aad9f92e7c84b0a0d4319e458ddfacb"><div class="ttname"><a href="class_s_ficha.html#a0aad9f92e7c84b0a0d4319e458ddfacb">SFicha::getCasilla</a></div><div class="ttdeci">SCasilla * getCasilla()</div><div class="ttdoc">Devuelve la casilla en la cual esta la ficha. </div><div class="ttdef"><b>Definition:</b> SFicha.h:94</div></div>
+<div class="ttc" id="class_s_ficha_html_a0a7d650cbd0635ce09cc8870597720fa"><div class="ttname"><a href="class_s_ficha.html#a0a7d650cbd0635ce09cc8870597720fa">SFicha::SFicha</a></div><div class="ttdeci">SFicha(int posicion=-1)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> SFicha.h:29</div></div>
+<div class="ttc" id="class_s_ficha_html_ae7ff822c8b3d7e5ab041146ff352b9b0"><div class="ttname"><a href="class_s_ficha.html#ae7ff822c8b3d7e5ab041146ff352b9b0">SFicha::setJugador</a></div><div class="ttdeci">void setJugador(SJugador *jugador)</div><div class="ttdoc">Asigna a la ficha un Jugador. </div><div class="ttdef"><b>Definition:</b> SFicha.h:67</div></div>
+<div class="ttc" id="class_s_ficha_html_a5116c2f365c6705b8b934c7bb6b7d654"><div class="ttname"><a href="class_s_ficha.html#a5116c2f365c6705b8b934c7bb6b7d654">SFicha::getJugador</a></div><div class="ttdeci">SJugador * getJugador()</div><div class="ttdoc">Devuelve el jugador al que le pertenece la ficha. </div><div class="ttdef"><b>Definition:</b> SFicha.h:77</div></div>
+<div class="ttc" id="class_s_ficha_html"><div class="ttname"><a href="class_s_ficha.html">SFicha</a></div><div class="ttdoc">La clase SFicha es la base para las fichas. </div><div class="ttdef"><b>Definition:</b> SFicha.h:12</div></div>
+<div class="ttc" id="class_s_ficha_html_ae4c73f3560714ed06c245260ef1fe3b6"><div class="ttname"><a href="class_s_ficha.html#ae4c73f3560714ed06c245260ef1fe3b6">SFicha::enTablero</a></div><div class="ttdeci">bool enTablero()</div><div class="ttdoc">Devuelve si la ficha se encuentra en alguna casilla. </div><div class="ttdef"><b>Definition:</b> SFicha.h:57</div></div>
+<div class="ttc" id="class_s_ficha_html_aba45427f741034dce05a1358430e561a"><div class="ttname"><a href="class_s_ficha.html#aba45427f741034dce05a1358430e561a">SFicha::getPosicion</a></div><div class="ttdeci">int getPosicion()</div><div class="ttdoc">Devuelve la posicion en la que se encuentra la ficha respecto al tablero. </div><div class="ttdef"><b>Definition:</b> SFicha.h:37</div></div>
+<div class="ttc" id="class_s_jugador_html"><div class="ttname"><a href="class_s_jugador.html">SJugador</a></div><div class="ttdoc">La Clase SJugador es la base para modelar los jugadores. </div><div class="ttdef"><b>Definition:</b> SJugador.h:15</div></div>
+<div class="ttc" id="class_s_ficha_html_af3e929a81dfde1d54ba68649dfa0a847"><div class="ttname"><a href="class_s_ficha.html#af3e929a81dfde1d54ba68649dfa0a847">SFicha::m_casilla</a></div><div class="ttdeci">SCasilla * m_casilla</div><div class="ttdoc">Casilla en la que esta la ficha. </div><div class="ttdef"><b>Definition:</b> SFicha.h:19</div></div>
+<div class="ttc" id="class_s_ficha_html_a1ce58f4f07b67d0a7a76db6aefc1d4fe"><div class="ttname"><a href="class_s_ficha.html#a1ce58f4f07b67d0a7a76db6aefc1d4fe">SFicha::m_posicion</a></div><div class="ttdeci">int m_posicion</div><div class="ttdoc">Entero que indica la casilla en la que se encuentra la ficha respecto al tablero empezando en 0...</div><div class="ttdef"><b>Definition:</b> SFicha.h:21</div></div>
+<div class="ttc" id="class_s_ficha_html_aa543aa19fef77f697379d819b481b680"><div class="ttname"><a href="class_s_ficha.html#aa543aa19fef77f697379d819b481b680">SFicha::setPosicion</a></div><div class="ttdeci">void setPosicion(int posicion)</div><div class="ttdoc">Asigna a la ficha una posicion. </div><div class="ttdef"><b>Definition:</b> SFicha.h:48</div></div>
+<div class="ttc" id="class_s_ficha_html_a819d418ca941e3e61703e5280702a7e1"><div class="ttname"><a href="class_s_ficha.html#a819d418ca941e3e61703e5280702a7e1">SFicha::m_jugador</a></div><div class="ttdeci">SJugador * m_jugador</div><div class="ttdoc">Jugador que posee la ficha. </div><div class="ttdef"><b>Definition:</b> SFicha.h:16</div></div>
+<div class="ttc" id="class_s_casilla_html"><div class="ttname"><a href="class_s_casilla.html">SCasilla</a></div><div class="ttdoc">La clase SCasilla es la que modela lo basico de una casilla y posee las cartas y las fichas...</div><div class="ttdef"><b>Definition:</b> SCasilla.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="_s_ficha_8h.html">SFicha.h</a></li>
-    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 10:33:17 para Saem Games por
+    <li class="footer">Generado el Jueves, 14 de Noviembre de 2013 20:16:45 para Saem Games por
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
 </div>
 </body>

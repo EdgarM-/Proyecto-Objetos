@@ -99,7 +99,7 @@ public:
 		STablero* tablero = ficha->getCasilla()->getTablero();
 		if (m_a == casilla)
 		{
-			std::cout << ((m_a - m_b > 0) ? "Escalera: ":"Serpiente: ") << m_b - m_a << std::endl;
+			std::cout << ((m_a - m_b < 0) ? "Escalera: +":"Serpiente: ") << m_b - m_a << std::endl;
 			tablero->removerFicha(ficha);
 			tablero->agregarFicha(ficha, m_b);
 		} 

@@ -78,7 +78,6 @@ public:
 	 */
 	void agregarFicha(SFicha* ficha, int posicion)
 	{
-		std::cout << "STablero::agregarFicha(SFicha* ficha = "<< ficha <<", int posicion = "<< posicion <<")" << std::endl;
 		ficha->setPosicion(posicion);
 		m_casillas[posicion]->addFicha(ficha);
 	}
@@ -114,7 +113,7 @@ public:
 				agregarFicha(ficha, 2 * m_casillas.size() - 2 - pos );	
 		}
 		else
-			agregarFicha(ficha, pos + n_casillas);
+			agregarFicha(ficha, pos);
 	}
 
 	//!Agrega una regla en la casilla posicion
