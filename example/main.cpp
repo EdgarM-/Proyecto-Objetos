@@ -44,7 +44,7 @@ public:
 			if (n_carta < 0) // Negativa
 			{
 				n_carta = n_carta * m_dado.tirar() * (-1);
-				std::cout << "Dark: n_carta = " << n_carta << std::endl;
+				std::cout << "Evento: carta trampa, retrocedes " << n_carta << " casillas!" << std::endl;
 				/* Tomamos la casilla donde se encuentra y retrocedemos la ficha 
 				 * el numero inticado de casillas o hasta la posicion 0 */
 				if (ficha->getPosicion() <= n_carta)
@@ -61,7 +61,7 @@ public:
 			}
 			else // Positiva
 			{
-				std::cout << "Light: n_carta = " << n_carta << std::endl;
+				std::cout << "Evento: carta ayuda, avanzas " << n_carta << " casillas!" << std::endl;
 				tablero->moverFicha(ficha, n_carta);
 			}
 		}
@@ -81,7 +81,7 @@ class ReglaSE
 	: public SRegla
 {
 	/* Como las serpientes y escaleras conectan dos puntos del tablero
-	 * vamos a crear dos variables con ese posiciones m_a salida, m_b llegada
+	 * vamos a crear dos variables con las posiciones m_a salida, m_b llegada
 	 */
 	int m_a;
 	int m_b;
@@ -99,7 +99,7 @@ public:
 		STablero* tablero = ficha->getCasilla()->getTablero();
 		if (m_a == casilla)
 		{
-			std::cout << ((m_a - m_b > 0) ? "Escalera: ":"Serpiente: ") << m_a - m_b << std::endl;
+			std::cout << ((m_a - m_b > 0) ? "Escalera: ":"Serpiente: ") << m_b - m_a << std::endl;
 			tablero->removerFicha(ficha);
 			tablero->agregarFicha(ficha, m_b);
 		} 
@@ -144,11 +144,11 @@ public:
 		/* Creamos el dado a utilizar en este juego, estandar de 6 caras. */
 		SDado dado(1,6);
 		/* Creamos el tablero donde se desarrolla el juego, en escalera es de 100 casillas
-		 * por defecto el constructor crea un tablero de tipo LINEAL_REBOTE de n casillas tipo SCasilla 
-		 * es decir que cuando una fiche se mueva con STablero::moverFigura(...), si el valor es mayor
-		 * al total de casillas la ficha 'rebota' y retrocede el numero de pasos restantes. */
+		 * por defecto el constructor crea un tablero de tipo LINEAL_REBOTE de n casillas tipo SCasilla, 
+		 * es decir, cuando una ficha se mueva con STablero::moverFigura(...), si el valor es mayor
+		 * al total de casillas totales la ficha 'rebota' y retrocede el numero de pasos restantes. */
 		m_tablero = new STablero(100);
-		/* Agregamos el dado al Juego insertandolo en el vector de dados para poder usarlo
+		/* Agregamos el dado al Juego, insertandolo en el vector de dados para poder usarlo
 		 * mas adelante. */
 		m_dados.push_back(dado);
 		/* En este caso haremos el juego entre dos jugadores y con solo una ficha por jugador
@@ -159,7 +159,7 @@ public:
 		std::vector<int> pinicial = {0, 3, 8, 16, 20, 27, 50, 53, 61, 63, 70, 79, 92, 94, 97};
 		std::vector<int> pfinal = {37, 13, 30, 6, 41, 83, 66, 33, 18, 59, 90, 99, 72, 74, 78};
 		for (int i = 0; i < pinicial.size(); ++i)
-		{
+		{ /* Incertamos la serpiente o escalera como regla en las casillas apropiadas */
 			m_tablero->agregarRegla(new ReglaSE(pinicial[i], pfinal[i]), pinicial[i]);
 		}
 		/* Para hacer el juego mas intersante hay casillas dentro del tablero que tienen cartas negativas y positivas
@@ -179,6 +179,7 @@ public:
 		{
 			if(m_jugadores[i]->getFichas()[0]->getPosicion() == 99)
 			{
+				/* Declaramos un ganador */
 				m_estado = GANADO;
 				m_jugador_ganador = m_jugadores[i];
 				return true;
@@ -199,9 +200,9 @@ public:
 		m_jugador_ganador = jugador;
 	}
 
-	/* Finalmente de si no hay interfaz grafica solo queda definir lo que ocurre en un turno
-	 * revisar el si hay un ganador o un empate con las funciones previamente implementadas
-	 * y si no llamar a SJuego::cambiarJugador(), m_jugadores_actual es numero en rotacion
+	/* Finalmente de si no hay interfaz grafica solo queda definir lo que ocurre en un turno,
+	 * revisar si hay un ganador o un empate con las funciones previamente implementadas
+	 * y si no llamar a SJuego::cambiarJugador(), m_jugador_actual es numero en rotacion
 	 * que se relaciona con un jugador de m_jugadores */
 	void turno()
 	{
@@ -210,13 +211,13 @@ public:
 		SFicha* ficha = m_jugadores[m_jugador_actual]->getFichas()[0];
 		/* Obtenomos el valor del dado y anunciamos el valor */
 		int dado = m_dados[0].tirar();
-		std::cout << dado << std::endl;
-		/* Desplazamos la figura del jugador actual las casillas indicadas por el dado
-		 * las reglas especificadas previamente se haran cargo de las escaleras, serpientes o cartas
+		std::cout << m_jugadores[m_jugador_actual]->getNombre() << ": Valor del dado = " << dado << std::endl;
+		/* Desplazamos la figura del jugador actual las casillas indicadas por el dado.
+		 * Las reglas especificadas previamente se haran cargo de las escaleras, serpientes o cartas
 		 * especiales en las casillas y el tipo de tablero LINEAL_REBOTE se hara cargo del desbordamiento */
 		m_tablero->moverFicha(ficha, dado);
 		/* Imprimimos la casilla en la que se encuentra la ficha despues de moverla */
-		// std::cout << " Casilla: " << ficha->getPosicion() + 1 << std::endl;
+		std::cout << m_jugadores[m_jugador_actual]->getNombre() << ": Casilla = " << ficha->getPosicion() + 1 << std::endl;
 		 /* Revisamos si hay ganador */
 		if(ganar() || m_estado == GANADO)
 		{
